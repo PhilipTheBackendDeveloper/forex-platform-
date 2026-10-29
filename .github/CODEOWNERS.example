@@ -1,0 +1,12 @@
+# Rename to CODEOWNERS once GitHub usernames are confirmed.
+*                                   @PUBLIC_SITE_OWNER
+/src/app/(protected)/dashboard/     @RODDY
+/src/features/dashboard/            @RODDY
+# Admin: owner TBD — see docs/team/ROLES_AND_OWNERSHIP.md
+/src/app/(protected)/admin/         @PUBLIC_SITE_OWNER @RODDY
+/src/features/admin/                @PUBLIC_SITE_OWNER @RODDY
+# Shared contracts require both reviewers
+/src/types/                         @PUBLIC_SITE_OWNER @RODDY
+/src/app/globals.css                @PUBLIC_SITE_OWNER @RODDY
+/src/components/ui/                 @PUBLIC_SITE_OWNER @RODDY
+/src/server/                        @PUBLIC_SITE_OWNER @RODDY

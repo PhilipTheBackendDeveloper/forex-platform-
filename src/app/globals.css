@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — the ONLY place brand colours, radii and typography scales are defined.
+ * Swap these values to rebrand; components reference semantic utilities (bg-background,
+ * text-muted, from-brand …) and never raw hex codes.
+ * Values marked (measured) were read from the reference site's public CSS/HTML on
+ * 2026-10-29; (estimated) values were sampled from the screenshot. See docs/design/DESIGN_TOKENS.md.
+ */
+:root {
+  --background: #020818; /* measured: hero section bg */
+  --background-deep: #000000; /* measured: beginner section bg-black */
+  --surface: #051024; /* measured */
+  --surface-2: #0a0f1c; /* measured */
+  --surface-3: #0f111a; /* measured */
+  --foreground: #f5f5f7; /* measured */
+  --muted: #86868b; /* measured */
+  --primary: #0071e3; /* measured: primary CTA / glow */
+  --primary-hover: #0077ed; /* measured */
+  --primary-contrast: #ffffff;
+  --accent: #bf5af2; /* measured: violet orb */
+  --gradient-from: #60a5fa; /* measured: headline shine */
+  --gradient-to: #a78bfa; /* measured */
+  --success: #30d158; /* measured */
+  --danger: #ff3b30; /* measured */
+  --border: rgb(255 255 255 / 0.08);
+  --border-strong: rgb(255 255 255 / 0.16);
+  --ring: #409cff; /* measured */
+  --container-max: 1200px; /* measured: hero padding calc uses 1200px */
+  --header-height: 88px; /* estimated */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-deep: var(--background-deep);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-contrast: var(--primary-contrast);
+  --color-accent: var(--accent);
+  --color-brand-from: var(--gradient-from);
+  --color-brand-to: var(--gradient-to);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --radius-card: 1.4rem; /* measured: rounded-[1.4rem] */
+  --radius-panel: 2.5rem; /* measured: rounded-[2.5rem] */
+  --radius-hero: 3rem; /* measured: rounded-[3rem] */
+
+  --container-site: var(--container-max);
+
+  --animate-orb: orb-float 20s ease-in-out infinite;
+  --animate-orb-reverse: orb-float-reverse 25s ease-in-out infinite;
+  --animate-shine: shine-flow 8s linear infinite;
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes orb-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(40px, -30px, 0) scale(1.08);
+    }
+  }
+  @keyframes orb-float-reverse {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(-50px, 30px, 0) scale(0.95);
+    }
+  }
+  @keyframes shine-flow {
+    to {
+      background-position: -400% center;
+    }
+  }
+  @keyframes marquee {
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+    color-scheme: dark;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 45%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@utility text-gradient-brand {
+  background-image: linear-gradient(
+    90deg,
+    var(--gradient-from) 0%,
+    var(--gradient-to) 25%,
+    var(--gradient-from) 50%,
+    var(--gradient-to) 75%,
+    var(--gradient-from) 100%
+  );
+  background-size: 400% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility container-site {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@utility bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
