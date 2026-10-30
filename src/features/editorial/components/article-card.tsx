@@ -12,7 +12,7 @@ export function ArticleCard({ article, seed = 0 }: { article: Article; seed?: nu
   return (
     <Link
       href={`/blogs/${article.slug}`}
-      className="group flex h-full flex-col overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#111827]/60 transition-[border-color,transform] duration-500 hover:-translate-y-1 hover:border-white/20"
+      className="group flex h-full flex-col overflow-hidden rounded-[1.6rem] border border-border bg-white shadow-card transition-[border-color,transform,box-shadow] duration-500 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lift"
     >
       <div className="relative">
         {cover ? (
@@ -22,13 +22,13 @@ export function ArticleCard({ article, seed = 0 }: { article: Article; seed?: nu
         ) : (
           <ChartCover seed={seed} className="aspect-[16/9] w-full transition-transform duration-700 group-hover:scale-[1.03]" />
         )}
-        <span className="absolute bottom-4 left-4 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-[11px] font-medium backdrop-blur">{article.category}</span>
+        <span className="absolute bottom-4 left-4 rounded-full border border-border bg-white/90 px-3 py-1 text-[11px] font-semibold text-foreground shadow-sm backdrop-blur">{article.category}</span>
       </div>
       <div className="flex flex-1 flex-col p-6">
         {article.status !== "published" && <PlaceholderBadge className="mb-3 w-fit" label="Draft sample" />}
         <h3 className="line-clamp-2 text-[19px] leading-snug font-semibold tracking-tight">{article.title}</h3>
         <p className="mt-3 line-clamp-2 text-[14px] leading-relaxed text-foreground/50">{article.excerpt}</p>
-        <div className="mt-auto flex items-center justify-between border-t border-white/[0.07] pt-5 text-[13px]">
+        <div className="mt-auto flex items-center justify-between border-t border-border pt-5 text-[13px]">
           <time dateTime={article.publishedAt} className="text-foreground/45">
             {new Date(article.publishedAt).toLocaleDateString("en-GB", { dateStyle: "long" })}
           </time>

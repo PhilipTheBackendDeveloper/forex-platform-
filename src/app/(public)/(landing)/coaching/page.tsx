@@ -87,14 +87,14 @@ export default function CoachingPage() {
             <Fade>{c.offer.dimWord}</Fade> <Accent>{c.offer.accentWord}</Accent>
           </h2>
         </Reveal>
-        <Reveal delay={0.1} className="relative mt-16 grid w-full max-w-5xl overflow-hidden rounded-[var(--radius-hero)] border border-white/10 bg-card/90 shadow-[0_40px_120px_-40px_var(--primary)] md:grid-cols-[1.2fr_1fr]">
+        <Reveal delay={0.1} className="relative mt-16 grid w-full max-w-5xl overflow-hidden rounded-[var(--radius-hero)] border border-border bg-white shadow-lift md:grid-cols-[1.2fr_1fr]">
           <div className="p-8 sm:p-12">
             <h3 className="text-[clamp(28px,3vw,40px)] font-extrabold tracking-[-0.03em]">{c.offer.name}</h3>
             <p className="mt-2 text-[16px] font-semibold text-primary">{c.offer.subtitle}</p>
             <ul className="mt-10 flex flex-col gap-6">
               {c.offer.included.map((item) => (
                 <li key={item.title} className="flex gap-4">
-                  <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
+                  <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border border-border bg-surface">
                     <Check aria-hidden className="size-3.5 text-primary" />
                   </span>
                   <span>
@@ -105,13 +105,13 @@ export default function CoachingPage() {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col items-center justify-center border-t border-white/10 bg-white/[0.02] p-8 text-center sm:p-12 md:border-t-0 md:border-l">
+          <div className="flex flex-col items-center justify-center border-t border-border bg-surface-2 p-8 text-center sm:p-12 md:border-t-0 md:border-l">
             <p className="font-mono text-[11px] tracking-[0.25em] text-foreground/45 uppercase">{c.offer.priceLabel}</p>
             <p className="mt-3 text-[clamp(48px,6vw,80px)] leading-none font-black tracking-[-0.05em]">TBC</p>
             <PlaceholderBadge className="mt-3" label="Pricing pending" />
             <a
               href="#apply"
-              className="group mt-8 inline-flex min-h-14 w-full max-w-xs items-center justify-center gap-2 rounded-full bg-foreground px-8 text-[17px] font-bold text-background shadow-[0_0_50px_-10px_rgb(255_255_255/0.5)] transition-colors hover:bg-white"
+              className="group mt-8 inline-flex min-h-14 w-full max-w-xs items-center justify-center gap-2 rounded-full bg-primary px-8 text-[17px] font-bold text-white shadow-lift transition-colors hover:bg-primary-hover"
             >
               Request Enrollment
               <span aria-hidden className="transition-transform group-hover:translate-x-1">
@@ -126,7 +126,7 @@ export default function CoachingPage() {
       </section>
 
       <section id="apply" className="relative px-4 pb-32">
-        <Reveal className="mx-auto max-w-2xl rounded-[var(--radius-panel)] border border-white/10 bg-white/[0.025] p-6 sm:p-10">
+        <Reveal className="mx-auto max-w-2xl rounded-[var(--radius-panel)] border border-border bg-white p-6 shadow-card sm:p-10">
           <h2 className="text-[26px] font-bold tracking-tight">Request a coaching seat</h2>
           <p className="mt-2 mb-8 text-[15px] text-foreground/55">
             Tell us where you are in your trading and what you want to fix. <Dim>Applying commits you to nothing.</Dim>

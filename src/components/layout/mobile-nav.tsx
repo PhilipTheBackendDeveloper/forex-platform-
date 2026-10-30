@@ -66,7 +66,7 @@ export function MobileNav({ pathname }: { pathname: string }) {
         aria-controls="mobile-menu"
         aria-label="Open menu"
         onClick={() => setOpen(true)}
-        className="inline-flex size-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-foreground backdrop-blur transition-colors hover:bg-white/10"
+        className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:bg-surface-2"
       >
         <Menu className="size-5" aria-hidden />
       </button>
@@ -82,7 +82,7 @@ export function MobileNav({ pathname }: { pathname: string }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[70] flex flex-col overflow-y-auto bg-background/97 px-6 pb-10 backdrop-blur-2xl"
+            className="fixed inset-0 z-[70] flex flex-col overflow-y-auto bg-background/98 px-6 pb-10 backdrop-blur-2xl"
           >
             <div className="flex h-20 shrink-0 items-center justify-between">
               <Wordmark />
@@ -90,7 +90,7 @@ export function MobileNav({ pathname }: { pathname: string }) {
                 type="button"
                 aria-label="Close menu"
                 onClick={close}
-                className="inline-flex size-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04]"
+                className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground hover:bg-surface-2 transition-colors"
               >
                 <X className="size-5" aria-hidden />
               </button>
@@ -123,14 +123,14 @@ export function MobileNav({ pathname }: { pathname: string }) {
               <Link
                 href={routes.login}
                 onClick={() => setOpen(false)}
-                className="inline-flex min-h-14 items-center justify-center rounded-2xl border border-white/15 text-[16px] text-foreground/85"
+                className="inline-flex min-h-14 items-center justify-center rounded-2xl border border-border bg-card text-[16px] font-medium text-foreground hover:bg-surface-2"
               >
                 Sign in
               </Link>
               <Link
                 href={routes.register}
                 onClick={() => setOpen(false)}
-                className={buttonClasses("light", "lg", "min-h-14 rounded-2xl font-semibold")}
+                className={buttonClasses("primary", "lg", "min-h-14 rounded-2xl font-semibold")}
               >
                 Sign up
               </Link>

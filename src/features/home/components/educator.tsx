@@ -39,7 +39,7 @@ export function EducatorSection() {
       className="relative z-10 overflow-hidden bg-background"
       style={{ clipPath: "polygon(0 8vw, 100% 0, 100% 100%, 0 100%)", marginTop: "-8vw" }}
     >
-      <div aria-hidden className="pointer-events-none absolute inset-y-0 z-20 hidden w-[300px] bg-linear-to-r from-transparent to-[#02091a] lg:block" style={{ right: "48%" }} />
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 z-20 hidden w-[300px] bg-linear-to-r from-transparent to-background lg:block" style={{ right: "48%" }} />
       <div className="flex flex-col lg:flex-row" style={{ minHeight: "92vh" }}>
         <div
           ref={panelRef}
@@ -58,17 +58,17 @@ export function EducatorSection() {
               </div>
             );
           })}
-          <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-48 bg-linear-to-t from-background to-transparent" />
+          <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-48 bg-linear-to-t from-black/70 to-transparent" />
           <div className="absolute right-0 bottom-10 left-0 z-20 flex items-end justify-between" style={{ paddingLeft: GUTTER, paddingRight: 28 }}>
             <div aria-live="polite" key={slide.title} className="animate-[caption-in_0.4s_ease]">
-              <p className="mb-[5px] text-[10px] font-medium tracking-[0.22em] text-white/35 uppercase">{slide.kicker}</p>
-              <p className="text-[13px] font-semibold tracking-[0.06em] text-white/80 uppercase">{slide.title}</p>
-              <p className="mt-1 text-[11px] tracking-[0.03em] text-white/30">{slide.meta}</p>
+              <p className="mb-[5px] text-[10px] font-medium tracking-[0.22em] text-white/50 uppercase">{slide.kicker}</p>
+              <p className="text-[13px] font-semibold tracking-[0.06em] text-white uppercase">{slide.title}</p>
+              <p className="mt-1 text-[11px] tracking-[0.03em] text-white/60">{slide.meta}</p>
             </div>
             <button
               type="button"
               onClick={() => setUserPaused((p) => !p)}
-              className="sr-only rounded-full bg-black/60 px-3 py-1.5 text-[12px] focus:not-sr-only"
+              className="sr-only rounded-full bg-black/60 px-3 py-1.5 text-[12px] text-white focus:not-sr-only"
             >
               {userPaused ? "Play slideshow" : "Pause slideshow"}
             </button>
@@ -82,16 +82,16 @@ export function EducatorSection() {
           <Reveal delay={0.2} className="mb-10">
             <SectionEyebrow>{e.eyebrow}</SectionEyebrow>
           </Reveal>
-          <RevealLines lines={toLines(e.title, e.dim)} fontSize="clamp(40px, 4.5vw, 64px)" delay={0.24} className="mb-9" />
+          <RevealLines lines={toLines(e.title, e.dim, "accent")} fontSize="clamp(40px, 4.5vw, 64px)" delay={0.24} className="mb-9" />
           <Reveal delay={0.5}>
-            <div aria-hidden className="mb-8 h-px max-w-[200px] bg-white/8" />
-            <p className="mb-[52px] max-w-[360px] text-[16px] leading-[1.72] tracking-[-0.01em] text-white/70">{e.body}</p>
+            <div aria-hidden className="mb-8 h-px max-w-[200px] bg-border" />
+            <p className="mb-[52px] max-w-[360px] text-[16px] leading-[1.72] tracking-[-0.01em] text-muted">{e.body}</p>
           </Reveal>
           <Reveal delay={0.62}>
             <dl className="flex items-start">
               {e.principles.map((p, i) => (
-                <div key={p.value} className={i < e.principles.length - 1 ? "mr-7 flex flex-col-reverse border-r border-white/8 pr-7" : "flex flex-col-reverse"}>
-                  <dt className="mt-1.5 text-[11px] tracking-[0.02em] text-white/45">{p.label}</dt>
+                <div key={p.value} className={i < e.principles.length - 1 ? "mr-7 flex flex-col-reverse border-r border-border pr-7" : "flex flex-col-reverse"}>
+                  <dt className="mt-1.5 text-[11px] tracking-[0.02em] text-muted">{p.label}</dt>
                   <dd className="text-[20px] leading-none font-bold tracking-[-0.03em] text-foreground">{p.value}</dd>
                 </div>
               ))}

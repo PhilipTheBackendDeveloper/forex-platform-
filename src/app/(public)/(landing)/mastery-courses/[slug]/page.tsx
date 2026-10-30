@@ -83,16 +83,16 @@ export default async function CourseDetailPage({ params }: PageProps<"/mastery-c
             </p>
           </Reveal>
           <Reveal delay={0.15} className="mx-auto mt-16 max-w-4xl">
-            <ChartCover seed={courses.indexOf(course)} label={course.level} className="aspect-[16/9] w-full rounded-[var(--radius-hero)] border border-white/10 shadow-[0_40px_120px_-40px_var(--primary)]" />
+            <ChartCover seed={courses.indexOf(course)} label={course.level} className="aspect-[16/9] w-full rounded-[var(--radius-hero)] border border-border shadow-lift" />
           </Reveal>
         </section>
 
-        <section className="border-y border-white/5 bg-black px-6 py-24">
+        <section className="border-y border-border bg-surface px-6 py-24">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-center text-[clamp(32px,4vw,48px)] font-black tracking-[-0.04em]">What you&apos;ll learn.</h2>
             <ul className="mt-12 grid gap-4 sm:grid-cols-2">
               {course.outcomes.map((o) => (
-                <li key={o} className="rounded-[1.4rem] border border-white/[0.07] bg-white/[0.025] p-6 text-[15px] leading-relaxed text-foreground/75">
+                <li key={o} className="rounded-[1.4rem] border border-border bg-white p-6 text-[15px] leading-relaxed text-foreground/75 shadow-card">
                   {o}
                 </li>
               ))}
@@ -100,12 +100,12 @@ export default async function CourseDetailPage({ params }: PageProps<"/mastery-c
           </div>
         </section>
 
-        <section id="curriculum" className="bg-black px-6 py-24">
+        <section id="curriculum" className="bg-background px-6 py-24">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-center text-[clamp(32px,4vw,48px)] font-black tracking-[-0.04em]">The Curriculum.</h2>
             <ol className="mt-12 flex flex-col gap-4">
               {lessons.map((l, i) => (
-                <li key={l.title} className="flex gap-5 rounded-[1.4rem] border border-white/[0.07] bg-white/[0.025] p-6 sm:p-7">
+                <li key={l.title} className="flex gap-5 rounded-[1.4rem] border border-border bg-white p-6 shadow-card sm:p-7">
                   <span className="text-[22px] font-black tracking-tight text-primary">{String(i + 1).padStart(2, "0")}</span>
                   <span>
                     <span className="flex items-center gap-2 text-[16px] font-semibold tracking-wide uppercase">

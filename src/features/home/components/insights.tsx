@@ -16,23 +16,22 @@ const spans = ["lg:col-span-4", "lg:col-span-2", "lg:col-span-3", "lg:col-span-3
 /** Editorial — spec measured from the reference (#020617 section, 400px image cards, hover lift). */
 export function InsightsSection() {
   return (
-    <section id="blogs" className="relative w-full overflow-hidden bg-[#020617] px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div aria-hidden className="pointer-events-none absolute top-0 left-1/2 h-100 w-[80%] max-w-250 -translate-x-1/2 rounded-[100%] bg-white/2 blur-[120px]" />
+    <section id="blogs" className="relative w-full overflow-hidden bg-background px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
       <div className="relative z-10 mx-auto w-full max-w-350">
         <div className="mb-12 flex flex-col justify-between gap-8 md:flex-row md:items-end lg:mb-16">
           <Reveal>
             <div aria-hidden className="mb-6 flex items-center gap-3">
-              <span className="h-px w-8 bg-white/30" />
-              <span className="text-[11px] font-bold tracking-[0.2em] text-white/60 uppercase">{b.eyebrow}</span>
+              <span className="h-px w-8 bg-primary" />
+              <span className="text-[11px] font-bold tracking-[0.2em] text-primary uppercase">{b.eyebrow}</span>
             </div>
             <h2 className="text-[clamp(40px,5vw,72px)] leading-[0.9] font-black tracking-[-0.048em] text-foreground">
-              {b.title} <span className="text-white/50 italic">{b.dim}</span>
+              {b.title} <span className="text-primary italic">{b.dim}</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <Link href={routes.blogs} className="group flex items-center gap-3 border-b border-white/20 pb-2 transition-colors hover:border-white/60">
-              <span className="text-[13px] font-semibold tracking-wide text-white uppercase">{b.cta}</span>
-              <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-1" />
+            <Link href={routes.blogs} className="group flex items-center gap-3 border-b border-primary/30 pb-2 transition-colors hover:border-primary">
+              <span className="text-[13px] font-semibold tracking-wide text-primary uppercase">{b.cta}</span>
+              <ArrowRight aria-hidden className="size-4 text-primary transition-transform group-hover:translate-x-1" />
             </Link>
           </Reveal>
         </div>
@@ -44,9 +43,9 @@ export function InsightsSection() {
               <StaggerItem key={a.slug} className={cn("flex", spans[i])}>
                 <Link
                   href={`/blogs/${a.slug}`}
-                  className="group relative flex h-80 w-full flex-col overflow-hidden rounded-3xl border border-white/5 bg-[#0f111a] transition-all duration-700 hover:border-white/20 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] sm:h-100"
+                  className="group relative flex h-80 w-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all duration-500 hover:border-primary/40 hover:shadow-lift sm:h-100"
                 >
-                  <div aria-hidden className="absolute inset-0 overflow-hidden bg-linear-to-br from-[#0a0f1c] to-[#0d1527]">
+                  <div aria-hidden className="absolute inset-0 overflow-hidden bg-linear-to-br from-slate-900 to-slate-950">
                     <div className="absolute inset-0 z-10 bg-black/20 transition-colors duration-500 group-hover:bg-transparent" />
                     {cover ? (
                       <Image
@@ -62,22 +61,22 @@ export function InsightsSection() {
                       <ChartCover seed={i} className="absolute inset-0" />
                     )}
                   </div>
-                  <div aria-hidden className="absolute inset-0 z-20 bg-linear-to-t from-[#020617] via-[#020617]/50 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-75" />
+                  <div aria-hidden className="absolute inset-0 z-20 bg-linear-to-t from-black/85 via-black/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-75" />
                   <div className="relative z-30 flex h-full flex-col justify-end p-6 sm:p-8">
                     <div className="transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2">
                       <div className="mb-4 flex items-center gap-3">
-                        <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-bold tracking-widest text-white uppercase backdrop-blur-md">{a.category}</span>
-                        <span className="text-[11px] font-semibold tracking-widest text-white/70 uppercase">{a.readingMinutes} min read</span>
+                        <span className="rounded-full border border-white/20 bg-black/40 px-3 py-1 text-[10px] font-bold tracking-widest text-white uppercase backdrop-blur-md">{a.category}</span>
+                        <span className="text-[11px] font-semibold tracking-widest text-white/80 uppercase">{a.readingMinutes} min read</span>
                       </div>
                       <h3
                         className={cn(
-                          "mb-3 max-w-2xl leading-[1.1] font-bold tracking-tight text-white transition-colors duration-300 group-hover:text-blue-400",
+                          "mb-3 max-w-2xl leading-[1.1] font-bold tracking-tight text-white transition-colors duration-300 group-hover:text-emerald-300",
                           big ? "text-3xl sm:text-4xl lg:text-5xl" : "text-2xl sm:text-3xl",
                         )}
                       >
                         {a.title}
                       </h3>
-                      <p className="line-clamp-2 max-w-lg text-sm leading-relaxed text-white/70 sm:text-base">{a.excerpt}</p>
+                      <p className="line-clamp-2 max-w-lg text-sm leading-relaxed text-white/80 sm:text-base">{a.excerpt}</p>
                     </div>
                   </div>
                 </Link>

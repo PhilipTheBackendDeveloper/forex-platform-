@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 
 /** Faded italic run — the reference's signature last line ("…Traders.", "Mastery Courses."). */
 export function Dim({ children, block }: { children: ReactNode; block?: boolean }) {
-  return <span className={cn("pr-[0.06em] text-white/15 italic", block && "block")}>{children}</span>;
+  return <span className={cn("pr-[0.06em] text-foreground/30 italic", block && "block")}>{children}</span>;
 }
 
 /** Blue italic accent ("precision.", "On your terms."). */
@@ -40,13 +40,13 @@ export function SectionEyebrow({
   centered?: boolean;
   tone?: "muted" | "primary" | "community";
 }) {
-  const color = tone === "primary" ? "text-primary" : tone === "community" ? "text-community" : "text-white/50";
+  const color = tone === "primary" ? "text-primary" : tone === "community" ? "text-accent-strong" : "text-muted";
   const text = "text-[11px] font-semibold tracking-[0.18em] uppercase";
   if (variant === "pill") {
     return (
-      <p className="inline-flex w-fit items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 shadow-[0_0_20px_rgba(255,255,255,0.03)] backdrop-blur-md">
-        <span aria-hidden className="size-1.5 animate-pulse rounded-full bg-blue-400" />
-        <span className="text-[11px] font-bold tracking-[0.2em] text-white/80 uppercase">{children}</span>
+      <p className="inline-flex w-fit items-center gap-3 rounded-full border border-border bg-card px-4 py-2 shadow-xs">
+        <span aria-hidden className="size-1.5 animate-pulse rounded-full bg-accent" />
+        <span className="text-[11px] font-bold tracking-[0.2em] text-foreground/80 uppercase">{children}</span>
       </p>
     );
   }
@@ -54,8 +54,8 @@ export function SectionEyebrow({
     return (
       <p className={cn("inline-flex items-center gap-3 font-bold", text, "tracking-[0.2em]", color)}>
         <span aria-hidden className="relative flex size-2 shrink-0 items-center justify-center">
-          <span className="absolute size-full animate-ping rounded-full bg-current opacity-60" />
-          <span className="relative size-1.5 rounded-full bg-current" />
+          <span className="absolute size-full animate-ping rounded-full bg-accent opacity-60" />
+          <span className="relative size-1.5 rounded-full bg-accent" />
         </span>
         {children}
       </p>
@@ -118,7 +118,7 @@ export function SectionHeading({
         </Reveal>
       )}
       <RevealLines as={as} lines={toLines(title, dim, dimTone)} fontSize={sizes[size]} />
-      {divider && <span aria-hidden className="mt-9 mb-8 block h-px w-[200px] bg-white/8" />}
+      {divider && <span aria-hidden className="mt-9 mb-8 block h-px w-[200px] bg-border" />}
       {description && (
         <Reveal delay={0.35}>
           <p className={cn("max-w-[600px] text-xl leading-[1.4] font-medium tracking-[-0.015em] text-muted lg:text-2xl", !divider && "mt-6", align === "center" && "mx-auto")}>

@@ -30,25 +30,24 @@ export function FaqSection() {
             <SectionEyebrow variant="pill">{f.eyebrow}</SectionEyebrow>
           </div>
           <h2 id="faq-title" className="mb-6 text-[clamp(40px,5vw,72px)] leading-[0.9] font-black tracking-[-0.048em] text-balance text-foreground">
-            {f.title} <span className="text-white/15 italic">{f.dim}</span>
+            {f.title} <span className="text-primary italic">{f.dim}</span>
           </h2>
-          <p className="max-w-2xl text-xl leading-relaxed font-medium text-white/70 md:text-2xl">
+          <p className="max-w-2xl text-xl leading-relaxed font-normal text-muted md:text-2xl">
             Ask our assistant about courses and mentorship, or browse the most frequently asked questions below.
           </p>
         </Reveal>
 
-        <Reveal delay={0.15} className="mx-auto mb-20 w-full max-w-4xl drop-shadow-2xl">
-          <div className="relative flex w-full flex-col overflow-hidden rounded-4xl border border-white/10 bg-white/3 shadow-2xl backdrop-blur-2xl transition-all duration-500 focus-within:border-blue-500/50 focus-within:shadow-[0_0_40px_rgba(59,130,246,0.15)] hover:border-white/20">
-            <div aria-hidden className="absolute top-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white/20 to-transparent" />
+        <Reveal delay={0.15} className="mx-auto mb-20 w-full max-w-4xl">
+          <div className="relative flex w-full flex-col overflow-hidden rounded-4xl border border-border bg-card shadow-card transition-all duration-300 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 hover:border-primary/40 hover:shadow-lift">
             <form
               aria-label="Ask the assistant"
-              className="relative flex items-center overflow-hidden p-1 md:p-2"
+              className="relative flex items-center overflow-hidden p-1.5 md:p-2.5"
               onSubmit={(e) => {
                 e.preventDefault();
                 openAssistant({ question: question.trim() || undefined });
               }}
             >
-              <span aria-hidden className="shrink-0 pr-2 pl-3 opacity-50 md:pr-4 md:pl-6">
+              <span aria-hidden className="shrink-0 pr-2 pl-3 text-primary md:pr-4 md:pl-6">
                 <Search className="size-5" />
               </span>
               <label htmlFor={inputId} className="sr-only">
@@ -59,13 +58,13 @@ export function FaqSection() {
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
                 placeholder={`Ask anything about ${siteConfig.name}…`}
-                className="min-w-0 flex-1 border-none bg-transparent py-3 text-base font-medium text-white outline-none placeholder:text-white/50 md:py-5 md:text-xl"
+                className="min-w-0 flex-1 border-none bg-transparent py-3 text-base font-medium text-foreground outline-none placeholder:text-muted md:py-5 md:text-xl"
               />
               <button
                 type="submit"
                 aria-label="Ask the assistant"
                 disabled={!question.trim()}
-                className="my-2 mr-2 flex shrink-0 items-center justify-center rounded-xl border border-white/5 bg-white/5 p-3 text-white transition-all hover:bg-white/10 disabled:opacity-40 md:rounded-2xl md:p-4"
+                className="my-1.5 mr-1.5 flex shrink-0 items-center justify-center rounded-xl bg-primary p-3 text-white transition-all hover:bg-primary-hover disabled:opacity-40 md:rounded-2xl md:p-4"
               >
                 <ArrowRight aria-hidden className="size-5" />
               </button>
@@ -78,7 +77,7 @@ export function FaqSection() {
         </Reveal>
 
         <div className="relative mt-16 flex flex-col items-center gap-5">
-          <p className="text-[14px] text-white/55">Still have questions about our programs?</p>
+          <p className="text-[14px] text-muted">Still have questions about our programs?</p>
           <ButtonLink
             href={siteConfig.contact.email ? `mailto:${siteConfig.contact.email}` : null}
             variant="light"

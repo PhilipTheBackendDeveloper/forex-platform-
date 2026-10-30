@@ -27,26 +27,25 @@ export function TestimonialsSection() {
             const wide = slot.span === 8;
             return (
               <StaggerItem key={i} className={cn(wide ? "md:col-span-8" : "md:col-span-4", "flex")}>
-                <figure className="group relative m-0 flex w-full flex-col justify-between overflow-hidden rounded-3xl border border-primary/10 bg-linear-to-br from-[#020510] to-[#020818] p-6 shadow-[0_4px_32px_rgba(0,113,227,0.03)] transition-colors duration-500 hover:border-primary/30 md:p-7 xl:p-8">
-                  <div aria-hidden className="bg-noise pointer-events-none absolute inset-0 opacity-[0.03] mix-blend-screen" />
-                  <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/30 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+                <figure className="group relative m-0 flex w-full flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-card transition-all duration-300 hover:border-primary/40 hover:shadow-lift md:p-7 xl:p-8">
+                  <div aria-hidden className="absolute inset-x-0 top-0 h-0.5 bg-linear-to-r from-transparent via-primary to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="relative z-10">
                     <figcaption className="mb-4 flex items-center gap-3">
-                      <span aria-hidden className="relative flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/5 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110">
-                        <UserRound className="size-4 text-white/40" />
+                      <span aria-hidden className="relative flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border bg-primary-soft transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110">
+                        <UserRound className="size-4 text-primary" />
                       </span>
                       <span>
-                        <span className="block text-[15px] font-semibold tracking-tight text-white">{slot.name}</span>
-                        <span className="block text-[12px] text-white/50">{slot.role}</span>
+                        <span className="block text-[15px] font-semibold tracking-tight text-foreground">{slot.name}</span>
+                        <span className="block text-[12px] text-muted">{slot.role}</span>
                       </span>
                     </figcaption>
                     <blockquote className={cn("mb-6", wide && "max-w-2xl")}>
-                      <p className={cn("leading-[1.6] text-white/60", wide ? "text-[17px] font-medium tracking-tight md:text-[20px]" : "text-[14px] md:text-[15px]")}>“{slot.quote}”</p>
+                      <p className={cn("leading-[1.6] text-muted", wide ? "text-[17px] font-medium tracking-tight md:text-[20px]" : "text-[14px] md:text-[15px]")}>“{slot.quote}”</p>
                     </blockquote>
                   </div>
                   <div className="relative z-10">
-                    <span className="inline-flex items-center gap-2.5 rounded-full border border-success/20 bg-success/5 px-4 py-2 text-[13px] font-medium tracking-tight text-success">
-                      <span aria-hidden className="size-1.5 rounded-full bg-success" />
+                    <span className="inline-flex items-center gap-2.5 rounded-full border border-accent/20 bg-accent-soft px-4 py-2 text-[13px] font-medium tracking-tight text-accent-strong">
+                      <span aria-hidden className="size-1.5 rounded-full bg-accent" />
                       {slot.outcome}
                     </span>
                   </div>
@@ -58,7 +57,7 @@ export function TestimonialsSection() {
         <Reveal delay={0.3} className="mt-20 flex justify-center">
           <Link
             href={routes.register}
-            className="group relative inline-flex items-center gap-3 rounded-full bg-foreground px-8 py-4 text-[15px] font-semibold tracking-tight text-background transition-transform duration-300 ease-out hover:scale-105"
+            className="group relative inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-[15px] font-semibold tracking-tight text-white shadow-md transition-all duration-300 hover:bg-primary-hover hover:scale-105"
           >
             {t.cta}
             <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5" />

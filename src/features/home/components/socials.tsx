@@ -29,23 +29,23 @@ export function SocialsSection() {
         <Reveal className="mb-16 shrink-0 lg:mb-0 lg:w-[52%]" style={{ paddingLeft: GUTTER, paddingRight: "clamp(28px, 4vw, 72px)" }}>
           <p className="leading-none font-black tracking-[-0.055em] text-foreground" style={{ fontSize: "clamp(80px, 10vw, 128px)" }}>
             {s.headline}
-            <span className="text-white/40">+</span>
+            <span className="text-accent">+</span>
           </p>
-          <div aria-hidden className="mt-7 mb-6 h-px max-w-48 bg-white/20" />
-          <p className="max-w-[220px] text-[14px] leading-[1.65] tracking-[-0.015em] text-white/70">{s.body}</p>
+          <div aria-hidden className="mt-7 mb-6 h-px max-w-48 bg-border" />
+          <p className="max-w-[220px] text-[14px] leading-[1.65] tracking-[-0.015em] text-muted">{s.body}</p>
         </Reveal>
         <Stagger className="m-0 flex flex-1 flex-col overflow-hidden px-6 md:px-12 lg:px-0" style={{ paddingRight: GUTTER }} stagger={0.055}>
           {channels.map((ch) => {
             const inner = (
               <>
-                <ch.icon aria-hidden className="size-5 shrink-0 text-white/60 transition-colors group-hover:text-white" />
-                <span className="flex-1 text-[15px] font-bold tracking-[-0.02em] text-white/90">{ch.label}</span>
-                <span className="text-[12px] tracking-[0.02em] text-white/50">{ch.href ? "Follow" : "Handle pending"}</span>
-                <ArrowUpRight aria-hidden className="size-4 text-white/40 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <ch.icon aria-hidden className="size-5 shrink-0 text-primary transition-transform group-hover:scale-110" />
+                <span className="flex-1 text-[15px] font-bold tracking-[-0.02em] text-foreground transition-colors group-hover:text-primary">{ch.label}</span>
+                <span className="text-[12px] tracking-[0.02em] text-muted">{ch.href ? "Follow" : "Handle pending"}</span>
+                <ArrowUpRight aria-hidden className="size-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary" />
               </>
             );
             return (
-              <StaggerItem key={ch.label} className="list-none">
+              <StaggerItem key={ch.label} className="list-none border-b border-border">
                 {ch.href ? (
                   <a href={ch.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 py-5">
                     {inner}

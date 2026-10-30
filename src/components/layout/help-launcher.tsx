@@ -63,40 +63,40 @@ export function HelpLauncher() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.97 }}
             transition={{ duration: 0.25 }}
-            className="pointer-events-auto flex h-[min(480px,calc(100dvh-120px))] w-[min(380px,calc(100vw-32px))] origin-bottom-right flex-col overflow-hidden rounded-[1.4rem] border border-white/10 bg-[#070d1a]/95 shadow-[0_30px_80px_-20px_rgb(0_0_0/0.9)] backdrop-blur-xl"
+            className="pointer-events-auto flex h-[min(480px,calc(100dvh-120px))] w-[min(380px,calc(100vw-32px))] origin-bottom-right flex-col overflow-hidden rounded-[1.4rem] border border-border bg-card/95 shadow-lift backdrop-blur-xl"
           >
-            <div className="flex items-center justify-between border-b border-white/[0.07] px-5 py-4">
+            <div className="flex items-center justify-between border-b border-border px-5 py-4">
               <div className="flex items-center gap-3">
                 <span className="flex size-9 items-center justify-center rounded-xl bg-primary">
                   <Sparkles aria-hidden className="size-4 text-white" />
                 </span>
                 <div>
-                  <p className="text-[14px] font-semibold">{siteConfig.name} Assistant</p>
-                  <p className="text-[11px] text-foreground/45">{siteConfig.features.assistantConnected ? "Online" : "Not connected yet"}</p>
+                  <p className="text-[14px] font-semibold text-foreground">{siteConfig.name} Assistant</p>
+                  <p className="text-[11px] text-muted">{siteConfig.features.assistantConnected ? "Online" : "Not connected yet"}</p>
                 </div>
               </div>
-              <button type="button" aria-label="Close assistant" onClick={() => setOpen(false)} className="flex size-9 items-center justify-center rounded-lg border border-white/10 hover:bg-white/5">
+              <button type="button" aria-label="Close assistant" onClick={() => setOpen(false)} className="flex size-9 items-center justify-center rounded-lg border border-border text-muted hover:bg-surface-2">
                 <X aria-hidden className="size-4" />
               </button>
             </div>
             <div className="flex flex-1 flex-col gap-3 overflow-y-auto px-5 py-5" aria-live="polite">
               {messages.length === 0 ? (
                 <div className="m-auto flex max-w-[240px] flex-col items-center text-center">
-                  <span className="flex size-11 items-center justify-center rounded-full bg-primary shadow-[0_0_30px_-4px_var(--primary)]">
+                  <span className="flex size-11 items-center justify-center rounded-full bg-primary shadow-md">
                     <Sparkles aria-hidden className="size-5 text-white" />
                   </span>
-                  <p className="mt-4 text-[15px] font-semibold">How can I help you?</p>
-                  <p className="mt-2 text-[13px] leading-relaxed text-foreground/50">Ask about programmes, coaching, the shop or the community.</p>
+                  <p className="mt-4 text-[15px] font-semibold text-foreground">How can I help you?</p>
+                  <p className="mt-2 text-[13px] leading-relaxed text-muted">Ask about programmes, coaching, the shop or the community.</p>
                 </div>
               ) : (
                 messages.map((m, i) => (
                   <div
                     key={i}
-                    className={m.role === "user" ? "ml-auto max-w-[85%] rounded-2xl rounded-br-md bg-primary px-4 py-2.5 text-[14px] text-white" : "max-w-[90%] rounded-2xl rounded-bl-md border border-white/10 bg-white/[0.04] px-4 py-3 text-[13px] leading-relaxed text-foreground/75"}
+                    className={m.role === "user" ? "ml-auto max-w-[85%] rounded-2xl rounded-br-md bg-primary px-4 py-2.5 text-[14px] text-white shadow-xs" : "max-w-[90%] rounded-2xl rounded-bl-md border border-border bg-surface px-4 py-3 text-[13px] leading-relaxed text-foreground/80"}
                   >
                     {m.text}
                     {m.role === "system" && (
-                      <Link href={routes.faq} onClick={() => setOpen(false)} className="mt-2 block font-medium text-[var(--ring)] hover:underline">
+                      <Link href={routes.faq} onClick={() => setOpen(false)} className="mt-2 block font-medium text-primary hover:underline">
                         Open the FAQ →
                       </Link>
                     )}
@@ -105,13 +105,13 @@ export function HelpLauncher() {
               )}
             </div>
             <form
-              className="border-t border-white/[0.07] p-4"
+              className="border-t border-border p-4"
               onSubmit={(e) => {
                 e.preventDefault();
                 ask(draft);
               }}
             >
-              <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] py-1.5 pr-1.5 pl-4 focus-within:border-[var(--ring)]">
+              <div className="flex items-center gap-2 rounded-xl border border-border bg-surface py-1.5 pr-1.5 pl-4 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
                 <label htmlFor={`${panelId}-input`} className="sr-only">
                   Message
                 </label>
@@ -121,13 +121,13 @@ export function HelpLauncher() {
                   value={draft}
                   onChange={(e) => setDraft(e.target.value)}
                   placeholder={`Ask ${siteConfig.name}…`}
-                  className="min-h-9 flex-1 bg-transparent text-[14px] placeholder:text-foreground/35 focus:outline-none"
+                  className="min-h-9 flex-1 bg-transparent text-[14px] text-foreground placeholder:text-muted focus:outline-none"
                 />
-                <button type="submit" aria-label="Send message" className="flex size-9 items-center justify-center rounded-lg bg-white/[0.06] hover:bg-white/10">
+                <button type="submit" aria-label="Send message" className="flex size-9 items-center justify-center rounded-lg bg-primary-soft text-primary hover:bg-primary hover:text-white transition-colors">
                   <SendHorizontal aria-hidden className="size-4" />
                 </button>
               </div>
-              <p className="mt-2 text-center text-[11px] text-foreground/35">Press Enter to send</p>
+              <p className="mt-2 text-center text-[11px] text-muted">Press Enter to send</p>
             </form>
           </motion.div>
         )}

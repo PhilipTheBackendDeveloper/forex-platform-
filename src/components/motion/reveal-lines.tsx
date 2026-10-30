@@ -8,10 +8,8 @@ import type { LineTone, RevealLine } from "./lines";
 
 const tones: Record<LineTone, CSSProperties> = {
   base: { color: "var(--foreground)" },
-  /** Reference: rgba(255,255,255,0.15) italic last line. */
-  dim: { color: "rgb(255 255 255 / 0.15)", fontStyle: "italic" },
-  /** Reference coaching / collaborate: rgba(255,255,255,0.5) italic. */
-  half: { color: "rgb(255 255 255 / 0.5)", fontStyle: "italic" },
+  dim: { color: "color-mix(in oklab, var(--foreground) 25%, transparent)", fontStyle: "italic" },
+  half: { color: "color-mix(in oklab, var(--foreground) 60%, transparent)", fontStyle: "italic" },
   accent: { color: "var(--primary)", fontStyle: "italic" },
 };
 

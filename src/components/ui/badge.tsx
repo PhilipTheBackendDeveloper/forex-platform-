@@ -6,11 +6,11 @@ export function Eyebrow({ children, className }: { children: ReactNode; classNam
   return (
     <p
       className={cn(
-        "inline-flex w-fit items-center gap-2 rounded-full border border-border bg-white/[0.03] px-3.5 py-1.5 text-[11px] font-semibold tracking-[0.18em] text-foreground/70 uppercase backdrop-blur",
+        "inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-3.5 py-1.5 text-[11px] font-semibold tracking-[0.18em] text-primary uppercase",
         className,
       )}
     >
-      <span aria-hidden className="size-1.5 rounded-full bg-primary shadow-[0_0_10px_var(--primary)]" />
+      <span aria-hidden className="size-1.5 rounded-full bg-accent" />
       {children}
     </p>
   );
@@ -19,10 +19,10 @@ export function Eyebrow({ children, className }: { children: ReactNode; classNam
 type Tone = "neutral" | "primary" | "success" | "warning";
 
 const tones: Record<Tone, string> = {
-  neutral: "border-border-strong text-foreground/70",
-  primary: "border-primary/40 bg-primary/10 text-[var(--ring)]",
-  success: "border-success/40 bg-success/10 text-success",
-  warning: "border-amber-400/40 bg-amber-400/10 text-amber-300",
+  neutral: "border-border bg-surface-2 text-foreground/80",
+  primary: "border-primary/20 bg-primary-soft text-primary",
+  success: "border-accent/30 bg-accent-soft text-accent-strong",
+  warning: "border-amber-400/40 bg-amber-50 text-amber-700",
 };
 
 export function Badge({
@@ -57,11 +57,11 @@ export function PlaceholderBadge({ label = "Placeholder", className }: { label?:
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full border border-white/10 px-2 py-0.5 align-middle text-[10px] font-medium tracking-[0.08em] whitespace-nowrap text-foreground/45 uppercase",
+        "inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-2 px-2 py-0.5 align-middle text-[10px] font-medium tracking-[0.08em] whitespace-nowrap text-muted uppercase",
         className,
       )}
     >
-      <span aria-hidden className="size-1 rounded-full bg-amber-400/80" />
+      <span aria-hidden className="size-1 rounded-full bg-amber-500" />
       {label}
     </span>
   );

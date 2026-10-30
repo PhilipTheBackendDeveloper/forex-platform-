@@ -85,7 +85,7 @@ export function LeadForm({
               onClick={() => pickTopic(t)}
               className={cn(
                 "rounded-full border px-4 py-2 text-[13px] font-medium transition-all duration-300",
-                topic === t ? "border-white bg-white text-black" : "border-white/10 bg-white/5 text-white/70 hover:bg-white/10 hover:text-white",
+                topic === t ? "border-primary bg-primary text-white" : "border-border bg-surface text-muted hover:border-primary/40 hover:text-foreground",
               )}
             >
               {t}
@@ -95,10 +95,10 @@ export function LeadForm({
       )}
 
       {topics && topicsLayout === "grid" && (
-        <fieldset className="rounded-[1.4rem] border border-white/10 bg-white/[0.02] p-4 sm:p-5">
+        <fieldset className="rounded-[1.4rem] border border-border bg-surface/50 p-4 sm:p-5">
           <legend className="sr-only">{topicsLabel}</legend>
           <div className="mb-4 flex items-center justify-between gap-3">
-            <p aria-hidden className="text-[11px] font-semibold tracking-[0.18em] text-white/60 uppercase">
+            <p aria-hidden className="text-[11px] font-semibold tracking-[0.18em] text-muted uppercase">
               {topicsLabel} <span className="text-danger">*</span>
             </p>
             <span className="rounded-full border border-danger/30 bg-danger/10 px-2 py-0.5 text-[9px] font-bold tracking-[0.15em] text-danger uppercase">Required</span>
@@ -113,7 +113,7 @@ export function LeadForm({
                 onClick={() => pickTopic(t)}
                 className={cn(
                   "min-h-11 rounded-xl border px-4 text-left text-[13px] font-medium transition-colors",
-                  topic === t ? "border-primary bg-primary/15 text-foreground" : "border-white/10 bg-white/[0.03] text-white/65 hover:border-white/25 hover:text-foreground",
+                  topic === t ? "border-primary bg-primary text-white" : "border-border bg-card text-muted hover:border-primary/40 hover:text-foreground",
                 )}
               >
                 {t}
@@ -156,7 +156,7 @@ export function LeadForm({
       <button
         type="submit"
         disabled={pending || needsTopic}
-        className="flex w-full items-center justify-center gap-2 rounded-xl bg-white py-4 text-[15px] font-bold tracking-tight text-black transition-all duration-300 hover:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50"
+        className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-4 text-[15px] font-bold tracking-tight text-white shadow-md transition-all duration-300 hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-50"
       >
         {pending ? "Checking…" : submitLabel}
         <ArrowRight aria-hidden className="size-4" />

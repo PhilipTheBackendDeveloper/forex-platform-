@@ -11,7 +11,7 @@ export function BrandGlyph({ className }: { className?: string }) {
     <svg aria-hidden viewBox="0 0 24 24" className={cn("size-6 text-foreground", className)} fill="none">
       <path d="M3.5 20.5 L12 3.5 L20.5 20.5" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M7.2 15.2 L10.2 12.6 L12.8 14.4 L16.6 10.6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="16.8" cy="10.4" r="1.7" fill="var(--primary)" />
+      <circle cx="16.8" cy="10.4" r="1.7" fill="#10b981" />
     </svg>
   );
 }

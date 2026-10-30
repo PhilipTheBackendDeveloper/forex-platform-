@@ -66,7 +66,7 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
 
   return (
     <>
-      <div className="flex flex-col justify-between gap-8 border-b border-white/10 pb-10 md:flex-row md:items-end">
+      <div className="flex flex-col justify-between gap-8 border-b border-border pb-10 md:flex-row md:items-end">
         <div>
           <h1 className="text-[clamp(52px,7vw,80px)] leading-none font-black tracking-[-0.05em]">Events.</h1>
           <p className="mt-4 text-[18px] text-foreground/60">Expos, seminars and meet &amp; greets.</p>
@@ -85,7 +85,7 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search events, cities…"
-            className="min-h-13 w-full rounded-full border border-white/10 bg-white/[0.04] py-3 pr-5 pl-12 text-[14px] placeholder:text-foreground/35 focus:border-[var(--ring)] focus:outline-none"
+            className="min-h-13 w-full rounded-full border border-border bg-white py-3 pr-5 pl-12 text-[14px] shadow-card placeholder:text-foreground/35 focus:border-primary focus:outline-none"
           />
         </div>
       </div>
@@ -99,7 +99,7 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
             onClick={() => setFilter(f.value)}
             className={cn(
               "min-h-11 rounded-full border px-5 text-[14px] font-medium transition-colors",
-              filter === f.value ? "border-foreground bg-foreground text-background" : "border-white/10 bg-white/[0.04] text-foreground/75 hover:text-foreground",
+              filter === f.value ? "border-primary bg-primary text-white shadow-lift" : "border-border bg-white text-foreground/75 hover:text-foreground hover:bg-surface",
             )}
           >
             {f.label}
@@ -109,7 +109,7 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
 
       {visible.length === 0 ? (
         <div className="flex flex-col items-center py-24 text-center">
-          <span className="flex size-16 items-center justify-center rounded-full bg-white/[0.06]">
+          <span className="flex size-16 items-center justify-center rounded-full border border-border bg-surface">
             <CalendarDays aria-hidden className="size-7 text-foreground/50" />
           </span>
           <p className="mt-6 text-[22px] font-semibold">{events.length === 0 ? "No upcoming events" : "No events found"}</p>
@@ -140,19 +140,19 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
                 <button
                   type="button"
                   onClick={() => setSelected(e)}
-                  className="group relative flex aspect-[3/4] w-full flex-col justify-between overflow-hidden rounded-[1.4rem] border border-white/10 bg-linear-to-br from-primary/25 via-surface-2 to-background p-5 text-left transition-transform hover:-translate-y-1"
+                  className="group relative flex aspect-[3/4] w-full flex-col justify-between overflow-hidden rounded-[1.4rem] border border-border bg-white p-5 text-left shadow-card transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lift"
                 >
                   <div className="flex items-start justify-between">
-                    <span className="rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[10px] font-bold tracking-[0.15em] uppercase">{e.category}</span>
-                    <span className="flex flex-col items-center rounded-xl border border-white/15 bg-black/40 px-3 py-2 text-center">
+                    <span className="rounded-full border border-border bg-surface px-3 py-1 text-[10px] font-bold tracking-[0.15em] uppercase">{e.category}</span>
+                    <span className="flex flex-col items-center rounded-xl border border-border bg-surface px-3 py-2 text-center">
                       <span className="text-[10px] tracking-wider text-foreground/60 uppercase">{d.toLocaleDateString("en-GB", { month: "short" })}</span>
                       <span className="text-[20px] leading-none font-bold">{d.getDate()}</span>
                     </span>
                   </div>
                   <span className="text-[24px] leading-[1.05] font-black tracking-tight uppercase">{e.title}</span>
-                  <span className="flex items-center justify-between border-t border-white/10 pt-4 text-[13px] text-foreground/60">
+                  <span className="flex items-center justify-between border-t border-border pt-4 text-[13px] text-foreground/60">
                     {d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}
-                    <span className="rounded-full border border-white/15 px-3 py-1 text-foreground">{e.price ? "Paid" : "Free"}</span>
+                    <span className="rounded-full border border-border bg-surface px-3 py-1 text-foreground">{e.price ? "Paid" : "Free"}</span>
                   </span>
                 </button>
               </li>
@@ -175,7 +175,7 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
             <span className="flex items-center gap-2 text-[13px] text-foreground/50">
               <Share2 aria-hidden className="size-4" /> Sharing available after launch
             </span>
-            <button type="button" disabled className="inline-flex min-h-11 items-center rounded-full bg-foreground px-6 text-[14px] font-semibold text-background opacity-60">
+            <button type="button" disabled className="inline-flex min-h-11 items-center rounded-full bg-primary/50 px-6 text-[14px] font-semibold text-white">
               Registration not open
             </button>
           </div>
@@ -183,7 +183,7 @@ export function EventsBrowser({ events }: { events: EventListing[] }) {
       >
         {selected && (
           <div className="grid gap-6 p-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-white/10 bg-linear-to-br from-primary/25 to-background p-6">
+            <div className="rounded-2xl border border-border bg-surface p-6">
               <p className="text-[11px] font-bold tracking-[0.2em] text-[var(--ring)] uppercase">{selected.format}</p>
               <dl className="mt-6 flex flex-col gap-4 text-[14px]">
                 <div className="flex gap-3">

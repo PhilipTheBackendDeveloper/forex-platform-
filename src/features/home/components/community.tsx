@@ -25,8 +25,8 @@ export function CommunitySection() {
   const inView = useInView(panelRef, { once: true, margin: "0px 0px -15% 0px" });
 
   return (
-    <section id="community" className="relative overflow-hidden bg-[#02091a]">
-      <div aria-hidden className="pointer-events-none absolute inset-y-0 z-20 hidden w-[300px] bg-linear-to-r from-[#02091a] to-transparent lg:block" style={{ left: "48%" }} />
+    <section id="community" className="relative overflow-hidden bg-surface">
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 z-20 hidden w-[300px] bg-linear-to-r from-surface to-transparent lg:block" style={{ left: "48%" }} />
       <div className="flex flex-col lg:flex-row" style={{ minHeight: "92vh" }}>
         <div
           className="relative z-10 flex flex-1 flex-col justify-center"
@@ -35,22 +35,22 @@ export function CommunitySection() {
           <Reveal delay={0.2} className="mb-10">
             <SectionEyebrow tone="community">{c.eyebrow}</SectionEyebrow>
           </Reveal>
-          <RevealLines lines={toLines(c.title, c.dim)} fontSize="clamp(36px, 4.5vw, 60px)" delay={0.24} className="mb-9" />
+          <RevealLines lines={toLines(c.title, c.dim, "accent")} fontSize="clamp(36px, 4.5vw, 60px)" delay={0.24} className="mb-9" />
           <Reveal delay={0.5}>
-            <div aria-hidden className="mb-8 h-px max-w-[200px] bg-white/8" />
+            <div aria-hidden className="mb-8 h-px max-w-[200px] bg-border" />
             <div className="mb-6">
               <p className="mb-4 flex items-center gap-3 text-[18px] font-semibold text-foreground">
-                <span className="flex size-7 items-center justify-center rounded-full bg-community">
+                <span className="flex size-7 items-center justify-center rounded-full bg-accent text-white shadow-xs">
                   <Send aria-hidden className="size-3.5 text-white" />
                 </span>
                 {c.subtitle}
               </p>
-              <p className="mb-5 text-[15px] leading-[1.6] text-white/55">{c.body}</p>
+              <p className="mb-5 text-[15px] leading-[1.6] text-muted">{c.body}</p>
             </div>
             <ul className="mb-[52px] grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))]">
               {c.bullets.map((b) => (
-                <li key={b} className="flex items-center gap-2 py-2 text-[14px] text-white/78">
-                  <span aria-hidden className="text-[18px] text-community">
+                <li key={b} className="flex items-center gap-2 py-2 text-[14px] text-foreground/80">
+                  <span aria-hidden className="text-[18px] text-accent font-bold">
                     •
                   </span>
                   {b}
@@ -63,7 +63,7 @@ export function CommunitySection() {
               href={siteConfig.social.telegram}
               external
               size="lg"
-              className="bg-community font-semibold text-white shadow-[0_0_20px_rgba(0,136,204,0.3)] hover:bg-[#0077b3] hover:shadow-[0_0_30px_rgba(0,136,204,0.5)]"
+              className="bg-accent font-semibold text-white shadow-md hover:bg-accent-strong hover:scale-105"
               unavailableReason="Community link pending client confirmation"
             >
               {c.cta}
@@ -77,14 +77,12 @@ export function CommunitySection() {
           className="relative flex min-h-[640px] shrink-0 items-center justify-center overflow-hidden py-20 lg:min-h-0 lg:w-[52%]"
           style={{ clipPath: inView ? "inset(0 0% 0 0)" : "inset(0 100% 0 0)", transition: "clip-path 1.3s cubic-bezier(0.76, 0, 0.24, 1)" }}
         >
-          {/* Lit scene: soft bokeh and key light, like a dark product photo. */}
-          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_55%_at_55%_45%,rgb(0_136_204/0.22),transparent_70%)]" />
-          <div aria-hidden className="absolute top-[12%] right-[14%] size-40 rounded-full bg-sky-400/10 blur-3xl" />
-          <div aria-hidden className="absolute bottom-[18%] left-[20%] size-56 rounded-full bg-indigo-500/10 blur-3xl" />
-          <div aria-hidden className="absolute top-[30%] left-[8%] size-24 rounded-full bg-white/5 blur-2xl" />
-          <div aria-hidden className="bg-noise absolute inset-0 opacity-[0.04] mix-blend-overlay" />
+          {/* Ambient scene: soft purple and mint glow */}
+          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_55%_at_55%_45%,rgb(16_185_129/0.10),transparent_70%)]" />
+          <div aria-hidden className="absolute top-[12%] right-[14%] size-40 rounded-full bg-accent-soft blur-3xl" />
+          <div aria-hidden className="absolute bottom-[18%] left-[20%] size-56 rounded-full bg-primary-soft blur-3xl" />
           <PhoneSimulator />
-          <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-48 bg-linear-to-t from-[#02091a] to-transparent" />
+          <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-48 bg-linear-to-t from-surface to-transparent" />
         </div>
       </div>
     </section>

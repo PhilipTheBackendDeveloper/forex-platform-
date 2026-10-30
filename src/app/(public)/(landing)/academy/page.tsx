@@ -55,7 +55,7 @@ export default function AcademyPage() {
           </a>
           <p className="mt-5 text-[11px] font-semibold tracking-[0.22em] text-foreground/40 uppercase">{a.hero.note}</p>
         </Reveal>
-        <Reveal delay={0.2} className="relative mt-16 aspect-[16/9] w-full max-w-5xl overflow-hidden rounded-[var(--radius-hero)] border border-white/10 shadow-[0_40px_120px_-40px_var(--primary)]">
+        <Reveal delay={0.2} className="relative mt-16 aspect-[16/9] w-full max-w-5xl overflow-hidden rounded-[var(--radius-hero)] border border-border shadow-lift">
           <Image src={photo.src} alt={photo.alt} fill priority placeholder="blur" sizes="(min-width:1024px) 1024px, 100vw" className="object-cover" style={{ objectPosition: photo.focus }} />
           <div aria-hidden className="absolute inset-0 bg-linear-to-t from-background/70 via-transparent to-transparent" />
         </Reveal>
@@ -68,10 +68,10 @@ export default function AcademyPage() {
         <div className="mx-auto mt-16 grid max-w-5xl gap-5 md:grid-cols-2">
           {a.venues.items.map((v, i) => (
             <Reveal key={v.title} delay={i * 0.1}>
-              <div className="h-full rounded-[var(--radius-panel)] border border-white/10 bg-white/[0.025] p-8 lg:p-10">
+              <div className="h-full rounded-[var(--radius-panel)] border border-border bg-surface p-8 shadow-card lg:p-10">
                 <h3 className="text-[clamp(32px,3vw,42px)] font-black tracking-[-0.04em]">{v.title}</h3>
                 <p className="mt-4 text-[16px] leading-[1.7] text-foreground/60">{v.text}</p>
-                <div className="mt-10 flex items-center justify-center rounded-[1.6rem] border border-white/[0.06] bg-black/40 py-10">
+                <div className="mt-10 flex items-center justify-center rounded-[1.6rem] border border-border bg-surface-2 py-10">
                   {i === 0 ? <ClassroomVisual /> : <LaptopVisual />}
                 </div>
               </div>
@@ -80,14 +80,14 @@ export default function AcademyPage() {
         </div>
       </section>
 
-      <section className="relative w-full overflow-hidden border-y border-white/5 bg-black py-28">
+      <section className="relative w-full overflow-hidden border-y border-border bg-surface py-28">
         <Stagger className="container-site grid gap-12 text-center md:grid-cols-3">
           {a.values.map((v, i) => {
             const Icon = valueIcons[i] ?? Users;
             return (
               <StaggerItem key={v.title} className="flex flex-col items-center">
-                <span className="flex size-14 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
-                  <Icon aria-hidden className="size-5" />
+                <span className="flex size-14 items-center justify-center rounded-full border border-border bg-white shadow-card">
+                  <Icon aria-hidden className="size-5 text-primary" />
                 </span>
                 <h3 className="mt-6 text-[19px] font-semibold">{v.title}</h3>
                 <p className="mt-3 max-w-xs text-[15px] leading-relaxed text-foreground/55">{v.text}</p>
@@ -105,20 +105,20 @@ export default function AcademyPage() {
               <div
                 className={cn(
                   "relative flex h-full flex-col rounded-[var(--radius-panel)] border p-8 lg:p-10",
-                  t.featured ? "border-primary/60 bg-linear-to-b from-primary to-[#0052a3] py-10 shadow-[0_0_80px_-20px_var(--primary)] md:-my-4" : "border-white/10 bg-white/[0.025]",
+                  t.featured ? "border-primary/60 bg-linear-to-b from-primary to-primary-hover py-10 text-white shadow-[0_20px_60px_-15px_rgba(124,58,237,0.35)] md:-my-4" : "border-border bg-white shadow-card",
                 )}
               >
-                <p className={cn("w-fit rounded-full px-3 py-1 text-[11px] font-bold tracking-[0.15em] uppercase", t.featured ? "bg-black/25 text-white" : "border border-white/10 text-foreground/60")}>
+                <p className={cn("w-fit rounded-full px-3 py-1 text-[11px] font-bold tracking-[0.15em] uppercase", t.featured ? "bg-white/20 text-white" : "border border-border bg-surface text-foreground/60")}>
                   {t.stage}
                 </p>
                 <h3 className="mt-5 text-[28px] font-bold tracking-tight">{t.name}</h3>
-                <p className={cn("mt-1 text-[14px]", t.featured ? "text-white/75" : "text-foreground/50")}>{t.tagline}</p>
+                <p className={cn("mt-1 text-[14px]", t.featured ? "text-white/80" : "text-foreground/50")}>{t.tagline}</p>
                 <p className="mt-6 text-[40px] leading-none font-black tracking-[-0.04em]">TBC</p>
                 <PlaceholderBadge className="mt-2 w-fit" label="Pricing pending" />
                 <ul className="mt-8 flex flex-col gap-3">
                   {t.topics.map((topic) => (
                     <li key={topic} className={cn("flex gap-3 text-[14px] font-medium", t.featured ? "text-white" : "text-foreground/80")}>
-                      <Check aria-hidden className={cn("mt-0.5 size-4 shrink-0", t.featured ? "text-white" : "text-primary")} /> {topic}
+                      <Check aria-hidden className={cn("mt-0.5 size-4 shrink-0", t.featured ? "text-accent" : "text-primary")} /> {topic}
                     </li>
                   ))}
                 </ul>
@@ -128,7 +128,7 @@ export default function AcademyPage() {
                   aria-describedby="enroll-note"
                   className={cn(
                     "mt-10 min-h-13 w-full rounded-full text-[15px] font-semibold disabled:cursor-not-allowed",
-                    t.featured ? "bg-white text-[#00224d] disabled:opacity-80" : "border border-white/10 bg-white/[0.04] disabled:opacity-60",
+                    t.featured ? "bg-white text-primary hover:bg-white/95 disabled:opacity-80" : "border border-border bg-surface text-foreground hover:bg-surface-2 disabled:opacity-60",
                   )}
                 >
                   Enroll Now

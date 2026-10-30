@@ -56,7 +56,7 @@ export default function CollaborationsPage() {
 
         <Stagger className="mt-16 grid gap-5 md:grid-cols-3">
           {metrics.map((m) => (
-            <StaggerItem key={m.label} className="rounded-[var(--radius-panel)] border border-white/10 bg-white/[0.025] p-7 backdrop-blur">
+            <StaggerItem key={m.label} className="rounded-[var(--radius-panel)] border border-border bg-white p-7 shadow-card">
               <span className="flex size-11 items-center justify-center rounded-xl border border-primary/30 bg-primary/10">
                 <m.icon aria-hidden className="size-5 text-[var(--ring)]" />
               </span>
@@ -76,7 +76,7 @@ export default function CollaborationsPage() {
             </p>
             <ul className="mt-10 flex max-w-md flex-col gap-3">
               {tracks.map((t) => (
-                <li key={t.title} className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.025] p-4">
+                <li key={t.title} className="flex items-center gap-4 rounded-2xl border border-border bg-surface p-4">
                   <span className="flex size-10 items-center justify-center rounded-xl bg-primary/10">
                     <t.icon aria-hidden className="size-4 text-[var(--ring)]" />
                   </span>
@@ -88,7 +88,7 @@ export default function CollaborationsPage() {
               ))}
             </ul>
           </div>
-          <Reveal className="rounded-[var(--radius-panel)] border border-white/10 bg-white/[0.025] p-5 shadow-[0_30px_80px_-30px_rgb(0_0_0/0.9)] sm:p-8">
+          <Reveal className="rounded-[var(--radius-panel)] border border-border bg-white p-5 shadow-card sm:p-8">
             <LeadForm
               kind="collaboration"
               topics={partnershipTypes}

@@ -64,9 +64,9 @@ export function PortraitScene({
         className,
       )}
     >
-      {/* Scene light: a soft key-light glow and a violet bounce behind the subject. */}
-      <div aria-hidden className="absolute inset-0" style={{ background: `radial-gradient(55% 48% at ${glowAt}, rgb(0 113 227 / 0.26), transparent 70%)` }} />
-      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(45%_35%_at_80%_95%,rgb(191_90_242/0.14),transparent_70%)]" />
+      {/* Scene light: soft purple and mint ambient glow behind the subject */}
+      <div aria-hidden className="absolute inset-0" style={{ background: `radial-gradient(55% 48% at ${glowAt}, rgb(124 58 237 / 0.12), transparent 70%)` }} />
+      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(45%_35%_at_80%_95%,rgb(16_185_129/0.10),transparent_70%)]" />
 
       <div className={cn("absolute inset-x-0 bottom-0 origin-bottom", inset, zoom && "animate-hero-zoom motion-reduce:animate-none")}>
         <Image
@@ -75,7 +75,7 @@ export function PortraitScene({
           fill
           priority={priority}
           sizes={sizes}
-          className={cn(fit === "cover" ? "object-cover" : "object-contain", imageClassName ?? "[filter:drop-shadow(0_0_22px_rgb(0_113_227/0.16))]")}
+          className={cn(fit === "cover" ? "object-cover" : "object-contain", imageClassName ?? "[filter:drop-shadow(0_12px_32px_rgb(124_58_237/0.15))]")}
           style={{ objectPosition: position }}
         />
       </div>

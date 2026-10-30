@@ -34,7 +34,7 @@ export function AcademyStory() {
       )}
       aside={(_, i) => (
         <div className="relative flex size-[min(340px,70vw)] items-center justify-center">
-          <span className="absolute inset-0 rounded-full border border-white/10" />
+          <span className="absolute inset-0 rounded-full border border-border" />
           <span className="absolute inset-10 animate-[spin_15s_linear_infinite] rounded-full border border-dashed border-primary/30" />
           <svg viewBox="0 0 100 100" className="absolute inset-0 -rotate-90">
             <circle cx="50" cy="50" r="48" fill="none" stroke="var(--primary)" strokeWidth="0.8" strokeDasharray={`${((i + 1) / total) * 301} 301`} className="transition-[stroke-dasharray] duration-700" />
@@ -44,7 +44,7 @@ export function AcademyStory() {
       )}
       footer={(_, progress) => (
         <div className="container-site absolute inset-x-0 bottom-10">
-          <div className="h-1 w-56 overflow-hidden rounded-full bg-white/10">
+          <div className="h-1 w-56 overflow-hidden rounded-full bg-border">
             <div className="h-full rounded-full bg-primary transition-[width] duration-150" style={{ width: `${Math.max(4, progress * 100)}%` }} />
           </div>
         </div>

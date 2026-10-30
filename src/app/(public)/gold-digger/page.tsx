@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default async function GoldDiggerPage() {
   const cohorts = await listActiveCohorts();
   return (
-    <main id="main" className="relative flex min-h-dvh flex-col items-center justify-center bg-[#020c1e] px-6 py-24 text-center">
+    <main id="main" className="relative flex min-h-dvh flex-col items-center justify-center bg-background px-6 py-24 text-center">
       <Link href="/" className="absolute top-6 left-6 inline-flex min-h-11 items-center gap-1.5 text-[13px] text-foreground/60 hover:text-foreground">
         <ArrowLeft aria-hidden className="size-4" /> Home
       </Link>
@@ -27,7 +27,7 @@ export default async function GoldDiggerPage() {
           <h1 className="text-[clamp(36px,5vw,56px)] font-black tracking-[-0.04em]">Gold Digger Live</h1>
           <ul className="mt-10 grid w-full max-w-3xl gap-5 md:grid-cols-2">
             {cohorts.data.map((c) => (
-              <li key={c.id} className="rounded-[1.4rem] border border-white/10 p-7 text-left">
+              <li key={c.id} className="rounded-[1.4rem] border border-border bg-surface p-7 text-left">
                 <Badge tone={c.status === "enrolling" ? "success" : "neutral"}>{c.status}</Badge>
                 <p className="mt-4 text-[22px] font-semibold">{c.name}</p>
                 <p className="mt-1 flex items-center gap-2 text-foreground/55">

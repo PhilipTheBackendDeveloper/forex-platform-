@@ -10,9 +10,9 @@ const base =
   "group/btn relative inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-tight whitespace-nowrap transition-[background-color,border-color,color,transform,box-shadow] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-primary text-white shadow-[0_0_30px_-6px_var(--primary)] hover:bg-primary-hover hover:shadow-[0_0_44px_-6px_var(--primary)]",
-  secondary: "border border-white/10 text-foreground hover:border-white/20 hover:bg-white/5",
-  light: "bg-foreground text-background hover:bg-white",
+  primary: "bg-primary text-white shadow-[0_4px_14px_-2px_rgba(124,58,237,0.35)] hover:bg-primary-hover hover:shadow-[0_6px_20px_-2px_rgba(124,58,237,0.5)]",
+  secondary: "border border-border bg-card text-foreground hover:border-primary/40 hover:bg-surface-2 shadow-xs",
+  light: "bg-foreground text-background hover:bg-foreground/90 shadow-xs",
   ghost: "text-foreground/80 hover:text-foreground",
 };
 
@@ -79,7 +79,7 @@ export function ButtonLink({
         </span>
         <span
           aria-hidden
-          className="pointer-events-none absolute top-full left-1/2 z-20 mt-2 -translate-x-1/2 translate-y-1 rounded-lg border border-white/10 bg-[#0b1220] px-3 py-1.5 text-[12px] whitespace-nowrap text-foreground/70 opacity-0 shadow-xl transition-[opacity,transform] duration-200 group-focus-within/na:translate-y-0 group-focus-within/na:opacity-100 group-hover/na:translate-y-0 group-hover/na:opacity-100"
+          className="pointer-events-none absolute top-full left-1/2 z-20 mt-2 -translate-x-1/2 translate-y-1 rounded-lg border border-border bg-card px-3 py-1.5 text-[12px] whitespace-nowrap text-muted opacity-0 shadow-lg transition-[opacity,transform] duration-200 group-focus-within/na:translate-y-0 group-focus-within/na:opacity-100 group-hover/na:translate-y-0 group-hover/na:opacity-100"
         >
           {unavailableReason}
         </span>

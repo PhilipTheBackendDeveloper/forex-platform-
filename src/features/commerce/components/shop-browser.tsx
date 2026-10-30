@@ -79,13 +79,13 @@ export function ShopBrowser({ products }: { products: Product[] }) {
           <button
             type="button"
             onClick={() => setBagOpen(true)}
-            className="inline-flex min-h-13 items-center gap-2 self-start rounded-2xl bg-foreground px-5 text-[13px] font-bold tracking-[0.1em] text-background uppercase shadow-[0_0_40px_-10px_rgb(255_255_255/0.5)]"
+            className="inline-flex min-h-13 items-center gap-2 self-start rounded-2xl bg-primary px-5 text-[13px] font-bold tracking-[0.1em] text-white uppercase shadow-lift transition-colors hover:bg-primary-hover"
           >
             <ShoppingCart aria-hidden className="size-4" /> Bag (0)
           </button>
         </div>
-        <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center">
-          <div role="group" aria-label="Product category" className="inline-flex w-fit flex-wrap gap-1 rounded-2xl border border-white/10 bg-black/30 p-1">
+        <div className="mt-8 flex flex-col justify-between gap-4 border-t border-border pt-6 md:flex-row md:items-center">
+          <div role="group" aria-label="Product category" className="inline-flex w-fit flex-wrap gap-1 rounded-2xl border border-border bg-surface p-1">
             {categories.map((c) => (
               <button
                 key={c}
@@ -94,7 +94,7 @@ export function ShopBrowser({ products }: { products: Product[] }) {
                 onClick={() => setCategory(c)}
                 className={cn(
                   "min-h-10 rounded-xl px-4 text-[11px] font-semibold tracking-[0.15em] uppercase transition-colors",
-                  category === c ? "bg-white/10 text-foreground" : "text-foreground/50 hover:text-foreground",
+                  category === c ? "bg-white text-foreground shadow-sm" : "text-foreground/50 hover:text-foreground",
                 )}
               >
                 {c}
@@ -112,14 +112,14 @@ export function ShopBrowser({ products }: { products: Product[] }) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search products…"
-              className="min-h-11 w-full rounded-xl border border-white/10 bg-black/30 py-2.5 pr-4 pl-11 text-[14px] placeholder:text-foreground/35 focus:border-[var(--ring)] focus:outline-none"
+              className="min-h-11 w-full rounded-xl border border-border bg-white py-2.5 pr-4 pl-11 text-[14px] shadow-card placeholder:text-foreground/35 focus:border-primary focus:outline-none"
             />
           </div>
         </div>
       </div>
 
       {visible.length === 0 ? (
-        <div className="mt-8 flex flex-col items-center rounded-[var(--radius-panel)] border border-white/10 bg-white/[0.02] px-6 py-24 text-center">
+        <div className="mt-8 flex flex-col items-center rounded-[var(--radius-panel)] border border-border bg-surface px-6 py-24 text-center">
           <Package aria-hidden className="size-9 text-foreground/40" />
           <p className="mt-5 text-[20px] font-semibold">Coming soon</p>
           <p className="mt-2 text-[15px] text-foreground/50">We haven&apos;t listed any items yet. Checkout will open once secure payments are configured.</p>
@@ -127,7 +127,7 @@ export function ShopBrowser({ products }: { products: Product[] }) {
       ) : (
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((p) => (
-            <li key={p.id} className="rounded-[1.4rem] border border-white/10 p-6">
+            <li key={p.id} className="rounded-[1.4rem] border border-border bg-white p-6 shadow-card">
               <h2 className="text-[19px] font-semibold">{p.name}</h2>
               <p className="mt-1 text-foreground/55">{formatPrice(p.price)}</p>
             </li>
@@ -138,7 +138,7 @@ export function ShopBrowser({ products }: { products: Product[] }) {
       <button
         type="button"
         onClick={() => setBagOpen(true)}
-        className="fixed right-4 bottom-4 z-30 inline-flex min-h-12 items-center gap-2 rounded-full border border-white/15 bg-[#070d1a]/90 px-5 text-[14px] font-semibold shadow-2xl backdrop-blur-xl md:right-28 md:bottom-9"
+        className="fixed right-4 bottom-4 z-30 inline-flex min-h-12 items-center gap-2 rounded-full border border-border bg-white/95 px-5 text-[14px] font-semibold text-foreground shadow-lift backdrop-blur-xl hover:bg-surface-2 md:right-28 md:bottom-9"
       >
         <ShoppingCart aria-hidden className="size-4" /> View Cart
       </button>

@@ -26,21 +26,21 @@ export function CollaborateSection() {
             </Reveal>
             <RevealLines lines={toLines(k.title, k.dim, "half")} fontSize="clamp(40px, 5.5vw, 64px)" className="max-w-xl" style={{ letterSpacing: "-0.048em" }} />
             <Reveal delay={0.3}>
-              <p className="max-w-md text-[15px] leading-[1.6] tracking-[-0.01em] text-white/70 sm:text-[17px]">{k.body}</p>
+              <p className="max-w-md text-[15px] leading-[1.6] tracking-[-0.01em] text-muted sm:text-[17px]">{k.body}</p>
             </Reveal>
           </div>
           <Reveal delay={0.4}>
-            <ul className="flex flex-col gap-5 border-t border-white/10 pt-6" aria-label="Opportunities">
+            <ul className="flex flex-col gap-5 border-t border-border pt-6" aria-label="Opportunities">
               {k.tracks.map((t, i) => {
                 const Icon = icons[i] ?? Building2;
                 return (
                   <li key={t.title} className="flex items-center gap-4">
-                    <span aria-hidden className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5">
-                      <Icon className="size-5 text-white/70" />
+                    <span aria-hidden className="flex size-12 shrink-0 items-center justify-center rounded-full border border-primary/15 bg-primary-soft text-primary">
+                      <Icon className="size-5" />
                     </span>
                     <div>
-                      <h3 className="text-[14px] font-bold tracking-tight text-white">{t.title}</h3>
-                      <p className="text-[13px] text-white/60">{t.text}</p>
+                      <h3 className="text-[14px] font-bold tracking-tight text-foreground">{t.title}</h3>
+                      <p className="text-[13px] text-muted">{t.text}</p>
                     </div>
                   </li>
                 );
@@ -49,10 +49,10 @@ export function CollaborateSection() {
           </Reveal>
         </div>
         <Reveal delay={0.2} className="relative">
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#0a0f1c]/80 p-6 shadow-[0_0_80px_rgba(0,0,0,0.8)] backdrop-blur-2xl sm:p-10">
-            <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/20 to-transparent" />
-            <h3 className="mb-2 text-[20px] font-bold tracking-tight text-white">Submit a Proposal</h3>
-            <p className="mb-8 text-[14px] text-white/50">Select the nature of your inquiry to route it to the correct team.</p>
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-lift sm:p-10">
+            <div aria-hidden className="absolute inset-x-0 top-0 h-0.5 bg-linear-to-r from-transparent via-primary to-transparent" />
+            <h3 className="mb-2 text-[20px] font-bold tracking-tight text-foreground">Submit a Proposal</h3>
+            <p className="mb-8 text-[14px] text-muted">Select the nature of your inquiry to route it to the correct team.</p>
             <LeadForm
               kind="collaboration"
               topics={partnershipTypes}

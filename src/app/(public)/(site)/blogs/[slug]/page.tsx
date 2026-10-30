@@ -37,7 +37,7 @@ export default async function ArticlePage({ params }: PageProps<"/blogs/[slug]">
     <>
       <article className="mx-auto max-w-4xl px-6 pt-32 pb-24">
         <Link href="/blogs" className="group inline-flex min-h-11 items-center gap-3 text-[14px] text-foreground/60 hover:text-foreground">
-          <span className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]">
+          <span className="flex size-8 items-center justify-center rounded-full border border-border bg-surface">
             <ChevronLeft aria-hidden className="size-4" />
           </span>
           Back to Articles
@@ -49,7 +49,7 @@ export default async function ArticlePage({ params }: PageProps<"/blogs/[slug]">
         <h1 className="mt-6 bg-linear-to-b from-foreground to-foreground/60 bg-clip-text text-[clamp(36px,5.5vw,60px)] leading-[1.08] font-bold tracking-[-0.03em] text-balance text-transparent">
           {article.title}
         </h1>
-        <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-y border-white/[0.07] py-5 text-[14px] text-foreground/55">
+        <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-y border-border py-5 text-[14px] text-foreground/55">
           <span className="flex items-center gap-3">
             <span aria-hidden className="flex size-9 items-center justify-center rounded-full bg-primary text-[14px] font-bold text-white">
               {article.author.charAt(0)}
@@ -68,31 +68,31 @@ export default async function ArticlePage({ params }: PageProps<"/blogs/[slug]">
           </span>
         </div>
         {cover ? (
-          <div className="relative mt-10 aspect-[16/9] w-full overflow-hidden rounded-[1.6rem] border border-white/10">
+          <div className="relative mt-10 aspect-[16/9] w-full overflow-hidden rounded-[1.6rem] border border-border shadow-lift">
             <Image src={cover.src} alt={cover.alt} fill priority placeholder="blur" sizes="(min-width:1024px) 896px, 100vw" className="object-cover" style={{ objectPosition: cover.focus }} />
           </div>
         ) : (
-          <ChartCover seed={articles.indexOf(article)} className="mt-10 aspect-[16/9] w-full rounded-[1.6rem] border border-white/10" />
+          <ChartCover seed={articles.indexOf(article)} className="mt-10 aspect-[16/9] w-full rounded-[1.6rem] border border-border shadow-lift" />
         )}
         <div className="mt-12 flex flex-col gap-6 text-[18px] leading-[1.85] text-foreground/75">
           {article.body.map((p) => (
             <p key={p}>{p}</p>
           ))}
         </div>
-        <aside className="mt-14 rounded-2xl border border-white/10 bg-white/[0.025] p-5 text-[13px] leading-relaxed text-foreground/50">{siteConfig.legal.riskDisclaimer}</aside>
+        <aside className="mt-14 rounded-2xl border border-border bg-surface p-5 text-[13px] leading-relaxed text-foreground/50">{siteConfig.legal.riskDisclaimer}</aside>
       </article>
 
       <section aria-labelledby="comments-title" className="mx-auto max-w-4xl px-6 pb-16">
         <h2 id="comments-title" className="text-[24px] font-semibold">
           Comments (0)
         </h2>
-        <div className="mt-6 flex items-center gap-3 rounded-2xl border border-dashed border-white/15 p-5 text-[14px] text-foreground/50">
+        <div className="mt-6 flex items-center gap-3 rounded-2xl border border-dashed border-border bg-surface p-5 text-[14px] text-foreground/50">
           <MessageSquare aria-hidden className="size-5" />
           Comments open once accounts and moderation are connected.
         </div>
       </section>
 
-      <section className="border-t border-white/5 bg-[#0a0f1c]/50">
+      <section className="border-t border-border bg-surface">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <h2 className="text-[clamp(28px,3vw,36px)] font-bold tracking-tight">Read Next</h2>
           <p className="mt-2 text-[15px] text-foreground/50">Explore more articles and market insights.</p>

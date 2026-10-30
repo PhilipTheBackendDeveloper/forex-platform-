@@ -33,12 +33,12 @@ export function CoachingRoadmap() {
         </div>
       )}
       aside={(s, i) => (
-        <div className="relative flex aspect-[4/5] w-[min(360px,80%)] flex-col items-center justify-center rounded-[2rem] border border-white/10 bg-linear-to-b from-white/[0.06] to-transparent shadow-[0_0_80px_-20px_var(--primary)]">
+        <div className="relative flex aspect-[4/5] w-[min(360px,80%)] flex-col items-center justify-center rounded-[2rem] border border-border bg-white shadow-lift">
           <p className="text-[12px] font-semibold tracking-[0.4em] text-foreground/40 uppercase">Session</p>
-          <p className="bg-linear-to-b from-white to-white/40 bg-clip-text text-[clamp(110px,12vw,170px)] leading-none font-black tracking-[-0.06em] text-transparent">
+          <p className="bg-linear-to-b from-foreground to-foreground/30 bg-clip-text text-[clamp(110px,12vw,170px)] leading-none font-black tracking-[-0.06em] text-transparent">
             {String(i + 1).padStart(2, "0")}
           </p>
-          <p className="mt-6 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[11px] font-semibold tracking-[0.18em] text-foreground/70 uppercase">{s.title}</p>
+          <p className="mt-6 rounded-full border border-border bg-surface px-4 py-2 text-[11px] font-semibold tracking-[0.18em] text-foreground/70 uppercase">{s.title}</p>
         </div>
       )}
       footer={(index) => (
@@ -46,7 +46,7 @@ export function CoachingRoadmap() {
           <p className="text-[10px] font-semibold tracking-[0.3em] text-foreground/40 uppercase">{index < c.sessions.length - 1 ? "Keep scrolling" : "Final session"}</p>
           <div className="flex gap-1.5">
             {c.sessions.map((s, i) => (
-              <span key={s.title} className={`h-1 rounded-full transition-all duration-500 ${i === index ? "w-8 bg-primary" : "w-3 bg-white/15"}`} />
+              <span key={s.title} className={`h-1 rounded-full transition-all duration-500 ${i === index ? "w-8 bg-primary" : "w-3 bg-border"}`} />
             ))}
           </div>
         </div>

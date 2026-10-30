@@ -19,7 +19,7 @@ export default function MasteryCoursesPage() {
         <Reveal className="mx-auto flex max-w-4xl flex-col items-center text-center">
           <h1 className="text-[clamp(44px,7.5vw,96px)] leading-[0.95] font-black tracking-[-0.045em]">
             <span className="block bg-linear-to-b from-foreground to-foreground/70 bg-clip-text text-transparent">Unlock true</span>
-            <span className="block bg-linear-to-r from-primary to-[var(--gradient-from)] bg-clip-text pb-2 text-transparent">market mastery.</span>
+            <span className="block bg-linear-to-r from-primary to-accent bg-clip-text pb-2 text-transparent">market mastery.</span>
           </h1>
           <p className="mt-6 max-w-xl text-[17px] leading-[1.7] text-foreground/60 lg:text-[19px]">
             Explore focused courses designed to refine your process. Listings are demo structure until the catalogue is approved.

@@ -50,7 +50,7 @@ export function FloatingBar({
         className={cn(
           "pointer-events-auto flex w-full items-center justify-between transition-[max-width,margin,padding,background-color,border-color,height,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
           scrolled
-            ? cn(compactWidth, "mt-3 h-14 rounded-full border border-white/10 bg-background/70 px-4 shadow-[0_10px_40px_-12px_rgb(0_0_0/0.8)] backdrop-blur-xl sm:px-5")
+            ? cn(compactWidth, "mt-3 h-14 rounded-full border border-border bg-white/85 px-4 shadow-card backdrop-blur-xl sm:px-5")
             : "mt-0 h-20 max-w-[calc(var(--container-max)+48px)] border border-transparent px-3 sm:px-6",
         )}
       >

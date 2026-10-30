@@ -91,28 +91,28 @@ export function Dialog({
             exit={variant === "drawer" ? { x: "100%" } : { opacity: 0, y: 24, scale: 0.97 }}
             transition={{ duration: 0.45, ease: easeOutExpo }}
             className={cn(
-              "relative flex flex-col overflow-hidden border border-white/10 bg-[#070d1a] shadow-[0_40px_120px_-30px_rgb(0_0_0/0.95)]",
+              "relative flex flex-col overflow-hidden border border-border bg-card shadow-lift",
               variant === "drawer" ? "h-full w-[min(420px,100vw)] border-y-0 border-r-0" : "max-h-[90dvh] w-full rounded-[1.8rem]",
               variant === "modal" && (size === "lg" ? "max-w-5xl" : "max-w-lg"),
             )}
           >
-            <div className="flex items-start justify-between gap-4 border-b border-white/[0.07] px-6 py-5">
+            <div className="flex items-start justify-between gap-4 border-b border-border px-6 py-5">
               <div>
-                <h2 id={titleId} className="text-[20px] font-semibold tracking-tight">
+                <h2 id={titleId} className="text-[20px] font-semibold tracking-tight text-foreground">
                   {title}
                 </h2>
                 {description && (
-                  <p id={descId} className="mt-1 text-[13px] text-foreground/50">
+                  <p id={descId} className="mt-1 text-[13px] text-muted">
                     {description}
                   </p>
                 )}
               </div>
-              <button type="button" aria-label="Close" onClick={onClose} className="flex size-9 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] hover:bg-white/10">
+              <button type="button" aria-label="Close" onClick={onClose} className="flex size-9 shrink-0 items-center justify-center rounded-full border border-border text-muted hover:bg-surface-2 transition-colors">
                 <X aria-hidden className="size-4" />
               </button>
             </div>
             <div className="flex-1 overflow-y-auto">{children}</div>
-            {footer && <div className="border-t border-white/[0.07] px-6 py-4">{footer}</div>}
+            {footer && <div className="border-t border-border px-6 py-4">{footer}</div>}
           </motion.div>
         </div>
       )}

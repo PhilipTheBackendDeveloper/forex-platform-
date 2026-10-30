@@ -126,7 +126,7 @@ export function PhoneSimulator() {
   return (
     <div aria-hidden className="relative [perspective:1800px]">
       {/* Floor shadow */}
-      <div className="absolute -bottom-10 left-1/2 h-16 w-[70%] -translate-x-1/2 rounded-[50%] bg-black/70 blur-2xl" />
+      <div className="absolute -bottom-10 left-1/2 h-16 w-[70%] -translate-x-1/2 rounded-[50%] bg-slate-900/15 blur-2xl" />
       <div className="animate-[levitate_6s_ease-in-out_infinite] motion-reduce:animate-none">
         <div className="relative [transform:rotateY(-18deg)_rotateX(8deg)_rotateZ(5deg)] [transform-style:preserve-3d]">
           {/* Side buttons */}

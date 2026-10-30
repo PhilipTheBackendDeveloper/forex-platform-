@@ -27,15 +27,13 @@ export function StickyStack({ cards, className }: { cards: StackCard[]; classNam
       {cards.map((card, i) => {
         const reversed = i % 2 === 1;
         const surface = card.featured
-          ? "bg-linear-to-br from-[#0071e3] to-[#0052a3] shadow-[0_-20px_80px_rgba(0,113,227,0.2)]"
-          : i === 0
-            ? "border border-white/5 bg-[#050505] shadow-[0_0_50px_rgba(0,0,0,0.8)]"
-            : "border border-primary/10 bg-[#0a0a0c]/90 shadow-[0_-15px_60px_rgba(0,0,0,0.6)] backdrop-blur-3xl";
+          ? "bg-linear-to-br from-[#7c3aed] to-[#5b21b6] text-white shadow-lift"
+          : "border border-border bg-card shadow-card hover:shadow-lift";
         const glow = card.featured
-          ? "bg-[radial-gradient(circle_at_center,rgb(255_255_255/0.10),transparent_60%)] opacity-100"
+          ? "bg-[radial-gradient(circle_at_center,rgb(255_255_255/0.15),transparent_60%)] opacity-100"
           : i === 0
-            ? "bg-[radial-gradient(ellipse_at_top_right,rgb(0_113_227/0.10),transparent_60%)] opacity-50 group-hover:opacity-100"
-            : "bg-[radial-gradient(ellipse_at_bottom_left,rgb(255_255_255/0.05),transparent_60%)] opacity-50 group-hover:opacity-100";
+            ? "bg-[radial-gradient(ellipse_at_top_right,rgb(124_58_237/0.06),transparent_60%)] opacity-50 group-hover:opacity-100"
+            : "bg-[radial-gradient(ellipse_at_bottom_left,rgb(16_185_129/0.06),transparent_60%)] opacity-50 group-hover:opacity-100";
         return (
           <div key={card.tag} className={cn("sticky w-full pt-0", i < cards.length - 1 && "mb-8 md:mb-12")} style={{ top: TOPS[i] }}>
             <motion.article
@@ -54,14 +52,27 @@ export function StickyStack({ cards, className }: { cards: StackCard[]; classNam
                 <span
                   className={cn(
                     "mb-6 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[10px] font-bold tracking-[0.2em] uppercase",
-                    card.featured ? "border-white/20 bg-black/10 text-white" : "border-white/10 bg-white/5",
-                    !card.featured && (i === 0 ? "text-[#3399FF] drop-shadow-[0_0_5px_rgba(51,153,255,0.5)]" : "text-white"),
+                    card.featured
+                      ? "border-white/20 bg-white/10 text-white"
+                      : i === 0
+                        ? "border-primary/20 bg-primary-soft text-primary"
+                        : "border-accent/20 bg-accent-soft text-accent-strong",
                   )}
                 >
-                  <span className={cn("size-1.5 rounded-full", card.featured ? "animate-pulse bg-white" : i === 0 ? "animate-pulse bg-[#3399FF]" : "bg-white/70")} />
+                  <span
+                    className={cn(
+                      "size-1.5 rounded-full",
+                      card.featured ? "animate-pulse bg-white" : i === 0 ? "animate-pulse bg-primary" : "bg-accent",
+                    )}
+                  />
                   {card.tag}
                 </span>
-                <h3 className="mb-6 text-3xl leading-[1.05] font-black tracking-tighter text-white md:text-4xl lg:text-5xl">
+                <h3
+                  className={cn(
+                    "mb-6 text-3xl leading-[1.05] font-black tracking-tighter md:text-4xl lg:text-5xl",
+                    card.featured ? "text-white" : "text-foreground",
+                  )}
+                >
                   {card.title.map((l, j) => (
                     <span key={l} className="block">
                       {l}

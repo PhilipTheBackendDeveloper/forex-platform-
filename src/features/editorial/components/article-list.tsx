@@ -21,7 +21,7 @@ export function ArticleList({ articles, categories }: { articles: Article[]; cat
             onClick={() => setActive(cat)}
             className={cn(
               "min-h-11 rounded-full border px-5 text-[14px] font-medium transition-colors",
-              active === cat ? "border-primary bg-primary text-white shadow-[0_0_24px_-6px_var(--primary)]" : "border-white/10 bg-white/[0.04] text-foreground/75 hover:text-foreground",
+              active === cat ? "border-primary bg-primary text-white shadow-lift" : "border-border bg-white text-foreground/75 hover:text-foreground hover:bg-surface",
             )}
           >
             {cat === "All" ? "All Topics" : cat}
@@ -29,7 +29,7 @@ export function ArticleList({ articles, categories }: { articles: Article[]; cat
         ))}
       </div>
       {visible.length === 0 ? (
-        <div className="mt-12 flex flex-col items-center rounded-[1.6rem] border border-dashed border-white/15 py-20 text-center">
+        <div className="mt-12 flex flex-col items-center rounded-[1.6rem] border border-dashed border-border bg-surface py-20 text-center">
           <FileSearch aria-hidden className="size-10 text-foreground/35" />
           <p className="mt-4 text-lg font-semibold">No articles in this topic yet</p>
         </div>
