@@ -6,6 +6,10 @@ import purplePortrait from "../../public/images/client/purple-portrait.jpg";
 import redOutfit from "../../public/images/client/red-outfit.jpg";
 import stainedGlass from "../../public/images/client/stained-glass.jpg";
 import yacht from "../../public/images/client/yacht.jpg";
+import blackOutfitCutout from "../../public/images/client/cutouts/black-outfit-window.png";
+import londonCutout from "../../public/images/client/cutouts/london.png";
+import purplePortraitCutout from "../../public/images/client/cutouts/purple-portrait.png";
+import redOutfitCutout from "../../public/images/client/cutouts/red-outfit.png";
 
 export type ClientPhoto = {
   src: StaticImageData;
@@ -59,3 +63,15 @@ export const clientPhotos = {
 } satisfies Record<string, ClientPhoto>;
 
 export type ClientPhotoKey = keyof typeof clientPhotos;
+
+/**
+ * Subject cutouts (transparent PNG) generated from the originals with `scripts/cutout.swift`
+ * (Apple Vision person segmentation, 2px defringe, 1.2px feather). The person is pixel-identical
+ * to the original; only the backdrop was removed so they sit cleanly on the dark design.
+ */
+export const clientCutouts = {
+  purplePortrait: { src: purplePortraitCutout, alt: clientPhotos.purplePortrait.alt },
+  blackOutfitWindow: { src: blackOutfitCutout, alt: clientPhotos.blackOutfitWindow.alt.replace(" beside tall bright windows", "") },
+  redOutfit: { src: redOutfitCutout, alt: clientPhotos.redOutfit.alt.replace(", leaning on a wall beside a framed painting", "") },
+  london: { src: londonCutout, alt: "The mentor in a black polo, photographed in London" },
+} satisfies Record<string, { src: StaticImageData; alt: string }>;

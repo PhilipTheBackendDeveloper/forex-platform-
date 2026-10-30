@@ -15,10 +15,10 @@ export const homeContent = {
     secondaryCta: "Beginner? Start For Free",
     /** Non-numeric stand-ins for the reference's stats row (no verified numbers yet). */
     pillars: [
-      { value: "Structured", label: "Curriculum" },
+      { value: "Clarity", label: "Curriculum" },
       { value: "Risk-first", label: "Method" },
       { value: "Live", label: "Sessions" },
-      { value: "Mentor", label: "Access" },
+      { value: "1-on-1", label: "Mentoring" },
     ],
   },
   testimonials: {
@@ -39,10 +39,9 @@ export const homeContent = {
     ],
     /** Captions describe the client's own photos — no invented events. */
     slides: [
-      { photo: "blackOutfitWindow", kicker: "In the studio", title: "Mentor portrait", meta: "Photo · client supplied" },
-      { photo: "london", kicker: "On location", title: "London, United Kingdom", meta: "Photo · client supplied" },
-      { photo: "stainedGlass", kicker: "On location", title: "Behind the scenes", meta: "Photo · client supplied" },
-      { photo: "yacht", kicker: "Off the charts", title: "Time away from the screens", meta: "Photo · client supplied" },
+      { cutout: "redOutfit", kicker: "Off the charts", title: "Mentor portrait", meta: "Client photo" },
+      { cutout: "london", kicker: "On location", title: "London, United Kingdom", meta: "Client photo" },
+      { cutout: "blackOutfitWindow", kicker: "In the studio", title: "Behind the method", meta: "Client photo" },
     ] as const,
   },
   community: {

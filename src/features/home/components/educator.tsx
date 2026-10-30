@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { PlaceholderBadge } from "@/components/ui/badge";
 import { Dim, SectionEyebrow } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
-import { clientPhotos } from "@/config/assets";
+import { PortraitScene } from "@/components/shared/portrait-scene";
+import { clientCutouts } from "@/config/assets";
 import { homeContent } from "@/content/home";
 import { cn } from "@/lib/cn";
 
@@ -20,7 +20,7 @@ export function EducatorSection() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const slide = e.slides[index];
-  const photo = clientPhotos[slide.photo];
+  const photo = clientCutouts[slide.cutout];
 
   useEffect(() => {
     if (paused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -50,11 +50,20 @@ export function EducatorSection() {
               transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
               className="absolute inset-0"
             >
-              <Image src={photo.src} alt={photo.alt} fill placeholder="blur" sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" style={{ objectPosition: photo.focus }} />
+              <PortraitScene
+                src={photo.src}
+                alt={photo.alt}
+                sizes="(min-width:1024px) 50vw, 100vw"
+                fit="contain"
+                position="50% 100%"
+                inset="top-[10%]"
+                glowAt="50% 42%"
+                zoom={false}
+                fades={{ right: true, bottom: true, top: true }}
+                className="h-full w-full"
+              />
             </motion.div>
           </AnimatePresence>
-          <div aria-hidden className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent lg:bg-linear-to-r lg:from-transparent lg:via-transparent lg:to-background" />
-          <div aria-hidden className="absolute inset-0 bg-linear-to-t from-background/90 via-transparent to-transparent" />
           <div className="absolute right-6 bottom-8 left-6 flex items-end justify-between gap-4 lg:left-10">
             <div aria-live="polite">
               <p className="text-[10px] font-semibold tracking-[0.25em] text-foreground/45 uppercase">{slide.kicker}</p>

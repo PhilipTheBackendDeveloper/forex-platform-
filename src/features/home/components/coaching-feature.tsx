@@ -1,15 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { PlaceholderBadge } from "@/components/ui/badge";
 import { Dim, SectionEyebrow } from "@/components/ui/section-heading";
-import { clientPhotos } from "@/config/assets";
+import { PortraitScene } from "@/components/shared/portrait-scene";
+import { clientCutouts } from "@/config/assets";
 import { routes } from "@/config/navigation";
 import { homeContent } from "@/content/home";
 
 const k = homeContent.coaching;
-const photo = clientPhotos.blackOutfitWindow;
+const photo = clientCutouts.blackOutfitWindow;
 
 /** Corner brackets drawn around the framed photo (reference "viewfinder" frame). */
 function Corners() {
@@ -58,9 +58,18 @@ export function CoachingFeature() {
         <Reveal delay={0.1} className="relative pb-40 sm:pb-24 lg:pb-0">
           <div className="relative ml-auto aspect-[4/5] w-full max-w-[420px] rounded-[1.6rem] border border-primary/30 p-2 shadow-[0_0_80px_-20px_var(--primary)]">
             <Corners />
-            <div className="relative h-full overflow-hidden rounded-[1.2rem]">
-              <Image src={photo.src} alt={photo.alt} fill placeholder="blur" sizes="(min-width:1024px) 420px, 90vw" className="object-cover" style={{ objectPosition: photo.focus }} />
-              <div aria-hidden className="absolute inset-0 bg-linear-to-t from-background/60 to-transparent" />
+            <div className="relative h-full overflow-hidden rounded-[1.2rem] bg-[#030a1a]">
+              <PortraitScene
+                src={photo.src}
+                alt={photo.alt}
+                sizes="(min-width:1024px) 420px, 90vw"
+                position="50% 0%"
+                inset="top-[8%]"
+                glowAt="60% 35%"
+                zoom={false}
+                fades={{ bottom: true }}
+                className="h-full w-full"
+              />
             </div>
           </div>
           <div className="absolute bottom-0 left-0 w-[min(100%,380px)] rounded-[1.4rem] border border-white/10 bg-[#0b1220]/95 p-6 shadow-2xl backdrop-blur-xl lg:-left-10 lg:bottom-[-60px]">

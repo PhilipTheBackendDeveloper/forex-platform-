@@ -8,7 +8,16 @@ import { cn } from "@/lib/cn";
  * width at the top of the page; after a short scroll it condenses into a floating, centred,
  * bordered pill (reference: 80 px → 72 px floating bar, observed 2026-10-29).
  */
-export function FloatingBar({ children, compactWidth = "max-w-[1000px]" }: { children: ReactNode; compactWidth?: string }) {
+export function FloatingBar({
+  children,
+  compactWidth = "max-w-[1000px]",
+  top,
+}: {
+  children: ReactNode;
+  compactWidth?: string;
+  /** Optional full-width strip above the bar (market ticker); collapses once scrolled. */
+  top?: ReactNode;
+}) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,6 +29,16 @@ export function FloatingBar({ children, compactWidth = "max-w-[1000px]" }: { chi
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex flex-col items-center px-3 sm:px-4">
+      {top && (
+        <div
+          className={cn(
+            "pointer-events-auto -mx-3 grid w-[calc(100%+1.5rem)] transition-[grid-template-rows,opacity] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] sm:-mx-4 sm:w-[calc(100%+2rem)]",
+            scrolled ? "grid-rows-[0fr] opacity-0" : "grid-rows-[1fr] opacity-100",
+          )}
+        >
+          <div className="overflow-hidden">{top}</div>
+        </div>
+      )}
       <a
         href="#main"
         className="pointer-events-auto sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:text-background"

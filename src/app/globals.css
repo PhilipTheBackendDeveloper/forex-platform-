@@ -67,6 +67,8 @@
   --animate-orb-reverse: orb-float-reverse 25s ease-in-out infinite;
   --animate-shine: shine-flow 8s linear infinite;
   --animate-marquee: marquee 40s linear infinite;
+  --animate-ticker: ticker 45s linear infinite;
+  --animate-hero-zoom: hero-zoom 40s cubic-bezier(0.16, 1, 0.3, 1) both;
 
   @keyframes orb-float {
     0%,
@@ -94,6 +96,21 @@
   @keyframes marquee {
     to {
       transform: translate3d(-50%, 0, 0);
+    }
+  }
+  /* Three copies are rendered; moving by one third loops seamlessly. */
+  @keyframes ticker {
+    to {
+      transform: translate3d(-33.333%, 0, 0);
+    }
+  }
+  /* Reference: hero photo settles from 110% to 100% over 40s. */
+  @keyframes hero-zoom {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
     }
   }
   @keyframes draw {

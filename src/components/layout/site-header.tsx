@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { ReactNode } from "react";
 import { isActivePath, primaryNav, routes } from "@/config/navigation";
 import { buttonClasses } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
@@ -10,11 +11,11 @@ import { MobileNav } from "./mobile-nav";
 import { Wordmark } from "./wordmark";
 
 /** Global header — used on the homepage, blog and about pages (reference parity). */
-export function SiteHeader() {
+export function SiteHeader({ ticker }: { ticker?: ReactNode }) {
   const pathname = usePathname();
 
   return (
-    <FloatingBar>
+    <FloatingBar top={ticker}>
       <Wordmark />
       <nav aria-label="Primary" className="hidden lg:block">
         <ul className="flex items-center gap-8">

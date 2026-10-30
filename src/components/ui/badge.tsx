@@ -47,12 +47,22 @@ export function Badge({
   );
 }
 
-/** Marks content that still needs client approval. Hidden once badges are switched off. */
+/**
+ * Marks content that still needs client approval. Deliberately quiet (small, low-contrast, amber
+ * dot) so a preview still feels finished, but reviewers can always spot unapproved content.
+ * Hidden once `siteConfig.features.showPlaceholderBadges` is switched off after sign-off.
+ */
 export function PlaceholderBadge({ label = "Placeholder", className }: { label?: string; className?: string }) {
   if (!siteConfig.features.showPlaceholderBadges) return null;
   return (
-    <Badge tone="warning" className={className}>
+    <span
+      className={cn(
+        "inline-flex items-center gap-1.5 rounded-full border border-white/10 px-2 py-0.5 align-middle text-[10px] font-medium tracking-[0.08em] whitespace-nowrap text-foreground/45 uppercase",
+        className,
+      )}
+    >
+      <span aria-hidden className="size-1 rounded-full bg-amber-400/80" />
       {label}
-    </Badge>
+    </span>
   );
 }
