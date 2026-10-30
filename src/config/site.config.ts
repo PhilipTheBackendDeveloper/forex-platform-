@@ -6,10 +6,10 @@
  * `null` links render as clearly disabled controls with an explanation (never href="#").
  */
 export const siteConfig = {
-  /** PLACEHOLDER — real business name not yet supplied. */
-  name: "Your Brand",
-  /** PLACEHOLDER — wordmark shown in header/footer until a logo file is supplied. */
-  wordmark: "YOURBRAND",
+  /** Brand name confirmed by the project owner on 2026-10-30. */
+  name: "Albert Tech",
+  /** Wordmark shown beside the brand glyph (src/components/layout/wordmark.tsx, src/app/icon.svg). */
+  wordmark: "ALBERT TECH",
   /** PLACEHOLDER — mentor/educator display name. */
   mentorName: "Your Mentor",
   tagline: "Forex education built on discipline, risk management and patience.",

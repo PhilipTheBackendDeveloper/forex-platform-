@@ -2,14 +2,14 @@ import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 const control =
-  "w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3.5 text-[15px] text-foreground placeholder:text-foreground/35 transition-colors duration-200 hover:border-white/25 focus:border-[var(--ring)] focus:bg-white/[0.05] focus:outline-none aria-[invalid=true]:border-danger/70";
+  "w-full rounded-xl border border-white/20 bg-black/40 px-4 py-3.5 text-[15px] text-foreground placeholder:text-white/30 transition-all duration-200 focus:border-primary/50 focus:bg-white/5 focus:outline-none aria-[invalid=true]:border-danger/70";
 
 type BaseProps = { label: string; name: string; error?: string; hint?: ReactNode; className?: string };
 
 function Wrapper({ label, name, error, hint, className, children }: BaseProps & { children: ReactNode }) {
   return (
     <div className={cn("flex flex-col gap-2", className)}>
-      <label htmlFor={name} className="text-[11px] font-semibold tracking-[0.16em] text-foreground/60 uppercase">
+      <label htmlFor={name} className="pl-1 text-[12px] font-semibold tracking-widest text-white/70 uppercase">
         {label}
       </label>
       {children}

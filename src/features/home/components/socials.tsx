@@ -1,5 +1,5 @@
-import { ArrowRight, AtSign, Camera, CirclePlay, Send, Users } from "lucide-react";
-import { Reveal } from "@/components/motion/reveal";
+import { ArrowUpRight, AtSign, Camera, CirclePlay, Send, Users } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { siteConfig } from "@/config/site.config";
 import { homeContent } from "@/content/home";
 
@@ -11,48 +11,54 @@ const channels = [
   { label: "Facebook", icon: Users, href: siteConfig.social.facebook },
 ];
 
+const GUTTER = "max(24px, calc((100vw - 1200px) / 2 + 24px))";
+
 /**
- * Reference: huge animated follower counter + list of networks. We have no verified follower
- * number, so the display word replaces the counter until the client supplies one.
+ * Socials — reference layout: 52% left column with a huge display line, rule and caption; borderless
+ * rows on the right. The reference shows an animated follower count; we show a word until the client
+ * supplies a verified figure.
  */
 export function SocialsSection() {
   const s = homeContent.socials;
   return (
-    <section id="socials" aria-labelledby="socials-title" className="relative py-24 lg:py-32">
-      <div className="container-site grid items-center gap-14 lg:grid-cols-2">
-        <Reveal>
-          <h2 id="socials-title" className="text-[clamp(72px,11vw,150px)] leading-[0.85] font-black tracking-[-0.06em]">
+    <section id="socials" aria-labelledby="socials-title" className="relative">
+      <h2 id="socials-title" className="sr-only">
+        Social media
+      </h2>
+      <div className="flex flex-col pt-16 pb-28 lg:flex-row">
+        <Reveal className="mb-16 shrink-0 lg:mb-0 lg:w-[52%]" style={{ paddingLeft: GUTTER, paddingRight: "clamp(28px, 4vw, 72px)" }}>
+          <p className="leading-none font-black tracking-[-0.055em] text-foreground" style={{ fontSize: "clamp(80px, 10vw, 128px)" }}>
             {s.headline}
-            <span className="text-foreground/30">+</span>
-          </h2>
-          <span aria-hidden className="mt-10 block h-px w-32 bg-linear-to-r from-white/20 to-transparent" />
-          <p className="mt-8 max-w-xs text-[14px] leading-relaxed text-foreground/55">{s.body}</p>
+            <span className="text-white/40">+</span>
+          </p>
+          <div aria-hidden className="mt-7 mb-6 h-px max-w-48 bg-white/20" />
+          <p className="max-w-[220px] text-[14px] leading-[1.65] tracking-[-0.015em] text-white/70">{s.body}</p>
         </Reveal>
-        <ul className="flex flex-col">
+        <Stagger className="m-0 flex flex-1 flex-col overflow-hidden px-6 md:px-12 lg:px-0" style={{ paddingRight: GUTTER }} stagger={0.055}>
           {channels.map((ch) => {
             const inner = (
               <>
-                <ch.icon aria-hidden className="size-5 text-foreground/70" />
-                <span className="flex-1 text-[16px] font-semibold">{ch.label}</span>
-                <span className="text-[13px] text-foreground/40">{ch.href ? "Follow" : "Handle pending"}</span>
-                <ArrowRight aria-hidden className="size-4 text-foreground/40 transition-transform group-hover:translate-x-1" />
+                <ch.icon aria-hidden className="size-5 shrink-0 text-white/60 transition-colors group-hover:text-white" />
+                <span className="flex-1 text-[15px] font-bold tracking-[-0.02em] text-white/90">{ch.label}</span>
+                <span className="text-[12px] tracking-[0.02em] text-white/50">{ch.href ? "Follow" : "Handle pending"}</span>
+                <ArrowUpRight aria-hidden className="size-4 text-white/40 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </>
             );
             return (
-              <li key={ch.label} className="border-b border-white/[0.06] last:border-0">
+              <StaggerItem key={ch.label} className="list-none">
                 {ch.href ? (
-                  <a href={ch.href} target="_blank" rel="noopener noreferrer" className="group flex min-h-16 items-center gap-5 px-2 transition-colors hover:bg-white/[0.03]">
+                  <a href={ch.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 py-5">
                     {inner}
                   </a>
                 ) : (
-                  <span aria-disabled="true" title="Handle pending client confirmation" className="flex min-h-16 items-center gap-5 px-2 opacity-60">
+                  <span aria-disabled="true" title="Handle pending client confirmation" className="group flex items-center gap-5 py-5">
                     {inner}
                   </span>
                 )}
-              </li>
+              </StaggerItem>
             );
           })}
-        </ul>
+        </Stagger>
       </div>
     </section>
   );

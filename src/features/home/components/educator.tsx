@@ -1,112 +1,98 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useState } from "react";
-import { PlaceholderBadge } from "@/components/ui/badge";
-import { Dim, SectionEyebrow } from "@/components/ui/section-heading";
+import Image from "next/image";
+import { useInView } from "motion/react";
+import { useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/motion/reveal";
-import { PortraitScene } from "@/components/shared/portrait-scene";
-import { clientCutouts } from "@/config/assets";
+import { RevealLines } from "@/components/motion/reveal-lines";
+import { toLines } from "@/components/motion/lines";
+import { SectionEyebrow } from "@/components/ui/section-heading";
+import { clientPhotos } from "@/config/assets";
 import { homeContent } from "@/content/home";
-import { cn } from "@/lib/cn";
 
 const e = homeContent.educator;
+const GUTTER = "max(24px, calc((100vw - 1200px) / 2 + 24px))";
 
 /**
- * Educator section: diagonal top edge, auto-advancing photo slider (client photos only, captions
- * describe the photos — no invented events) and a principles row in place of statistics.
+ * Educator — structure measured from the reference: diagonal top (`clip-path` 8vw, −8vw margin),
+ * left 52% full-bleed photo slideshow (0.9s crossfade, 1.3s wipe reveal on entry, bottom fade,
+ * 300px blend into the text column), right text column with line-mask heading and a principles row.
+ * Uses the client's original photos. Auto-advances; pauses on hover/focus and via the pause control.
  */
 export function EducatorSection() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
-  const slide = e.slides[index];
-  const photo = clientCutouts[slide.cutout];
+  const [userPaused, setUserPaused] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const inView = useInView(panelRef, { once: true, margin: "0px 0px -15% 0px" });
+  const slide = e.slides[index] ?? e.slides[0];
 
   useEffect(() => {
-    if (paused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const id = window.setInterval(() => setIndex((i) => (i + 1) % e.slides.length), 6000);
+    if (paused || userPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = window.setInterval(() => setIndex((i) => (i + 1) % e.slides.length), 5500);
     return () => window.clearInterval(id);
-  }, [paused]);
+  }, [paused, userPaused]);
 
   return (
     <section
       id="educator"
-      className="relative z-10 -mt-24 overflow-hidden bg-background pt-24 [clip-path:polygon(0_6rem,100%_0,100%_100%,0_100%)] lg:-mt-32 lg:pt-32 lg:[clip-path:polygon(0_9rem,100%_0,100%_100%,0_100%)]"
+      className="relative z-10 overflow-hidden bg-background"
+      style={{ clipPath: "polygon(0 8vw, 100% 0, 100% 100%, 0 100%)", marginTop: "-8vw" }}
     >
-      <div className="grid lg:min-h-[720px] lg:grid-cols-2">
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 z-20 hidden w-[300px] bg-linear-to-r from-transparent to-[#02091a] lg:block" style={{ right: "48%" }} />
+      <div className="flex flex-col lg:flex-row" style={{ minHeight: "92vh" }}>
         <div
-          className="relative min-h-[460px] overflow-hidden lg:min-h-full"
+          ref={panelRef}
+          className="relative min-h-[100vw] shrink-0 overflow-hidden sm:min-h-[70vw] lg:min-h-0 lg:w-[52%]"
+          style={{ clipPath: inView ? "inset(0 0% 0 0)" : "inset(0 100% 0 0)", transition: "clip-path 1.3s cubic-bezier(0.76, 0, 0.24, 1)" }}
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
-          onFocus={() => setPaused(true)}
-          onBlur={() => setPaused(false)}
+          onFocusCapture={() => setPaused(true)}
+          onBlurCapture={() => setPaused(false)}
         >
-          <AnimatePresence mode="sync">
-            <motion.div
-              key={slide.title}
-              initial={{ opacity: 0, scale: 1.04 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-0"
+          {e.slides.map((s, i) => {
+            const photo = clientPhotos[s.photo];
+            return (
+              <div key={s.title} className="absolute inset-0" style={{ opacity: i === index ? 1 : 0, transition: "opacity 0.9s ease", zIndex: i === index ? 1 : 0 }}>
+                <Image src={photo.src} alt={photo.alt} fill placeholder="blur" sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" style={{ objectPosition: photo.focus }} />
+              </div>
+            );
+          })}
+          <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-48 bg-linear-to-t from-background to-transparent" />
+          <div className="absolute right-0 bottom-10 left-0 z-20 flex items-end justify-between" style={{ paddingLeft: GUTTER, paddingRight: 28 }}>
+            <div aria-live="polite" key={slide.title} className="animate-[caption-in_0.4s_ease]">
+              <p className="mb-[5px] text-[10px] font-medium tracking-[0.22em] text-white/35 uppercase">{slide.kicker}</p>
+              <p className="text-[13px] font-semibold tracking-[0.06em] text-white/80 uppercase">{slide.title}</p>
+              <p className="mt-1 text-[11px] tracking-[0.03em] text-white/30">{slide.meta}</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setUserPaused((p) => !p)}
+              className="sr-only rounded-full bg-black/60 px-3 py-1.5 text-[12px] focus:not-sr-only"
             >
-              <PortraitScene
-                src={photo.src}
-                alt={photo.alt}
-                sizes="(min-width:1024px) 50vw, 100vw"
-                fit="contain"
-                position="50% 100%"
-                inset="top-[10%]"
-                glowAt="50% 42%"
-                zoom={false}
-                fades={{ right: true, bottom: true, top: true }}
-                className="h-full w-full"
-              />
-            </motion.div>
-          </AnimatePresence>
-          <div className="absolute right-6 bottom-8 left-6 flex items-end justify-between gap-4 lg:left-10">
-            <div aria-live="polite">
-              <p className="text-[10px] font-semibold tracking-[0.25em] text-foreground/45 uppercase">{slide.kicker}</p>
-              <p className="mt-1 text-[13px] font-semibold tracking-[0.12em] text-foreground uppercase">{slide.title}</p>
-              <p className="mt-1 text-[12px] text-foreground/40">{slide.meta}</p>
-            </div>
-            <div className="flex items-center gap-1" role="group" aria-label="Choose photo">
-              {e.slides.map((s, i) => (
-                <button
-                  key={s.title}
-                  type="button"
-                  aria-label={`Slide ${i + 1}: ${s.title}`}
-                  aria-pressed={i === index}
-                  onClick={() => setIndex(i)}
-                  className="flex size-8 items-center justify-center"
-                >
-                  <span className={cn("h-1.5 rounded-full transition-all duration-500", i === index ? "w-6 bg-foreground" : "w-1.5 bg-white/30")} />
-                </button>
-              ))}
-            </div>
+              {userPaused ? "Play slideshow" : "Pause slideshow"}
+            </button>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center px-6 py-20 lg:px-16 xl:px-24">
-          <Reveal>
+        <div
+          className="relative z-10 flex flex-1 flex-col justify-center"
+          style={{ paddingLeft: "clamp(36px, 5vw, 80px)", paddingRight: GUTTER, paddingTop: "clamp(60px, 8vh, 100px)", paddingBottom: "clamp(60px, 8vh, 100px)" }}
+        >
+          <Reveal delay={0.2} className="mb-10">
             <SectionEyebrow>{e.eyebrow}</SectionEyebrow>
-            <h2 className="mt-6 text-[clamp(40px,4.6vw,64px)] leading-[0.98] font-extrabold tracking-[-0.045em]">
-              {e.title.map((l) => (
-                <span key={l} className="block">
-                  {l}
-                </span>
-              ))}
-              <Dim block>{e.dim}</Dim>
-            </h2>
-            <span aria-hidden className="mt-10 block h-px w-32 bg-linear-to-r from-white/20 to-transparent" />
-            <p className="mt-8 max-w-md text-[16px] leading-[1.7] text-foreground/60">
-              {e.body} <PlaceholderBadge className="ml-1 align-middle" />
-            </p>
-            <dl className="mt-12 grid max-w-lg grid-cols-3 divide-x divide-white/10">
-              {e.principles.map((p) => (
-                <div key={p.value} className="flex flex-col-reverse px-4 first:pl-0">
-                  <dt className="mt-1 text-[12px] text-foreground/45">{p.label}</dt>
-                  <dd className="text-[19px] font-bold tracking-tight">{p.value}</dd>
+          </Reveal>
+          <RevealLines lines={toLines(e.title, e.dim)} fontSize="clamp(40px, 4.5vw, 64px)" delay={0.24} className="mb-9" />
+          <Reveal delay={0.5}>
+            <div aria-hidden className="mb-8 h-px max-w-[200px] bg-white/8" />
+            <p className="mb-[52px] max-w-[360px] text-[16px] leading-[1.72] tracking-[-0.01em] text-white/70">{e.body}</p>
+          </Reveal>
+          <Reveal delay={0.62}>
+            <dl className="flex items-start">
+              {e.principles.map((p, i) => (
+                <div key={p.value} className={i < e.principles.length - 1 ? "mr-7 flex flex-col-reverse border-r border-white/8 pr-7" : "flex flex-col-reverse"}>
+                  <dt className="mt-1.5 text-[11px] tracking-[0.02em] text-white/45">{p.label}</dt>
+                  <dd className="text-[20px] leading-none font-bold tracking-[-0.03em] text-foreground">{p.value}</dd>
                 </div>
               ))}
             </dl>

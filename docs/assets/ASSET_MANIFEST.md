@@ -41,6 +41,14 @@ The yacht, stained-glass and football photos were **not** cut out (the segmenter
 
 > Publication consent (OPEN_CLIENT_ITEMS #4) should cover these derivative cutouts too.
 
+## Display treatments (owner-directed, 2026-10-30) — CSS only, files untouched
+| Where | Treatment | Why |
+|---|---|---|
+| Home hero (purple-portrait cutout) | `brightness-50` mobile / `brightness-[0.85]` desktop + `contrast-[1.1]` | Exact reference hero treatment |
+| Home educator slider | Original photos (London, stained glass, red outfit, yacht), full-bleed, crossfade | Owner asked for the original pictures here |
+| Home coaching frame (black-outfit-window original) | `mix-blend-luminosity` + 80% opacity → full colour + zoom on hover | Exact reference behaviour |
+| Article covers | Client photos mapped in `src/features/editorial/data/covers.ts` | Reference uses photo covers; replace with licensed editorial images per article |
+
 ## Notes / risks
 - `client-football-stadium` shows a club's branded shirts with player names; `client-red-outfit` shows a framed artwork with luxury-brand pattern; `client-london` and `client-stained-glass` include bystanders/branded interiors. Confirm the client is comfortable publishing these.
 - Clothing in some photos carries third-party brand marks (e.g. caps, a "UAE" polo, product branding on a T-shirt). Fine for lifestyle use, but avoid implying endorsement.

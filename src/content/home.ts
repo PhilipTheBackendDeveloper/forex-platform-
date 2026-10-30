@@ -26,6 +26,16 @@ export const homeContent = {
     title: ["Real progress", "from real"],
     dim: "Traders.",
     cta: "Start Your Success Story",
+    /**
+     * PLACEHOLDER slots — layout mirrors the reference bento (8/4/4/8). Replace each with a real,
+     * consented student story; never invent names, quotes or results.
+     */
+    slots: [
+      { span: 8, name: "Student story", role: "Awaiting client approval", quote: "Your students' own words will appear here — a real, consented story about how the programme changed the way they approach the market.", outcome: "Verified outcome" },
+      { span: 4, name: "Student story", role: "Awaiting client approval", quote: "A short, verified quote from a community member about discipline, risk or consistency.", outcome: "Verified outcome" },
+      { span: 4, name: "Student story", role: "Awaiting client approval", quote: "A short, verified quote from a signal-group or academy student.", outcome: "Verified outcome" },
+      { span: 8, name: "Student story", role: "Awaiting client approval", quote: "Featured testimonial slot — published only with the student's written permission and evidence for any result mentioned.", outcome: "Verified outcome" },
+    ],
   },
   educator: {
     eyebrow: "Meet your mentor",
@@ -38,15 +48,17 @@ export const homeContent = {
       { value: "Patience", label: "Fewer, better trades" },
     ],
     /** Captions describe the client's own photos — no invented events. */
+    /** Client's original photos; captions describe the photos only — no invented events. */
     slides: [
-      { cutout: "redOutfit", kicker: "Off the charts", title: "Mentor portrait", meta: "Client photo" },
-      { cutout: "london", kicker: "On location", title: "London, United Kingdom", meta: "Client photo" },
-      { cutout: "blackOutfitWindow", kicker: "In the studio", title: "Behind the method", meta: "Client photo" },
+      { photo: "london", kicker: "On location", title: "London, United Kingdom", meta: "Client photo" },
+      { photo: "stainedGlass", kicker: "On location", title: "Beyond the charts", meta: "Client photo" },
+      { photo: "redOutfit", kicker: "Off the clock", title: "The mentor", meta: "Client photo" },
+      { photo: "yacht", kicker: "Off the charts", title: "Time away from the screens", meta: "Client photo" },
     ] as const,
   },
   community: {
     eyebrow: "Free community",
-    title: ["Join our free", "trading", "education"],
+    title: ["Join our free", "trading education"],
     dim: "Community",
     subtitle: "Daily notes & breakdowns",
     body: "Market context, educational chart breakdowns and session recaps from the mentor — shared in one free community channel.",
@@ -86,8 +98,8 @@ export const homeContent = {
   },
   coaching: {
     eyebrow: "1-on-1 coaching",
-    title: ["Private", "coaching with"],
-    dim: "your mentor.",
+    title: ["Private", "Coaching with"],
+    dim: "Albert Tech",
     body: "Personalised trading education: work directly with the mentor in private sessions built around your goals and learning style.",
     bullets: [
       "Private, personalised sessions",
@@ -99,7 +111,7 @@ export const homeContent = {
       "Scheduling that fits your week",
     ],
     card: {
-      status: "Availability on request",
+      status: "Spots on request",
       items: ["Initial strategy assessment", "Recurring 1-to-1 video calls", "Direct support channel (scope TBC)", "Custom trading plan"],
       feeLabel: "Mentorship fee",
       cta: "Secure Your Spot",

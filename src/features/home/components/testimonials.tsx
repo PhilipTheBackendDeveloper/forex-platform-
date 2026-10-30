@@ -1,65 +1,69 @@
 import Link from "next/link";
-import { ChevronRight, Trophy } from "lucide-react";
-import { Stagger, StaggerItem } from "@/components/motion/reveal";
-import { PlaceholderBadge } from "@/components/ui/badge";
+import { ArrowRight, UserRound } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { routes } from "@/config/navigation";
 import { homeContent } from "@/content/home";
 import { cn } from "@/lib/cn";
 
 const t = homeContent.testimonials;
-// Reference bento: wide/narrow on row one, narrow/wide on row two.
-const spans = ["md:col-span-7", "md:col-span-5", "md:col-span-5", "md:col-span-7"];
 
 /**
- * Social proof in the reference's bento layout. Slots stay visibly empty until the client supplies
- * real, consented student stories — we never fabricate quotes, names or results.
+ * Social proof — card spec measured from the reference (12-col bento 8/4/4/8, rounded-3xl,
+ * #0071e3/10 border → /30 on hover, #020510→#020818 gradient, grain, hover top glow, avatar
+ * scale). Slots stay placeholders until the client supplies consented student stories.
  */
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="relative overflow-hidden pt-32 pb-32 lg:pb-48">
-      <div aria-hidden className="absolute top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-primary/[0.07] blur-[140px]" />
-      <div className="container-site relative">
-        <SectionHeading align="center" eyebrow={t.eyebrow} title={t.title.map((l) => <span key={l} className="block">{l}</span>)} dim={t.dim} />
-        <Stagger className="mt-20 grid gap-5 md:grid-cols-12">
-          {spans.map((span, i) => (
-            <StaggerItem
-              key={span + i}
-              className={cn(
-                "flex min-h-64 flex-col justify-between rounded-[var(--radius-panel)] border border-white/[0.07] bg-white/[0.025] p-7 shadow-[0_20px_60px_-30px_rgb(0_0_0/0.9)] backdrop-blur lg:p-8",
-                span,
-              )}
-            >
-              <div className="flex items-center gap-3">
-                <span aria-hidden className="size-10 rounded-full border border-white/10 bg-white/[0.06]" />
-                <div>
-                  <p className="text-[15px] font-semibold text-foreground/70">Student name</p>
-                  <p className="text-[13px] text-foreground/40">Programme · location</p>
-                </div>
-              </div>
-              <div className={cn("mt-6 space-y-2.5", i % 3 === 0 && "lg:pr-10")} aria-hidden>
-                <div className="h-3 w-11/12 rounded-full bg-white/[0.06]" />
-                <div className="h-3 w-4/5 rounded-full bg-white/[0.06]" />
-                <div className="h-3 w-2/3 rounded-full bg-white/[0.06]" />
-              </div>
-              <div className="mt-7 flex flex-wrap items-center gap-3">
-                <span className="inline-flex items-center gap-2 rounded-full border border-success/25 bg-success/[0.08] px-3 py-1.5 text-[12px] text-success/80">
-                  <Trophy aria-hidden className="size-3.5" /> Outcome — verified only
-                </span>
-                <PlaceholderBadge label="Awaiting approved story" />
-              </div>
-            </StaggerItem>
-          ))}
+    <section id="testimonials" className="relative overflow-hidden pt-32 pb-56 lg:pb-72">
+      <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
+        <div className="absolute top-0 right-[10%] h-200 w-200 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.03)_0%,transparent_60%)]" />
+        <div className="absolute bottom-[20%] left-[-10%] h-150 w-150 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(48,209,88,0.02)_0%,transparent_60%)]" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-310 px-6">
+        <SectionHeading align="center" size="xl" eyebrow={t.eyebrow} title={t.title} dim={t.dim} className="mb-24" />
+        <Stagger className="grid grid-cols-1 gap-6 md:grid-cols-12" stagger={0.1}>
+          {t.slots.map((slot, i) => {
+            const wide = slot.span === 8;
+            return (
+              <StaggerItem key={i} className={cn(wide ? "md:col-span-8" : "md:col-span-4", "flex")}>
+                <figure className="group relative m-0 flex w-full flex-col justify-between overflow-hidden rounded-3xl border border-primary/10 bg-linear-to-br from-[#020510] to-[#020818] p-6 shadow-[0_4px_32px_rgba(0,113,227,0.03)] transition-colors duration-500 hover:border-primary/30 md:p-7 xl:p-8">
+                  <div aria-hidden className="bg-noise pointer-events-none absolute inset-0 opacity-[0.03] mix-blend-screen" />
+                  <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/30 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+                  <div className="relative z-10">
+                    <figcaption className="mb-4 flex items-center gap-3">
+                      <span aria-hidden className="relative flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/5 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110">
+                        <UserRound className="size-4 text-white/40" />
+                      </span>
+                      <span>
+                        <span className="block text-[15px] font-semibold tracking-tight text-white">{slot.name}</span>
+                        <span className="block text-[12px] text-white/50">{slot.role}</span>
+                      </span>
+                    </figcaption>
+                    <blockquote className={cn("mb-6", wide && "max-w-2xl")}>
+                      <p className={cn("leading-[1.6] text-white/60", wide ? "text-[17px] font-medium tracking-tight md:text-[20px]" : "text-[14px] md:text-[15px]")}>“{slot.quote}”</p>
+                    </blockquote>
+                  </div>
+                  <div className="relative z-10">
+                    <span className="inline-flex items-center gap-2.5 rounded-full border border-success/20 bg-success/5 px-4 py-2 text-[13px] font-medium tracking-tight text-success">
+                      <span aria-hidden className="size-1.5 rounded-full bg-success" />
+                      {slot.outcome}
+                    </span>
+                  </div>
+                </figure>
+              </StaggerItem>
+            );
+          })}
         </Stagger>
-        <div className="mt-14 flex justify-center">
+        <Reveal delay={0.3} className="mt-20 flex justify-center">
           <Link
             href={routes.register}
-            className="group inline-flex min-h-12 items-center gap-2 rounded-full bg-foreground px-7 text-[15px] font-semibold text-background shadow-[0_0_40px_-10px_rgb(255_255_255/0.5)] transition-colors hover:bg-white"
+            className="group relative inline-flex items-center gap-3 rounded-full bg-foreground px-8 py-4 text-[15px] font-semibold tracking-tight text-background transition-transform duration-300 ease-out hover:scale-105"
           >
             {t.cta}
-            <ChevronRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5" />
+            <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

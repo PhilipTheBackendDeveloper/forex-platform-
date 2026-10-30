@@ -20,6 +20,7 @@ export function LeadForm({
   kind,
   topics,
   topicsLabel = "Partnership type",
+  topicsLayout = "grid",
   submitLabel = "Send request",
   messageLabel = "Message",
   messagePlaceholder = "Tell us a little about your request…",
@@ -30,6 +31,8 @@ export function LeadForm({
   kind: LeadKind;
   topics?: readonly string[];
   topicsLabel?: string;
+  /** `pills` = homepage proposal form; `grid` = /collaborations (reference has both). */
+  topicsLayout?: "pills" | "grid";
   submitLabel?: string;
   messageLabel?: string;
   messagePlaceholder?: string;
@@ -43,6 +46,11 @@ export function LeadForm({
   const uid = useId();
   const errors = { ...(result.status === "invalid" ? result.fieldErrors : {}), ...clientErrors };
   const needsTopic = Boolean(topics?.length) && !topic;
+
+  function pickTopic(t: string) {
+    setTopic(t);
+    setClientErrors((prev) => Object.fromEntries(Object.entries(prev).filter(([key]) => key !== "topic")));
+  }
 
   function validateBeforeSubmit(e: React.FormEvent<HTMLFormElement>) {
     const parsed = leadSchema.safeParse(Object.fromEntries(new FormData(e.currentTarget)));
@@ -66,11 +74,31 @@ export function LeadForm({
         <input id={`${uid}-hp`} name="hp" tabIndex={-1} autoComplete="off" />
       </div>
 
-      {topics && (
+      {topics && topicsLayout === "pills" && (
+        <div role="radiogroup" aria-label={topicsLabel} aria-required="true" className="flex flex-wrap gap-2">
+          {topics.map((t) => (
+            <button
+              key={t}
+              type="button"
+              role="radio"
+              aria-checked={topic === t}
+              onClick={() => pickTopic(t)}
+              className={cn(
+                "rounded-full border px-4 py-2 text-[13px] font-medium transition-all duration-300",
+                topic === t ? "border-white bg-white text-black" : "border-white/10 bg-white/5 text-white/70 hover:bg-white/10 hover:text-white",
+              )}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {topics && topicsLayout === "grid" && (
         <fieldset className="rounded-[1.4rem] border border-white/10 bg-white/[0.02] p-4 sm:p-5">
           <legend className="sr-only">{topicsLabel}</legend>
           <div className="mb-4 flex items-center justify-between gap-3">
-            <p aria-hidden className="text-[11px] font-semibold tracking-[0.18em] text-foreground/60 uppercase">
+            <p aria-hidden className="text-[11px] font-semibold tracking-[0.18em] text-white/60 uppercase">
               {topicsLabel} <span className="text-danger">*</span>
             </p>
             <span className="rounded-full border border-danger/30 bg-danger/10 px-2 py-0.5 text-[9px] font-bold tracking-[0.15em] text-danger uppercase">Required</span>
@@ -82,13 +110,10 @@ export function LeadForm({
                 type="button"
                 role="radio"
                 aria-checked={topic === t}
-                onClick={() => {
-                  setTopic(t);
-                  setClientErrors((prev) => Object.fromEntries(Object.entries(prev).filter(([key]) => key !== "topic")));
-                }}
+                onClick={() => pickTopic(t)}
                 className={cn(
                   "min-h-11 rounded-xl border px-4 text-left text-[13px] font-medium transition-colors",
-                  topic === t ? "border-primary bg-primary/15 text-foreground" : "border-white/10 bg-white/[0.03] text-foreground/65 hover:border-white/25 hover:text-foreground",
+                  topic === t ? "border-primary bg-primary/15 text-foreground" : "border-white/10 bg-white/[0.03] text-white/65 hover:border-white/25 hover:text-foreground",
                 )}
               >
                 {t}
@@ -131,12 +156,12 @@ export function LeadForm({
       <button
         type="submit"
         disabled={pending || needsTopic}
-        className="inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-2xl bg-foreground px-6 text-[15px] font-semibold text-background transition-[background-color,opacity] hover:bg-white disabled:cursor-not-allowed disabled:opacity-45"
+        className="flex w-full items-center justify-center gap-2 rounded-xl bg-white py-4 text-[15px] font-bold tracking-tight text-black transition-all duration-300 hover:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50"
       >
         {pending ? "Checking…" : submitLabel}
         <ArrowRight aria-hidden className="size-4" />
       </button>
-      {needsTopic && <p className="-mt-2 text-center text-[12px] text-danger/80">* Please select a category to continue</p>}
+      {needsTopic && <p className="-mt-2 animate-pulse text-center text-[12px] text-rose-400/80">* Please select a category to continue</p>}
       {errors.topic && !needsTopic && (
         <p role="alert" className="-mt-2 text-center text-[12px] text-danger">
           {errors.topic}

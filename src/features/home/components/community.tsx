@@ -1,100 +1,91 @@
-import { BookOpen, Send } from "lucide-react";
+"use client";
+
+import { Send } from "lucide-react";
+import { useInView } from "motion/react";
+import { useRef } from "react";
 import { Reveal } from "@/components/motion/reveal";
+import { RevealLines } from "@/components/motion/reveal-lines";
+import { toLines } from "@/components/motion/lines";
 import { ButtonLink } from "@/components/ui/button";
-import { BrandGlyph } from "@/components/layout/wordmark";
-import { Dim, SectionEyebrow } from "@/components/ui/section-heading";
+import { SectionEyebrow } from "@/components/ui/section-heading";
 import { siteConfig } from "@/config/site.config";
 import { homeContent } from "@/content/home";
+import { PhoneSimulator } from "./phone-simulator";
 
 const c = homeContent.community;
+const GUTTER = "max(24px, calc((100vw - 1200px) / 2 + 24px))";
 
-/** Illustrative messages only — educational notes, never trade calls or profit claims. */
-const messages = [
-  { title: "Morning note", body: "Weekly levels marked. No trade until price reaches our zones — patience first." },
-  { title: "Chart breakdown", body: "Structure shift on the 4H. Here is why we wait for confirmation before acting." },
-  { title: "Session recap", body: "Today's lesson: risk is defined before entry, not after. Journal your reasons." },
-];
-
-function PhoneMockup() {
-  return (
-    <div aria-hidden className="relative mx-auto w-[300px] rotate-[-4deg] rounded-[48px] border border-white/15 bg-black p-3 shadow-[0_40px_120px_-30px_var(--primary)] sm:w-[320px]">
-      <div className="overflow-hidden rounded-[38px] bg-[#0e1621]">
-        <div className="flex items-center justify-between px-6 pt-4 text-[11px] font-semibold text-white/80">
-          <span>9:41</span>
-          <span className="h-5 w-20 rounded-full bg-black" />
-          <span>100%</span>
-        </div>
-        <div className="mt-3 flex items-center gap-3 border-b border-white/5 px-4 pb-3">
-          <span className="flex size-9 items-center justify-center rounded-full bg-primary/20">
-            <BrandGlyph className="size-5" />
-          </span>
-          <div>
-            <p className="text-[13px] font-semibold text-white">{siteConfig.name} Community</p>
-            <p className="text-[11px] text-white/45">channel · members TBC</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-3 bg-[linear-gradient(160deg,#17212b,#0e1621)] px-3 py-4">
-          {messages.map((m) => (
-            <div key={m.title} className="max-w-[88%] rounded-2xl rounded-bl-md bg-[#182533] px-3.5 py-2.5 shadow">
-              <p className="text-[11px] font-semibold text-[#64b5ef]">{m.title}</p>
-              <p className="mt-1 text-[12px] leading-snug text-white/85">{m.body}</p>
-              <p className="mt-1 text-right text-[9px] text-white/35">educational · not advice</p>
-            </div>
-          ))}
-          <div className="mt-1 h-9 rounded-full bg-white/[0.06]" />
-        </div>
-      </div>
-    </div>
-  );
-}
-
+/**
+ * Community — structure measured from the reference: text column (flex-1) + 52% visual panel with
+ * a 1.3s wipe reveal, 300px blend gradient at 48%, bottom fade. The reference shows a photo of a
+ * phone; we render a live phone simulator in a dark, lit scene instead.
+ */
 export function CommunitySection() {
+  const panelRef = useRef<HTMLDivElement>(null);
+  const inView = useInView(panelRef, { once: true, margin: "0px 0px -15% 0px" });
+
   return (
-    <section id="community" className="relative overflow-hidden bg-[#02091a] py-28 lg:py-32">
-      <div aria-hidden className="absolute top-1/4 right-[-10%] h-[600px] w-[600px] rounded-full bg-community/15 blur-[160px]" />
-      <div className="container-site relative grid items-center gap-16 lg:grid-cols-2">
-        <Reveal>
-          <SectionEyebrow tone="primary">{c.eyebrow}</SectionEyebrow>
-          <h2 className="mt-6 text-[clamp(40px,4.6vw,64px)] leading-[0.98] font-extrabold tracking-[-0.045em]">
-            {c.title.map((l) => (
-              <span key={l} className="block">
-                {l}
-              </span>
-            ))}
-            <Dim block>{c.dim}</Dim>
-          </h2>
-          <span aria-hidden className="mt-10 block h-px w-32 bg-linear-to-r from-white/20 to-transparent" />
-          <p className="mt-8 flex items-center gap-3 text-[17px] font-semibold">
-            <span className="flex size-8 items-center justify-center rounded-full bg-community text-white">
-              <BookOpen aria-hidden className="size-4" />
-            </span>
-            {c.subtitle}
-          </p>
-          <p className="mt-4 max-w-md text-[15px] leading-[1.7] text-foreground/60">{c.body}</p>
-          <ul className="mt-8 grid max-w-lg gap-x-8 gap-y-4 sm:grid-cols-2">
-            {c.bullets.map((b) => (
-              <li key={b} className="flex items-start gap-3 text-[14px] text-foreground/75">
-                <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-community" />
-                {b}
-              </li>
-            ))}
-          </ul>
-          <div className="mt-10">
+    <section id="community" className="relative overflow-hidden bg-[#02091a]">
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 z-20 hidden w-[300px] bg-linear-to-r from-[#02091a] to-transparent lg:block" style={{ left: "48%" }} />
+      <div className="flex flex-col lg:flex-row" style={{ minHeight: "92vh" }}>
+        <div
+          className="relative z-10 flex flex-1 flex-col justify-center"
+          style={{ paddingLeft: GUTTER, paddingRight: "clamp(36px, 5vw, 80px)", paddingTop: "clamp(60px, 8vh, 100px)", paddingBottom: "clamp(60px, 8vh, 100px)" }}
+        >
+          <Reveal delay={0.2} className="mb-10">
+            <SectionEyebrow tone="community">{c.eyebrow}</SectionEyebrow>
+          </Reveal>
+          <RevealLines lines={toLines(c.title, c.dim)} fontSize="clamp(36px, 4.5vw, 60px)" delay={0.24} className="mb-9" />
+          <Reveal delay={0.5}>
+            <div aria-hidden className="mb-8 h-px max-w-[200px] bg-white/8" />
+            <div className="mb-6">
+              <p className="mb-4 flex items-center gap-3 text-[18px] font-semibold text-foreground">
+                <span className="flex size-7 items-center justify-center rounded-full bg-community">
+                  <Send aria-hidden className="size-3.5 text-white" />
+                </span>
+                {c.subtitle}
+              </p>
+              <p className="mb-5 text-[15px] leading-[1.6] text-white/55">{c.body}</p>
+            </div>
+            <ul className="mb-[52px] grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))]">
+              {c.bullets.map((b) => (
+                <li key={b} className="flex items-center gap-2 py-2 text-[14px] text-white/78">
+                  <span aria-hidden className="text-[18px] text-community">
+                    •
+                  </span>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+          <Reveal delay={0.6}>
             <ButtonLink
               href={siteConfig.social.telegram}
               external
               size="lg"
-              className="bg-community text-white shadow-[0_0_40px_-8px_var(--community)] hover:bg-community/90"
+              className="bg-community font-semibold text-white shadow-[0_0_20px_rgba(0,136,204,0.3)] hover:bg-[#0077b3] hover:shadow-[0_0_30px_rgba(0,136,204,0.5)]"
               unavailableReason="Community link pending client confirmation"
             >
               {c.cta}
               <Send aria-hidden className="size-4" />
             </ButtonLink>
-          </div>
-        </Reveal>
-        <Reveal delay={0.15} className="py-6">
-          <PhoneMockup />
-        </Reveal>
+          </Reveal>
+        </div>
+
+        <div
+          ref={panelRef}
+          className="relative flex min-h-[640px] shrink-0 items-center justify-center overflow-hidden py-20 lg:min-h-0 lg:w-[52%]"
+          style={{ clipPath: inView ? "inset(0 0% 0 0)" : "inset(0 100% 0 0)", transition: "clip-path 1.3s cubic-bezier(0.76, 0, 0.24, 1)" }}
+        >
+          {/* Lit scene: soft bokeh and key light, like a dark product photo. */}
+          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_55%_at_55%_45%,rgb(0_136_204/0.22),transparent_70%)]" />
+          <div aria-hidden className="absolute top-[12%] right-[14%] size-40 rounded-full bg-sky-400/10 blur-3xl" />
+          <div aria-hidden className="absolute bottom-[18%] left-[20%] size-56 rounded-full bg-indigo-500/10 blur-3xl" />
+          <div aria-hidden className="absolute top-[30%] left-[8%] size-24 rounded-full bg-white/5 blur-2xl" />
+          <div aria-hidden className="bg-noise absolute inset-0 opacity-[0.04] mix-blend-overlay" />
+          <PhoneSimulator />
+          <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-48 bg-linear-to-t from-[#02091a] to-transparent" />
+        </div>
       </div>
     </section>
   );

@@ -25,8 +25,9 @@ export function HomeHero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative flex min-h-dvh w-full flex-col overflow-hidden lg:flex-row"
-      style={{ background: "linear-gradient(160deg, #020c1e 0%, #030d20 40%, #020818 100%)" }}
+      className="relative flex min-h-screen w-full flex-col overflow-hidden bg-background lg:min-h-dvh lg:flex-row"
+      // Reference: diagonal bottom edge (rises 8vw to the right) + matching bottom padding.
+      style={{ paddingTop: 80, paddingBottom: "8vw", clipPath: "polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%)" }}
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 z-[5] overflow-hidden">
         <div className="absolute top-[10%] left-[10%] h-100 w-100 animate-orb rounded-full bg-primary/15 mix-blend-screen blur-[120px] lg:h-150 lg:w-150" />
@@ -35,7 +36,7 @@ export function HomeHero() {
       </div>
 
       <div
-        className="relative z-20 flex grow flex-col justify-center pt-32 pb-16 lg:w-[52%] lg:shrink-0 lg:grow-0 lg:pt-44 lg:pb-10"
+        className="relative z-20 flex grow flex-col justify-center pt-20 pb-20 lg:w-[52%] lg:shrink-0 lg:grow-0 lg:pt-[4.5rem] lg:pb-0"
         style={{ paddingLeft: "max(24px, calc((100vw - var(--container-max)) / 2 + 24px))", paddingRight: "clamp(28px, 4vw, 72px)" }}
       >
         <motion.h1 id="hero-title" {...rise(0.1)} className="relative">
@@ -69,9 +70,9 @@ export function HomeHero() {
           {hero.intro} <span className="block font-medium text-white/90 md:inline">{hero.introEmphasis}</span>
         </motion.p>
 
-        <motion.div {...rise(0.5)} className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center lg:mt-12">
+        <motion.div {...rise(0.5)} className="mt-8 flex flex-col flex-wrap items-start gap-4 sm:flex-row sm:items-center lg:mt-10">
           {/* Leads to the community section, which holds the (pending) community link. */}
-          <ButtonLink href="#community" variant="primary" size="lg" arrow className="w-full sm:w-auto">
+          <ButtonLink href="#community" variant="primary" size="lg" arrow shine className="w-full font-semibold hover:scale-105 sm:w-auto">
             {hero.primaryCta}
           </ButtonLink>
           <ButtonLink href="#beginner-course" variant="secondary" size="lg" className="w-full sm:w-auto">
@@ -104,12 +105,13 @@ export function HomeHero() {
           priority
           sizes="(max-width: 1024px) 100vw, 50vw"
           position="50% 0%"
-          inset="top-[14%] lg:top-[16%]"
+          inset="top-[14%] lg:top-[10%]"
+          // Reference exposure on the hero photo: brightness .5 (mobile, behind text) / .85 (desktop), contrast 1.1.
+          imageClassName="brightness-50 contrast-[1.1] lg:brightness-[0.85]"
           className="h-full w-full"
         />
-        {/* Below lg the scene sits behind the text: darken for legibility (reference: brightness-50 + gradient). */}
         <div aria-hidden className="absolute inset-0 bg-linear-to-t from-background via-background/80 to-transparent lg:hidden" />
-        <div aria-hidden className="absolute inset-0 bg-background/40 lg:hidden" />
+        <div aria-hidden className="absolute inset-0 bg-background/30 lg:hidden" />
       </motion.div>
     </section>
   );

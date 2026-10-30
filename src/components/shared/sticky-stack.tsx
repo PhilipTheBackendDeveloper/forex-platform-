@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
@@ -11,55 +14,67 @@ export type StackCard = {
   action?: ReactNode;
 };
 
+const TOPS = ["10vh", "14vh", "18vh", "22vh"];
+
 /**
- * Sticky stacked cards (reference: `sticky top-[10vh|14vh|18vh]`). Each card pins a little lower
- * than the previous one so they pile up as you scroll — pure CSS, no scroll listeners, works
- * with reduced motion.
+ * Sticky stacked cards — spec measured from the reference: `sticky top-[10vh|14vh|18vh]`,
+ * max-w-5xl, 450px tall, rounded 2.5rem/3rem, card 1 #050505, card 2 #0a0a0c/90 with blue border
+ * and blur, featured card blue gradient; each card rises 150px into place as it scrolls in.
  */
 export function StickyStack({ cards, className }: { cards: StackCard[]; className?: string }) {
   return (
-    <div className={cn("mx-auto max-w-[1024px]", className)}>
+    <div className={cn("relative mx-auto w-full max-w-5xl pb-20", className)}>
       {cards.map((card, i) => {
-        const textRight = i % 2 === 1;
+        const reversed = i % 2 === 1;
+        const surface = card.featured
+          ? "bg-linear-to-br from-[#0071e3] to-[#0052a3] shadow-[0_-20px_80px_rgba(0,113,227,0.2)]"
+          : i === 0
+            ? "border border-white/5 bg-[#050505] shadow-[0_0_50px_rgba(0,0,0,0.8)]"
+            : "border border-primary/10 bg-[#0a0a0c]/90 shadow-[0_-15px_60px_rgba(0,0,0,0.6)] backdrop-blur-3xl";
+        const glow = card.featured
+          ? "bg-[radial-gradient(circle_at_center,rgb(255_255_255/0.10),transparent_60%)] opacity-100"
+          : i === 0
+            ? "bg-[radial-gradient(ellipse_at_top_right,rgb(0_113_227/0.10),transparent_60%)] opacity-50 group-hover:opacity-100"
+            : "bg-[radial-gradient(ellipse_at_bottom_left,rgb(255_255_255/0.05),transparent_60%)] opacity-50 group-hover:opacity-100";
         return (
-          <article
-            key={card.tag}
-            className="sticky mb-8 w-full last:mb-0 md:mb-12"
-            style={{ top: `calc(${10 + i * 4}vh + 40px)` }}
-          >
-            <div
+          <div key={card.tag} className={cn("sticky w-full pt-0", i < cards.length - 1 && "mb-8 md:mb-12")} style={{ top: TOPS[i] }}>
+            <motion.article
+              initial={{ y: 150 }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className={cn(
-                "grid min-h-[420px] items-center gap-10 overflow-hidden rounded-[var(--radius-panel)] border p-8 shadow-[0_-20px_60px_-20px_rgb(0_0_0/0.9)] sm:p-12 md:grid-cols-2 lg:p-14",
-                card.featured
-                  ? "border-primary/60 bg-linear-to-br from-primary to-[#0052a3] shadow-[0_0_80px_-20px_var(--primary)]"
-                  : "border-white/[0.07] bg-card",
+                "group relative flex h-auto w-full flex-col items-center justify-between gap-10 overflow-hidden rounded-[2.5rem] p-8 sm:p-12 md:h-112.5 md:rounded-[3rem] md:p-14",
+                reversed ? "md:flex-row-reverse" : "md:flex-row",
+                surface,
               )}
             >
-              <div className={cn(textRight && "md:order-2 md:text-right")}>
-                <p
+              <div aria-hidden className={cn("pointer-events-none absolute inset-0 transition-opacity duration-1000", glow)} />
+              <div className={cn("relative z-10 w-full", card.featured ? "md:w-[55%]" : "md:w-1/2", reversed && "flex flex-col items-start text-left md:items-end md:text-right")}>
+                <span
                   className={cn(
-                    "inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase",
-                    card.featured ? "border-white/30 text-white" : "border-white/10 bg-white/[0.04] text-[var(--ring)]",
+                    "mb-6 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[10px] font-bold tracking-[0.2em] uppercase",
+                    card.featured ? "border-white/20 bg-black/10 text-white" : "border-white/10 bg-white/5",
+                    !card.featured && (i === 0 ? "text-[#3399FF] drop-shadow-[0_0_5px_rgba(51,153,255,0.5)]" : "text-white"),
                   )}
                 >
-                  <span aria-hidden className="size-1.5 rounded-full bg-current" />
+                  <span className={cn("size-1.5 rounded-full", card.featured ? "animate-pulse bg-white" : i === 0 ? "animate-pulse bg-[#3399FF]" : "bg-white/70")} />
                   {card.tag}
-                </p>
-                <h3 className="mt-6 text-[clamp(32px,3.6vw,46px)] leading-[1.02] font-extrabold tracking-[-0.04em]">
-                  {card.title.map((l) => (
+                </span>
+                <h3 className="mb-6 text-3xl leading-[1.05] font-black tracking-tighter text-white md:text-4xl lg:text-5xl">
+                  {card.title.map((l, j) => (
                     <span key={l} className="block">
                       {l}
+                      {j < card.title.length - 1 && <span className="sr-only"> </span>}
                     </span>
                   ))}
                 </h3>
-                <p className={cn("mt-5 max-w-md text-[16px] leading-[1.7]", card.featured ? "text-white/85" : "text-foreground/55", textRight && "md:ml-auto")}>
-                  {card.text}
-                </p>
-                {card.action && <div className="mt-8">{card.action}</div>}
+                <p className={cn("text-[17px] leading-relaxed", card.featured ? "mb-8 font-medium text-white/90" : "text-muted")}>{card.text}</p>
+                {card.action}
               </div>
-              <div className={cn("flex justify-center", textRight && "md:order-1")}>{card.visual}</div>
-            </div>
-          </article>
+              <div className="pointer-events-none relative flex h-48 w-full items-center justify-center md:h-full md:w-[40%]">{card.visual}</div>
+            </motion.article>
+          </div>
         );
       })}
     </div>

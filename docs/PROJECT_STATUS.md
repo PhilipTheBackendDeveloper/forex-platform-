@@ -30,6 +30,11 @@ The public site was **rebuilt to match the reference's real multi-page structure
 - [x] Quieter placeholder badges; tooltip reasons instead of captions
 - [x] Verified: lint ✅ · typecheck ✅ · unit 16/16 ✅ · build ✅ · e2e 59 passed, 1 skipped ✅
 
+### Done 2026-10-30 (exact-replica pass)
+- [x] Pulled the reference homepage's full server-rendered structure (every section) and rebuilt each section to its measured classes/spacing/animation
+- [x] Brand → Albert Tech + favicon/app icon; line-mask heading reveals site-wide; phone simulator; diagonal section edges; original photos in educator; B&W→colour coaching frame
+- [x] Verified: lint ✅ · typecheck ✅ · unit 16/16 ✅ · build 33 pages ✅ · e2e 59 passed, 1 skipped ✅ · visual check at 1680×1050 and 390×844
+
 ### Next
 - [ ] Visual polish pass at 320/360/1024/1920 widths; Safari/Firefox
 - [ ] Tailwind canonical-class cleanup (IDE suggestions only)

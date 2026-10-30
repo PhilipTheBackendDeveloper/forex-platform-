@@ -35,8 +35,11 @@ export function PortraitScene({
   zoom = true,
   fit = "cover",
   fades = { left: true, bottom: true, top: true },
+  imageClassName,
   className,
 }: {
+  /** Extra classes for the image (e.g. the reference's exposure filter). */
+  imageClassName?: string;
   /** `contain` never upscales small cutouts (keeps them sharp); `cover` fills the frame. */
   fit?: "cover" | "contain";
   src: StaticImageData;
@@ -72,7 +75,7 @@ export function PortraitScene({
           fill
           priority={priority}
           sizes={sizes}
-          className={cn(fit === "cover" ? "object-cover" : "object-contain", "[filter:drop-shadow(0_0_22px_rgb(0_113_227/0.16))]")}
+          className={cn(fit === "cover" ? "object-cover" : "object-contain", imageClassName ?? "[filter:drop-shadow(0_0_22px_rgb(0_113_227/0.16))]")}
           style={{ objectPosition: position }}
         />
       </div>

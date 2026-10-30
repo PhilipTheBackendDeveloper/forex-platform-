@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased] — 2026-10-30 · Exact-replica pass from reference markup
+### Added
+- Brand renamed to **Albert Tech**; new "A + rising line" mark; `src/app/icon.svg` favicon + `apple-icon.png`.
+- `RevealLines`: line-mask heading reveal (reference: overflow-hidden rows, 0.9s cubic-bezier(0.16,1,0.3,1), staggered) used by all section headings.
+- `PhoneSimulator`: realistic 3D phone (titanium frame, buttons, Dynamic Island, glare) with a live, looping channel feed.
+### Changed (all measured from the reference's server-rendered markup)
+- Hero: diagonal bottom edge (`clip-path` 8vw), reference paddings, exposure filter, shine sweep on primary CTA.
+- Educator: diagonal top (−8vw overlap), original full-bleed photos with crossfade + wipe reveal, 300px blend, caption; slider dots removed (owner request).
+- Testimonials: reference card spec (bento 8/4/4/8, blue borders, grain, hover glow) with labelled placeholder quotes.
+- Community: reference two-column layout with wipe-reveal visual panel.
+- Beginner, mastery (sticky stack spec incl. 150px rise), coaching (B&W→colour hover frame, moving corners, gradient fee card), blog bento (photo covers), proposal form (pill chips, reference fields), FAQ (rounded-4xl cards, gradient top bar, glass ask bar), socials, footer gradient.
+### Fixed
+- FAQ answers moved outside the toggle button (valid ARIA), collapsed answers are `inert`.
+
 ## [Unreleased] — 2026-10-30 · Image integration, ticker, button sizing
 ### Added
 - `scripts/cutout.swift`: on-device Vision subject cutouts (defringe, feather, auto-trim); 4 cutouts in `public/images/client/cutouts/`.

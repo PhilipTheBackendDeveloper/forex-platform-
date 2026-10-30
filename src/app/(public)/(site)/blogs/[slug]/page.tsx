@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalendarDays, ChevronLeft, Clock, MessageSquare } from "lucide-react";
@@ -7,6 +8,7 @@ import { ChartCover } from "@/components/shared/visuals";
 import { siteConfig } from "@/config/site.config";
 import { ArticleCard } from "@/features/editorial/components/article-card";
 import { articles, getArticle } from "@/features/editorial/data/articles";
+import { getArticleCover } from "@/features/editorial/data/covers";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -29,6 +31,7 @@ export default async function ArticlePage({ params }: PageProps<"/blogs/[slug]">
   const article = getArticle(slug);
   if (!article) notFound();
   const related = articles.filter((a) => a.slug !== article.slug).slice(0, 3);
+  const cover = getArticleCover(article.slug);
 
   return (
     <>
@@ -64,7 +67,13 @@ export default async function ArticlePage({ params }: PageProps<"/blogs/[slug]">
             <Clock aria-hidden className="size-4" /> {article.readingMinutes} min read
           </span>
         </div>
-        <ChartCover seed={articles.indexOf(article)} className="mt-10 aspect-[16/9] w-full rounded-[1.6rem] border border-white/10" />
+        {cover ? (
+          <div className="relative mt-10 aspect-[16/9] w-full overflow-hidden rounded-[1.6rem] border border-white/10">
+            <Image src={cover.src} alt={cover.alt} fill priority placeholder="blur" sizes="(min-width:1024px) 896px, 100vw" className="object-cover" style={{ objectPosition: cover.focus }} />
+          </div>
+        ) : (
+          <ChartCover seed={articles.indexOf(article)} className="mt-10 aspect-[16/9] w-full rounded-[1.6rem] border border-white/10" />
+        )}
         <div className="mt-12 flex flex-col gap-6 text-[18px] leading-[1.85] text-foreground/75">
           {article.body.map((p) => (
             <p key={p}>{p}</p>

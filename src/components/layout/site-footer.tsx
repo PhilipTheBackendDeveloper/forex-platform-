@@ -21,7 +21,7 @@ const socials = [
 export async function SiteFooter() {
   const year = await getCopyrightYear();
   return (
-    <footer className="relative border-t border-white/10 bg-background">
+    <footer className="relative border-t border-white/10" style={{ background: "linear-gradient(180deg, #020818 0%, #010712 100%)" }}>
       <h2 className="sr-only">Footer</h2>
       <div className="mx-auto max-w-[1100px] px-6 pt-16 pb-10 sm:px-8">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-4">

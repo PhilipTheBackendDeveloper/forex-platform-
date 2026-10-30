@@ -4,8 +4,8 @@ Everything below is a **placeholder in the codebase** until the client supplies 
 
 | # | Item | Current placeholder | Where to change | Blocks |
 |---|---|---|---|---|
-| 1 | Business name & wordmark | "Your Brand" / "YOURBRAND" | `src/config/site.config.ts` | Launch |
-| 2 | Logo files (SVG + favicon + app icons) | Geometric glyph in `wordmark.tsx`; Next default favicon | `src/components/layout/wordmark.tsx`, `src/app/favicon.ico` | Launch |
+| 1 | Business name & wordmark | ✅ **Albert Tech** (owner, 2026-10-30) | `src/config/site.config.ts` | — |
+| 2 | Official logo files | Interim "A + rising line" mark + favicon/app icon generated in-house (`src/app/icon.svg`, `apple-icon.png`) — replace if the client has a logo | `src/components/layout/wordmark.tsx`, `src/app/icon.svg` | Optional |
 | 3 | Mentor display name & approved biography | "Your Mentor"; placeholder bio | `site.config.ts`, `src/content/home.ts`, `/about` | Launch |
 | 4 | **Photo publication consent** for all 7 photos | Used with "pending" status | `docs/assets/ASSET_MANIFEST.md` | **Public deploy** |
 | 5 | Brand colour palette | Reference-measured navy/blue/violet | `src/app/globals.css` `:root` | Rebrand |

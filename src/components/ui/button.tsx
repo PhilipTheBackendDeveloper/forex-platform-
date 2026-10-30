@@ -27,15 +27,26 @@ export function buttonClasses(variant: Variant = "primary", size: Size = "md", c
   return cn(base, variants[variant], sizes[size], className);
 }
 
+/** Reference hover effect: a diagonal light sweep across the primary CTA. */
+function Shine() {
+  return (
+    <span
+      aria-hidden
+      className="pointer-events-none absolute inset-0 -translate-x-[150%] -skew-x-[30deg] bg-linear-to-r from-transparent via-white/30 to-transparent transition-transform duration-[1.1s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/btn:translate-x-[150%] motion-reduce:hidden"
+    />
+  );
+}
+
 function Arrow() {
   return <ArrowRight aria-hidden className="size-4 transition-transform duration-300 group-hover/btn:translate-x-1" />;
 }
 
-type CommonProps = { variant?: Variant; size?: Size; arrow?: boolean; children: ReactNode };
+type CommonProps = { variant?: Variant; size?: Size; arrow?: boolean; shine?: boolean; children: ReactNode };
 
-export function Button({ variant, size, arrow, className, children, type = "button", ...props }: CommonProps & ComponentProps<"button">) {
+export function Button({ variant, size, arrow, shine, className, children, type = "button", ...props }: CommonProps & ComponentProps<"button">) {
   return (
-    <button type={type} className={buttonClasses(variant, size, className)} {...props}>
+    <button type={type} className={buttonClasses(variant, size, cn(shine && "overflow-hidden", className))} {...props}>
+      {shine && <Shine />}
       {children}
       {arrow && <Arrow />}
     </button>
@@ -52,6 +63,7 @@ export function ButtonLink({
   variant,
   size,
   arrow,
+  shine,
   className,
   children,
   external,
@@ -76,7 +88,8 @@ export function ButtonLink({
   }
   const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
-    <Link href={href} className={buttonClasses(variant, size, className)} {...externalProps}>
+    <Link href={href} className={buttonClasses(variant, size, cn(shine && "overflow-hidden", className))} {...externalProps}>
+      {shine && <Shine />}
       {children}
       {arrow && <Arrow />}
     </Link>

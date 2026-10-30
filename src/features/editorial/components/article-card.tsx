@@ -1,18 +1,27 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { PlaceholderBadge } from "@/components/ui/badge";
 import { ChartCover } from "@/components/shared/visuals";
 import type { Article } from "@/types/domain";
+import { getArticleCover } from "../data/covers";
 
 /** Reference blog card: cover, category pill, title, excerpt, date + "Read ↗". */
 export function ArticleCard({ article, seed = 0 }: { article: Article; seed?: number }) {
+  const cover = getArticleCover(article.slug);
   return (
     <Link
       href={`/blogs/${article.slug}`}
       className="group flex h-full flex-col overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#111827]/60 transition-[border-color,transform] duration-500 hover:-translate-y-1 hover:border-white/20"
     >
       <div className="relative">
-        <ChartCover seed={seed} className="aspect-[16/9] w-full transition-transform duration-700 group-hover:scale-[1.03]" />
+        {cover ? (
+          <div className="relative aspect-[16/9] w-full overflow-hidden">
+            <Image src={cover.src} alt="" fill placeholder="blur" sizes="(min-width:1024px) 400px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" style={{ objectPosition: cover.focus }} />
+          </div>
+        ) : (
+          <ChartCover seed={seed} className="aspect-[16/9] w-full transition-transform duration-700 group-hover:scale-[1.03]" />
+        )}
         <span className="absolute bottom-4 left-4 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-[11px] font-medium backdrop-blur">{article.category}</span>
       </div>
       <div className="flex flex-1 flex-col p-6">
