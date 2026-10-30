@@ -19,6 +19,8 @@
   --primary-hover: #0077ed; /* measured */
   --primary-contrast: #ffffff;
   --accent: #bf5af2; /* measured: violet orb */
+  --community: #0088cc; /* measured: community (Telegram-blue) CTA */
+  --card: #0a0a0c; /* measured: stacked feature cards */
   --gradient-from: #60a5fa; /* measured: headline shine */
   --gradient-to: #a78bfa; /* measured */
   --success: #30d158; /* measured */
@@ -42,6 +44,8 @@
   --color-primary-hover: var(--primary-hover);
   --color-primary-contrast: var(--primary-contrast);
   --color-accent: var(--accent);
+  --color-community: var(--community);
+  --color-card: var(--card);
   --color-brand-from: var(--gradient-from);
   --color-brand-to: var(--gradient-to);
   --color-success: var(--success);
@@ -90,6 +94,11 @@
   @keyframes marquee {
     to {
       transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
     }
   }
 }

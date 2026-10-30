@@ -17,10 +17,7 @@ export async function submitLead(_prev: FormResult, formData: FormData): Promise
   if (!parsed.success) {
     return { status: "invalid", fieldErrors: fieldErrorsFrom(parsed.error) };
   }
-  if (parsed.data.website) {
-    // Honeypot tripped: respond neutrally without storing anything.
-    return { status: "not_configured", message: "Submission received for review." };
-  }
+  // A filled honeypot (`hp`) fails the schema above, so bots never reach this point.
   if (!siteConfig.features.formDeliveryConnected) {
     return {
       status: "not_configured",

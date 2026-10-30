@@ -1,0 +1,630 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/blogs",
+  "screens": 32,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(255, 255, 255)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(255, 255, 255)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(255, 255, 255)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "Blog | Kojo Forex | KojoForex",
+  "scrollHeight": 6678,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "36px",
+    "fontWeight": "700",
+    "lineHeight": "40px",
+    "letterSpacing": "-0.9px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-20",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-100 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 72
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "KOJOFOREX"
+    },
+    {
+      "tag": "div",
+      "id": "mobile-menu",
+      "cls": "fixed inset-0 z-90 bg-[#020818]/95 backdrop-blur-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden flex flex-col items-center justify-center opacity-0 pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "lab(2.19456 0.662386 -8.98873 / 0.95)",
+      "position": "fixed",
+      "headings": [],
+      "text": "Gold Digger One on One Academy Mastery Courses Sign in Sign up"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "pt-32 pb-24 px-6 max-w-7xl mx-auto space-y-16",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 4896
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "static",
+      "headings": [
+        "H1: Market Insights & Research",
+        "H3: How Do You Build a Forex Trading Routine That You Can Actually Follow?",
+        "H3: Can You Learn Forex Without Paying for a Course?",
+        "H3: Do You Really Need to Be Glued to the Charts All Day to Make Money From Forex?",
+        "H3: How Long Does It Take to Become a Good Forex Trader?",
+        "H3: Why Chasing Money Is Holding You Back in Forex Trading",
+        "H3: Why Risk Management Is More Important Than Your Strategy in Forex",
+        "H3: What Happens When You Never Give Up on Your Dreams",
+        "H3: Why Learning With a Community Makes You Progress Faster as a Forex Trader",
+        "H3: What to Do After Your First Losing Trade"
+      ],
+      "text": "Market Insights & Research Institutional-grade analysis, trading concepts, and comprehensive updates from the Kojo Forex desk. All Topics Market Research Platform Updates Psychology Trading Strategy Market Research How Do You Build a Forex Trading Routine That You Can Actually Follow? Struggling to stay consistent with forex? Discover how to build a practical trading routine that fits your lifestyle, sharpens your decision making, and helps you trade with more discipline and confidence. October …"
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "cls": "relative border-t border-white/10",
+      "rect": {
+        "x": 0,
+        "y": 4896,
+        "w": 390,
+        "h": 1782
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Footer",
+        "H3: Education",
+        "H3: Ecosystem",
+        "H3: Company",
+        "H3: Legal"
+      ],
+      "text": "Footer Education Mastery Courses Academy Gold Digger Program 1-on-1 Coaching Ecosystem Events Blogs Shop Collaborations Company About KojoForex Testimonials FAQ Telegram Community Legal Privacy Policy Terms of Service Cookie Policy Refund Policy KojoForex Empowering traders across Africa and beyond with world-class forex education, community, and mentorship since 2011. Get in touch hello@kojoforex.com © 2026 KojoForex. All rights reserved. DISCLAIMER: KojoForex.com is an educational platform tha…"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 844
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-20",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 844
+      },
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-100 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 72
+      },
+      "text": "KOJOFOREX"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 z-90 bg-[#020818]/95 backdrop-blur-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden flex flex-col items-center justify-center opacity-0 pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 2956,
+        "w": 390,
+        "h": 844
+      },
+      "text": "Gold Digger One on One Academy Mastery Courses Sign in Sign up"
+    }
+  ],
+  "links": [
+    {
+      "text": "KOJOFOREX",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Gold Digger",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "One on One",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Sign in",
+      "href": "/signin",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Sign up",
+      "href": "/get-access",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Gold Digger",
+      "href": "/gold-digger",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "One on One",
+      "href": "/coaching",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Sign in",
+      "href": "/signin",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Sign up",
+      "href": "/get-access",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Market Research How Do You Build a Forex Trading Routine That You Can Actually F…",
+      "href": "/blogs/how-do-you-build-a-forex-trading-routine-that-you-can-actually-follow",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Market Research Can You Learn Forex Without Paying for a Course? Can you really …",
+      "href": "/blogs/can-you-learn-forex-without-paying-for-a-course",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Psychology Do You Really Need to Be Glued to the Charts All Day to Make Money Fr…",
+      "href": "/blogs/do-you-really-need-to-be-glued-to-the-charts-all-day-to-make-money-from-forex",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Market Research How Long Does It Take to Become a Good Forex Trader? Becoming a …",
+      "href": "/blogs/how-long-does-it-take-to-become-a-good-forex-trader",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Psychology Why Chasing Money Is Holding You Back in Forex Trading Chasing profit…",
+      "href": "/blogs/why-chasing-money-is-holding-you-back-in-forex-trading",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Psychology Why Risk Management Is More Important Than Your Strategy in Forex A g…",
+      "href": "/blogs/why-risk-management-is-more-important-than-your-strategy-in-forex",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Market Research What Happens When You Never Give Up on Your Dreams A dream that …",
+      "href": "/blogs/what-happens-when-you-refuse-to-give-up-on-your-dreams",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Market Research Why Learning With a Community Makes You Progress Faster as a For…",
+      "href": "/blogs/why-learning-with-a-community-makes-you-progress-faster-as-a-forex-trader",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Psychology What to Do After Your First Losing Trade Your first losing trade can …",
+      "href": "/blogs/what-to-do-after-your-first-losing-trade",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Open Menu",
+      "aria": "Open Menu",
+      "expanded": "false",
+      "visible": true,
+      "y": 2980
+    },
+    {
+      "text": "All Topics",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 381
+    },
+    {
+      "text": "Market Research",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 380
+    },
+    {
+      "text": "Platform Updates",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 430
+    },
+    {
+      "text": "Psychology",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 430
+    },
+    {
+      "text": "Trading Strategy",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 480
+    },
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": false,
+      "y": 2956
+    }
+  ],
+  "fields": [],
+  "media": [
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/h0xodq2a8i_1791222731987.png",
+      "alt": "How Do You Build a Forex Trading Routine That You Can Actually Follow?",
+      "rect": {
+        "x": 25,
+        "y": 567,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/9az73cmr3lv_1789545804128.png",
+      "alt": "Can You Learn Forex Without Paying for a Course?",
+      "rect": {
+        "x": 25,
+        "y": 1041,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/wd9eny80dva_1788804497625.png",
+      "alt": "Do You Really Need to Be Glued to the Charts All Day to Make Money From Forex?",
+      "rect": {
+        "x": 25,
+        "y": 1515,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/a0g5h7f70id_1788198425400.png",
+      "alt": "How Long Does It Take to Become a Good Forex Trader?",
+      "rect": {
+        "x": 25,
+        "y": 1989,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/jjpk32hm61_1787850784959.png",
+      "alt": "Why Chasing Money Is Holding You Back in Forex Trading",
+      "rect": {
+        "x": 25,
+        "y": 2463,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/c2wr78rk4av_1786603574315.png",
+      "alt": "Why Risk Management Is More Important Than Your Strategy in Forex",
+      "rect": {
+        "x": 25,
+        "y": 2937,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/9exxv1swaza_1787736465802.png",
+      "alt": "What Happens When You Never Give Up on Your Dreams",
+      "rect": {
+        "x": 25,
+        "y": 3411,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/kgd6drx949g_1786693019921.png",
+      "alt": "Why Learning With a Community Makes You Progress Faster as a Forex Trader",
+      "rect": {
+        "x": 25,
+        "y": 3885,
+        "w": 340,
+        "h": 224
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/blog_images/covers/nlazzop3yf_1786443369194.png",
+      "alt": "What to Do After Your First Losing Trade",
+      "rect": {
+        "x": 25,
+        "y": 4359,
+        "w": 340,
+        "h": 224
+      }
+    }
+  ],
+  "animations": []
+}

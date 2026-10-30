@@ -1,0 +1,223 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/signin",
+  "screens": 1,
+  "header": {
+    "atTop": {
+      "top": 328,
+      "height": 75,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "static",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 328,
+      "height": 75,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "static",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 328,
+      "height": 75,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "static",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [
+    "Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.",
+    "Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.",
+    "Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.",
+    "%c%d font-size:0;color:transparent NaN",
+    "%c%d font-size:0;color:transparent NaN",
+    "%c%o font-size:0;color:transparent {}",
+    "%c%o font-size:0;color:transparent {}"
+  ],
+  "title": "Sign in | KojoForex | KojoForex",
+  "scrollHeight": 900,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "-apple-system, \"system-ui\", \"SF Pro Display\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "36px",
+    "fontWeight": "600",
+    "lineHeight": "40px",
+    "letterSpacing": "-1.8px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-150 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.03)_0%,transparent_70%)] pointer-events-none",
+      "rect": {
+        "x": 272,
+        "y": 0,
+        "w": 896,
+        "h": 600
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "absolute",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "nav",
+      "id": null,
+      "cls": "relative z-10 w-full max-w-2xl mx-auto pt-8 flex items-center justify-between",
+      "rect": {
+        "x": 384,
+        "y": 0,
+        "w": 672,
+        "h": 64
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [],
+      "text": "Cancel KOJOFOREX"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "flex-1 flex flex-col items-center justify-start sm:justify-center mt-12 sm:mt-0 pb-12 relative z-10 w-full px-4",
+      "rect": {
+        "x": 24,
+        "y": 64,
+        "w": 1392,
+        "h": 836
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H3: Authentication Issue",
+        "H1: Welcome back.",
+        "H2: Verify it's you."
+      ],
+      "text": "Authentication Issue Welcome back. Sign in to your KojoForex dashboard. Email Address Don't have an account? Create yours now. Verify it's you. We sent a secure code to your email. Enter the 6-digit security code Sign in Didn't receive it? Resend code"
+    }
+  ],
+  "fixed": [],
+  "links": [
+    {
+      "text": "Cancel",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "KOJOFOREX",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Don't have an account? Create yours now.",
+      "href": "/get-access",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 519
+    },
+    {
+      "text": "Sign in",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 452
+    },
+    {
+      "text": "Resend code",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 543
+    }
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "cf-turnstile-response",
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "name": null,
+      "placeholder": " ",
+      "label": "Email Address",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    }
+  ],
+  "media": [],
+  "animations": [
+    {
+      "name": "spin",
+      "duration": 1000,
+      "iterations": null,
+      "target": "svg."
+    }
+  ]
+}

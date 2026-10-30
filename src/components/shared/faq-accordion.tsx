@@ -7,13 +7,16 @@ import type { FaqItem } from "@/content/faq";
 import { easeOutExpo } from "@/design/motion";
 import { cn } from "@/lib/cn";
 
-/** Accessible disclosure list: buttons with aria-expanded controlling labelled regions. */
-export function FaqAccordion({ items, className }: { items: FaqItem[]; className?: string }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+/**
+ * Accessible single-open disclosure list. `layout="grid"` renders the reference's two-column card
+ * grid; `layout="list"` stacks full-width rows.
+ */
+export function FaqAccordion({ items, layout = "list", className }: { items: FaqItem[]; layout?: "list" | "grid"; className?: string }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(layout === "list" ? 0 : null);
   const baseId = useId();
 
   return (
-    <ul className={cn("flex w-full flex-col gap-3", className)}>
+    <ul className={cn("grid w-full gap-4", layout === "grid" && "items-start md:grid-cols-2 md:gap-5", className)}>
       {items.map((item, i) => {
         const open = openIndex === i;
         const buttonId = `${baseId}-q${i}`;
@@ -22,8 +25,8 @@ export function FaqAccordion({ items, className }: { items: FaqItem[]; className
           <li
             key={item.question}
             className={cn(
-              "rounded-[var(--radius-card)] border transition-colors duration-300",
-              open ? "border-border-strong bg-white/[0.04]" : "border-border bg-white/[0.015] hover:bg-white/[0.03]",
+              "rounded-[1.6rem] border backdrop-blur transition-colors duration-300",
+              open ? "border-white/15 bg-white/[0.05]" : "border-white/[0.08] bg-white/[0.02] hover:bg-white/[0.035]",
             )}
           >
             <h3>
@@ -33,18 +36,15 @@ export function FaqAccordion({ items, className }: { items: FaqItem[]; className
                 aria-expanded={open}
                 aria-controls={panelId}
                 onClick={() => setOpenIndex(open ? null : i)}
-                className="flex min-h-16 w-full items-center justify-between gap-6 px-6 py-5 text-left"
+                className="flex min-h-16 w-full items-start justify-between gap-6 px-6 py-6 text-left sm:px-7"
               >
                 <span>
-                  <span className="block text-[11px] font-semibold tracking-[0.16em] text-[var(--ring)] uppercase">
-                    {item.category}
-                  </span>
-                  <span className="mt-1.5 block text-[17px] font-medium tracking-tight">{item.question}</span>
+                  <span className="block text-[10px] font-semibold tracking-[0.2em] text-[var(--ring)] uppercase">{item.category}</span>
+                  <span className="mt-2.5 block text-[18px] leading-snug font-medium tracking-tight">{item.question}</span>
                 </span>
-                <Plus
-                  aria-hidden
-                  className={cn("size-5 shrink-0 text-foreground/60 transition-transform duration-300", open && "rotate-45")}
-                />
+                <span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-white/15">
+                  <Plus aria-hidden className={cn("size-4 text-foreground/70 transition-transform duration-300", open && "rotate-45")} />
+                </span>
               </button>
             </h3>
             <AnimatePresence initial={false}>
@@ -59,7 +59,7 @@ export function FaqAccordion({ items, className }: { items: FaqItem[]; className
                   transition={{ duration: 0.4, ease: easeOutExpo }}
                   className="overflow-hidden"
                 >
-                  <p className="px-6 pb-6 text-[15px] leading-relaxed text-foreground/60">{item.answer}</p>
+                  <p className="px-6 pb-6 text-[15px] leading-relaxed text-foreground/60 sm:px-7">{item.answer}</p>
                 </motion.div>
               )}
             </AnimatePresence>

@@ -1,0 +1,494 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/mastery-courses",
+  "screens": 3,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "Mastery Courses | KojoForex | KojoForex",
+  "scrollHeight": 2172,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "96px",
+    "fontWeight": "900",
+    "lineHeight": "100.8px",
+    "letterSpacing": "-2.88px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-0",
+      "rect": {
+        "x": 0,
+        "y": 1217,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 1217,
+        "w": 1440,
+        "h": 73
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "Home Mastery Courses"
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "relative pt-40 pb-20 overflow-hidden isolate px-4",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 658
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H1: Unlock True Market Mastery."
+      ],
+      "text": "Unlock True Market Mastery. Explore available Mastery Courses designed to refine your trading edge."
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-24",
+      "rect": {
+        "x": 80,
+        "y": 706,
+        "w": 1280,
+        "h": 462
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H3: Goat Strategy Course"
+      ],
+      "text": "Goat Strategy Course Learn the advanced techniques and principles behind Kojo Forex's signature Goat Strategy to maximize your potential. TUITION $ 199"
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "cls": "relative border-t border-white/10",
+      "rect": {
+        "x": 0,
+        "y": 1264,
+        "w": 1440,
+        "h": 780
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Footer",
+        "H3: Education",
+        "H3: Ecosystem",
+        "H3: Company",
+        "H3: Legal"
+      ],
+      "text": "Footer Education Mastery Courses Academy Gold Digger Program 1-on-1 Coaching Ecosystem Events Blogs Shop Collaborations Company About KojoForex Testimonials FAQ Telegram Community Legal Privacy Policy Terms of Service Cookie Policy Refund Policy KojoForex Empowering traders across Africa and beyond with world-class forex education, community, and mentorship since 2011. Get in touch hello@kojoforex.com © 2026 KojoForex. All rights reserved. DISCLAIMER: KojoForex.com is an educational platform tha…"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-0",
+      "rect": {
+        "x": 0,
+        "y": 1217,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 1217,
+        "w": 1440,
+        "h": 73
+      },
+      "text": "Home Mastery Courses"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed right-4 md:right-8 z-90 hidden md:flex bottom-6 md:bottom-8",
+      "rect": {
+        "x": 1352,
+        "y": 2029,
+        "w": 56,
+        "h": 56
+      },
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "Home",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "",
+      "href": "/mastery-courses/cf451512-2d80-407d-a8e4-76c1aeced91c",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": true,
+      "y": 2029
+    }
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": "Search available courses...",
+      "label": "",
+      "required": false
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "src": "https://pnuvlmcnueulmjudonyy.supabase.co/storage/v1/object/public/courses/course_thumbnails/1785262818048-2y03hgrgdqd.jpg",
+      "alt": "Goat Strategy Course",
+      "rect": {
+        "x": 113,
+        "y": 707,
+        "w": 382,
+        "h": 215
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.border-t border-white/10 mt-8 pt-6 transition-all duration-7"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.border-t border-white/10 mt-8 pt-6 transition-all duration-7"
+    }
+  ]
+}

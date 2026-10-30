@@ -4,16 +4,15 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { dashboardEntryHref, footerNav, isActivePath, primaryNav } from "@/config/navigation";
+import { isActivePath, primaryNav, routes } from "@/config/navigation";
 import { buttonClasses } from "@/components/ui/button";
 import { easeOutExpo } from "@/design/motion";
 import { cn } from "@/lib/cn";
-
-const secondaryLinks = footerNav.find((g) => g.title === "Ecosystem")?.links ?? [];
+import { Wordmark } from "./wordmark";
 
 /**
- * Full-screen mobile menu. Closes on link selection, Escape and route change; locks
- * page scroll while open; returns focus to the toggle when closed.
+ * Full-screen mobile menu (reference: centred large links + Sign in / Sign up buttons).
+ * Improvements over the reference: closes on Escape, traps focus, returns focus to the toggle.
  */
 export function MobileNav({ pathname }: { pathname: string }) {
   const [open, setOpen] = useState(false);
@@ -25,7 +24,6 @@ export function MobileNav({ pathname }: { pathname: string }) {
     toggleRef.current?.focus();
   }, []);
 
-  // Close whenever the route changes (e.g. browser back while open).
   const [lastPath, setLastPath] = useState(pathname);
   if (pathname !== lastPath) {
     setLastPath(pathname);
@@ -52,7 +50,7 @@ export function MobileNav({ pathname }: { pathname: string }) {
     const { overflow } = document.body.style;
     document.body.style.overflow = "hidden";
     document.addEventListener("keydown", onKey);
-    panelRef.current?.querySelector<HTMLElement>("a[href]")?.focus();
+    panelRef.current?.querySelector<HTMLElement>("nav a[href]")?.focus();
     return () => {
       document.body.style.overflow = overflow;
       document.removeEventListener("keydown", onKey);
@@ -66,11 +64,11 @@ export function MobileNav({ pathname }: { pathname: string }) {
         type="button"
         aria-expanded={open}
         aria-controls="mobile-menu"
-        aria-label={open ? "Close menu" : "Open menu"}
-        onClick={() => (open ? close() : setOpen(true))}
-        className="relative z-[60] inline-flex size-11 items-center justify-center rounded-full border border-border-strong bg-white/[0.04] text-foreground backdrop-blur transition-colors hover:bg-white/10"
+        aria-label="Open menu"
+        onClick={() => setOpen(true)}
+        className="inline-flex size-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-foreground backdrop-blur transition-colors hover:bg-white/10"
       >
-        {open ? <X className="size-5" aria-hidden /> : <Menu className="size-5" aria-hidden />}
+        <Menu className="size-5" aria-hidden />
       </button>
       <AnimatePresence>
         {open && (
@@ -84,10 +82,21 @@ export function MobileNav({ pathname }: { pathname: string }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[55] flex flex-col overflow-y-auto bg-background/95 px-6 pt-28 pb-10 backdrop-blur-2xl"
+            className="fixed inset-0 z-[70] flex flex-col overflow-y-auto bg-background/97 px-6 pb-10 backdrop-blur-2xl"
           >
-            <nav aria-label="Mobile primary">
-              <ul className="flex flex-col gap-1">
+            <div className="flex h-20 shrink-0 items-center justify-between">
+              <Wordmark />
+              <button
+                type="button"
+                aria-label="Close menu"
+                onClick={close}
+                className="inline-flex size-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04]"
+              >
+                <X className="size-5" aria-hidden />
+              </button>
+            </div>
+            <nav aria-label="Mobile primary" className="mt-24">
+              <ul className="flex flex-col items-center gap-2">
                 {primaryNav.map((link, i) => (
                   <motion.li
                     key={link.href}
@@ -100,8 +109,8 @@ export function MobileNav({ pathname }: { pathname: string }) {
                       onClick={() => setOpen(false)}
                       aria-current={isActivePath(pathname, link.href) ? "page" : undefined}
                       className={cn(
-                        "flex min-h-14 items-center text-[34px] font-bold tracking-[-0.03em]",
-                        isActivePath(pathname, link.href) ? "text-foreground" : "text-foreground/60",
+                        "flex min-h-14 items-center text-[28px] font-semibold tracking-[-0.02em] transition-colors",
+                        isActivePath(pathname, link.href) ? "text-foreground" : "text-foreground/65 hover:text-foreground",
                       )}
                     >
                       {link.label}
@@ -109,27 +118,23 @@ export function MobileNav({ pathname }: { pathname: string }) {
                   </motion.li>
                 ))}
               </ul>
-              <ul className="mt-8 grid grid-cols-2 gap-x-4 border-t border-border pt-6">
-                {secondaryLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      onClick={() => setOpen(false)}
-                      className="flex min-h-11 items-center text-[17px] text-foreground/70 hover:text-foreground"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </nav>
-            <Link
-              href={dashboardEntryHref}
-              onClick={() => setOpen(false)}
-              className={buttonClasses("light", "lg", "mt-auto w-full font-semibold")}
-            >
-              Dashboard
-            </Link>
+            <div className="mx-auto mt-14 flex w-full max-w-sm flex-col gap-3">
+              <Link
+                href={routes.login}
+                onClick={() => setOpen(false)}
+                className="inline-flex min-h-14 items-center justify-center rounded-2xl border border-white/15 text-[16px] text-foreground/85"
+              >
+                Sign in
+              </Link>
+              <Link
+                href={routes.register}
+                onClick={() => setOpen(false)}
+                className={buttonClasses("light", "lg", "min-h-14 rounded-2xl font-semibold")}
+              >
+                Sign up
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

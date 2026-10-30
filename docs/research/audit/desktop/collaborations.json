@@ -1,0 +1,613 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/collaborations",
+  "screens": 4,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "Collaborations | KojoForex",
+  "scrollHeight": 2727,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "80px",
+    "fontWeight": "900",
+    "lineHeight": "72px",
+    "letterSpacing": "-4px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 1689,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.03] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 1689,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed top-[-10%] right-[-5%] w-125 h-125 bg-[#0071e3]/5 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": 1012,
+        "y": 1599,
+        "w": 500,
+        "h": 500
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.05)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed bottom-[-10%] left-[-10%] w-100 h-100 bg-[#bf5af2]/5 blur-[100px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -144,
+        "y": 2279,
+        "w": 400,
+        "h": 400
+      },
+      "bg": "lab(56.3909 58.869 -60.0193 / 0.05)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "relative z-10 max-w-7xl mx-auto px-4 sm:px-6",
+      "rect": {
+        "x": 80,
+        "y": 160,
+        "w": 1280,
+        "h": 1656
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H1: Reach over 20 Million traders.",
+        "H3: GLOBAL AUDIENCE",
+        "H3: AVG. ENGAGEMENT",
+        "H3: DEMOGRAPHICS",
+        "H2: Align with Africa's Finest."
+      ],
+      "text": "PARTNERSHIPS & MEDIA Reach over 20 Million traders. Kojoforex is a global financial brand recognized for market dominance and profound educational architecture. Partner with us to tap into a highly engaged, high-capital audience. GLOBAL AUDIENCE 20 M+ Verified combined following across Instagram, YouTube, Telegram, and X. AVG. ENGAGEMENT 18 % Consistently outperforming industry benchmarks for tier-1 finance creators. DEMOGRAPHICS 170 + Countries reached, with strong capital concentration in US, …"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 1689,
+        "w": 1440,
+        "h": 72
+      },
+      "text": "Home Collaborations Submit Proposal"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 1689,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.03] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 1689,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed top-[-10%] right-[-5%] w-125 h-125 bg-[#0071e3]/5 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": 1012,
+        "y": 1599,
+        "w": 500,
+        "h": 500
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed bottom-[-10%] left-[-10%] w-100 h-100 bg-[#bf5af2]/5 blur-[100px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -144,
+        "y": 2279,
+        "w": 400,
+        "h": 400
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-32",
+      "rect": {
+        "x": 104,
+        "y": 940,
+        "w": 457,
+        "h": 472
+      },
+      "text": "Align with Africa's Finest. KojoForex represents absolute authority in the financial markets. We partner with elite bran…"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed right-4 md:right-8 z-90 hidden md:flex bottom-6 md:bottom-8",
+      "rect": {
+        "x": 1352,
+        "y": 2501,
+        "w": 56,
+        "h": 56
+      },
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "Home",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Submit Proposal",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1718
+    },
+    {
+      "text": "Brand Sponsorship",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1041
+    },
+    {
+      "text": "Broker Partnership",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1041
+    },
+    {
+      "text": "Speaking Engagement",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1103
+    },
+    {
+      "text": "Media / Interview",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1103
+    },
+    {
+      "text": "Other",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1165
+    },
+    {
+      "text": "Submit Proposal",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1720
+    },
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": true,
+      "y": 2501
+    }
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "name",
+      "placeholder": "Bright Kojo",
+      "label": "",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "company",
+      "placeholder": "Company Name",
+      "label": "",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "name": "email",
+      "placeholder": "kojo@company.com",
+      "label": "",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "website",
+      "placeholder": "https://example.com",
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "textarea",
+      "type": null,
+      "name": "message",
+      "placeholder": "Briefly describe the proposed collaboration, intended deliverables, and allocated budget...",
+      "label": "",
+      "required": true
+    }
+  ],
+  "media": [],
+  "animations": [
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.border-t border-white/10 mt-8 pt-6 transition-all duration-7"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.border-t border-white/10 mt-8 pt-6 transition-all duration-7"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "span.w-1.5 h-1.5 rounded-full bg-[#0071e3] shadow-[0_0_10px_#0071"
+    },
+    {
+      "name": "Animation",
+      "duration": 800,
+      "iterations": 1,
+      "target": "div.grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-star"
+    }
+  ]
+}

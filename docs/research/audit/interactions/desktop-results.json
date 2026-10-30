@@ -1,0 +1,1053 @@
+{
+  "/": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "KOJOFOREX"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Gold Digger"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "One on One"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Sign in"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Sign up"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Mastery Courses"
+    },
+    {
+      "index": 1,
+      "label": "Slide 1: Dubai Forex Expo",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -3,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 2,
+      "label": "Slide 2: Partnership Commercial",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 4,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 3,
+      "label": "Slide 3: Africa Forex Summit",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 12,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "Slide 4: Forex Trading Conference",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -6,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "Enroll for Free",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 6,
+      "label": "Explore Courses",
+      "effect": {
+        "navigated": "/signin?redirect=%2Fdashboard%2Fmastery-courses",
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -10347,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 7,
+      "label": "Secure Your Spot",
+      "effect": {
+        "navigated": "/signin?redirect=%2Fdashboard%2Fcoaching",
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -10340,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 8,
+      "label": "Brand Sponsorship",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -41,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 9,
+      "label": "Broker Partnership",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 10,
+      "label": "Speaking Engagement",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 11,
+      "label": "Media / Interview",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 12,
+      "label": "Other",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 13,
+      "label": "Initiate Contact",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 14,
+      "label": "Send message to AI",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 15,
+      "label": "PLATFORM ACCESS How do I access the KojoForex Academy courses? Once you create a",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 1,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 16,
+      "label": "EDUCATION Are the strategies taught by Kojo suitable for absolute beginners? Yes",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 17,
+      "label": "COMMUNITY What exactly is included in the KojoForex Telegram Community? The VIP ",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 18,
+      "label": "MENTORSHIP How does the 1-on-1 Coaching program work? Our 1-on-1 Coaching provid",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 19,
+      "label": "TECHNICAL SPECIFICS Can I access the KojoForex platform on my phone? Absolutely.",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 20,
+      "label": "RISK & SAFETY What makes the KojoForex approach to risk management different? At",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 21,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    }
+  ],
+  "/gold-digger": [],
+  "/coaching": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Home"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Gold Digger Program"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "1-on-1 Coaching"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Events"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Blogs"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Shop"
+    },
+    {
+      "index": 0,
+      "label": "Apply Now ($2000)",
+      "effect": {
+        "navigated": "/signin?redirect=%2Fcoaching%3Fcheckout%3Dtrue",
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -4192,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 1,
+      "label": "Secure Your Seat ($2000)",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 2,
+      "label": "Secure Enrollment",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 3,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/academy": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Home"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Gold Digger Program"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "1-on-1 Coaching"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Events"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Blogs"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Shop"
+    },
+    {
+      "index": 0,
+      "label": "Enroll Now",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 1,
+      "label": "View Curriculum",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 2,
+      "label": "Enroll Now",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 3,
+      "label": "Enroll Now",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 4,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/mastery-courses": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Home"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Gold Digger Program"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "1-on-1 Coaching"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Events"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Blogs"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Shop"
+    },
+    {
+      "index": 0,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/blogs": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "KOJOFOREX"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Gold Digger"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "One on One"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Sign in"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Sign up"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Mastery Courses"
+    },
+    {
+      "index": 1,
+      "label": "All Topics",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 2,
+      "label": "Market Research",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 3,
+      "label": "Platform Updates",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 3012,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "Psychology",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "Trading Strategy",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/events": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Home"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Gold Digger Program"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "1-on-1 Coaching"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Events"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Blogs"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Shop"
+    },
+    {
+      "index": 0,
+      "label": "My Tickets",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 201,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 1,
+      "label": "View your event tickets",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 201,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 2,
+      "label": "All",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 3,
+      "label": "Expos",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "Seminars",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "Meet & Greet",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "Reset Filters",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 7,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/shop": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Home"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Gold Digger Program"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "1-on-1 Coaching"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Events"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Blogs"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Shop"
+    },
+    {
+      "index": 0,
+      "label": "My Orders",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 221,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 1,
+      "label": "View your order history",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 221,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 2,
+      "label": "BAG (0)",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 63,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 3,
+      "label": "ALL",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "ACCESSORIES",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "CLOTHING",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "OTHERS",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 7,
+      "label": "View Cart",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 63,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 8,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/collaborations": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Home"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "Mastery Courses"
+    },
+    {
+      "action": "hover-nav",
+      "index": 2,
+      "text": "Academy"
+    },
+    {
+      "action": "hover-nav",
+      "index": 3,
+      "text": "Gold Digger Program"
+    },
+    {
+      "action": "hover-nav",
+      "index": 4,
+      "text": "1-on-1 Coaching"
+    },
+    {
+      "action": "hover-nav",
+      "index": 5,
+      "text": "Events"
+    },
+    {
+      "action": "hover-nav",
+      "index": 6,
+      "text": "Blogs"
+    },
+    {
+      "action": "hover-nav",
+      "index": 7,
+      "text": "Shop"
+    },
+    {
+      "index": 0,
+      "label": "Submit Proposal",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 1,
+      "label": "Brand Sponsorship",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -9,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 2,
+      "label": "Broker Partnership",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 3,
+      "label": "Speaking Engagement",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "Media / Interview",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "Other",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "Submit Proposal",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 7,
+      "label": "Open AI Assistant",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 160,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/signin": [
+    {
+      "action": "hover-nav",
+      "index": 0,
+      "text": "Cancel"
+    },
+    {
+      "action": "hover-nav",
+      "index": 1,
+      "text": "KOJOFOREX"
+    },
+    {
+      "index": 0,
+      "label": "",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 1,
+      "label": "Sign in",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 2,
+      "label": "Resend code",
+      "skipped": "submit/commerce/auth"
+    }
+  ]
+}

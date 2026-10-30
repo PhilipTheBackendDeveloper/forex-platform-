@@ -10,7 +10,9 @@ Version 0.1 · 2026-10-29 · Proposed by public-site owner, **pending Roddy's re
 | `/dashboard/**` | Roddy | Lives in `src/app/(protected)/dashboard/`. Must check the session server-side and redirect unauthenticated users to `/login?next=…`. |
 | `/admin/**` | TBD | Same protection + `admin` role. |
 
-`src/config/navigation.ts` exports `routes.dashboard` and `dashboardEntryHref`. While `siteConfig.features.dashboardAvailable === false`, every "Dashboard" CTA points at `/login`. **Roddy flips the flag in the PR that merges the dashboard.**
+`src/config/navigation.ts` exports `routes.dashboard`. Matching the live reference audit, the **logged-out** global header shows "Sign in" (→ `/login`) and "Sign up" (→ `/register`). Once a session helper exists, `SiteHeader` should swap those for a "Dashboard" pill when `getCurrentUser()` returns a user. **Roddy flips `siteConfig.features.dashboardAvailable` in the PR that merges the dashboard.**
+
+Reference behaviour worth mirroring in the dashboard (observed 2026-10-29): purchase/enrol CTAs redirect logged-out users to `/signin?redirect=/dashboard/<area>`, e.g. `/dashboard/mastery-courses`, `/dashboard/coaching`. "My Tickets" and "My Orders" open modals on `/events` and `/shop`; once auth exists these should load the user's tickets and orders.
 
 ## 2. Shared types (`src/types/domain.ts`)
 `UserSummary`, `Role`, `CourseSummary`, `CourseDetail`, `Enrollment`, `LessonProgress`, `Cohort`, `EventSummary`, `Product`, `OrderSummary`, `Money` (integer minor units), `Loadable<T>`, `FormResult`. Additive changes are fine in a small PR; renames/removals need both reviewers.

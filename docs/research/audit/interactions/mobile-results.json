@@ -1,0 +1,471 @@
+{
+  "/": [
+    {
+      "index": 0,
+      "label": "Open Menu",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 1,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": "hidden"
+      }
+    },
+    {
+      "index": 1,
+      "label": "Slide 1: Dubai Forex Expo",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 2,
+      "label": "Slide 2: Partnership Commercial",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 3,
+      "label": "Slide 3: Africa Forex Summit",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 4,
+      "label": "Slide 4: Forex Trading Conference",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 5,
+      "label": "Enroll for Free",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 6,
+      "label": "Explore Courses",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 7,
+      "label": "Secure Your Spot",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 8,
+      "label": "Brand Sponsorship",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 9,
+      "label": "Broker Partnership",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 10,
+      "label": "Speaking Engagement",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 11,
+      "label": "Media / Interview",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 12,
+      "label": "Other",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 13,
+      "label": "Initiate Contact",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 14,
+      "label": "Send message to AI",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 15,
+      "label": "PLATFORM ACCESS How do I access the KojoForex Academy courses? Once you create a",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 16,
+      "label": "EDUCATION Are the strategies taught by Kojo suitable for absolute beginners? Yes",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 17,
+      "label": "COMMUNITY What exactly is included in the KojoForex Telegram Community? The VIP ",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 18,
+      "label": "MENTORSHIP How does the 1-on-1 Coaching program work? Our 1-on-1 Coaching provid",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 19,
+      "label": "TECHNICAL SPECIFICS Can I access the KojoForex platform on my phone? Absolutely.",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 20,
+      "label": "RISK & SAFETY What makes the KojoForex approach to risk management different? At",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    }
+  ],
+  "/coaching": [
+    {
+      "index": 0,
+      "label": "Apply Now ($2000)",
+      "effect": {
+        "navigated": "/signin?redirect=%2Fcoaching%3Fcheckout%3Dtrue",
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -4181,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 1,
+      "label": "Secure Your Seat ($2000)",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 2,
+      "label": "Secure Enrollment",
+      "skipped": "submit/commerce/auth"
+    }
+  ],
+  "/academy": [
+    {
+      "index": 0,
+      "label": "Enroll Now",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 1,
+      "label": "View Curriculum",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 2,
+      "label": "Enroll Now",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 3,
+      "label": "Enroll Now",
+      "skipped": "submit/commerce/auth"
+    }
+  ],
+  "/mastery-courses": [],
+  "/blogs": [
+    {
+      "index": 0,
+      "label": "Open Menu",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 1,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": "hidden"
+      }
+    },
+    {
+      "index": 1,
+      "label": "All Topics",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 2,
+      "label": "Market Research",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 3,
+      "label": "Platform Updates",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 4,
+      "label": "Psychology",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    },
+    {
+      "index": 5,
+      "label": "Trading Strategy",
+      "error": "TimeoutError: locator.click: Timeout 4000ms exceeded."
+    }
+  ],
+  "/events": [
+    {
+      "index": 0,
+      "label": "My Tickets",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 132,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 1,
+      "label": "View your event tickets",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 201,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 2,
+      "label": "All",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 3,
+      "label": "Expos",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "Seminars",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "Meet & Greet",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 19,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "Reset Filters",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -19,
+        "scrollLocked": null
+      }
+    }
+  ],
+  "/shop": [
+    {
+      "index": 0,
+      "label": "My Orders",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 221,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 1,
+      "label": "View your order history",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 221,
+        "scrollLocked": "hidden"
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 2,
+      "label": "BAG (0)",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 63,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    },
+    {
+      "index": 3,
+      "label": "ALL",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "ACCESSORIES",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "CLOTHING",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "OTHERS",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 7,
+      "label": "View Cart",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": true,
+        "textDelta": 63,
+        "scrollLocked": null
+      },
+      "closesOnEscape": false
+    }
+  ],
+  "/collaborations": [
+    {
+      "index": 0,
+      "label": "Submit Proposal",
+      "skipped": "submit/commerce/auth"
+    },
+    {
+      "index": 1,
+      "label": "Brand Sponsorship",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": -9,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 2,
+      "label": "Broker Partnership",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 3,
+      "label": "Speaking Engagement",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "Media / Interview",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 5,
+      "label": "Other",
+      "effect": {
+        "navigated": null,
+        "dialogOpened": false,
+        "expandedDelta": 0,
+        "overlayOpened": false,
+        "textDelta": 0,
+        "scrollLocked": null
+      }
+    },
+    {
+      "index": 6,
+      "label": "Submit Proposal",
+      "skipped": "submit/commerce/auth"
+    }
+  ]
+}

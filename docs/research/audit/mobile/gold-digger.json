@@ -1,0 +1,81 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/gold-digger",
+  "screens": 1,
+  "header": {
+    "atTop": null,
+    "scrolledDown": null,
+    "scrolledUp": null
+  },
+  "consoleErrors": [],
+  "title": "Gold Digger Live | KojoForex",
+  "scrollHeight": 844,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": null,
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2] bg-[#020c1e]",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "rgb(2, 12, 30)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "w-16 h-16 rounded-full bg-[#0071e3]/10 border border-[#0071e3]/30 flex items-center justify-center mb-6",
+      "rect": {
+        "x": 163,
+        "y": 224,
+        "w": 64,
+        "h": 64
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.1)",
+      "position": "static",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "p",
+      "id": null,
+      "cls": "text-white/60 text-lg max-w-lg text-center leading-relaxed",
+      "rect": {
+        "x": 16,
+        "y": 364,
+        "w": 358,
+        "h": 88
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "static",
+      "headings": [],
+      "text": "There are currently no upcoming Gold Digger Live sessions available for enrollment. Please check back later."
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2] bg-[#020c1e]",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "text": ""
+    }
+  ],
+  "links": [],
+  "buttons": [],
+  "fields": [],
+  "media": [],
+  "animations": []
+}

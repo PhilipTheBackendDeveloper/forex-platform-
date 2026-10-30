@@ -1,20 +1,18 @@
 import { z } from "zod";
 
+/** Reference flow: email → one-time code (passwordless). */
 export const loginSchema = z.object({
   email: z.string().trim().email("Please enter a valid email address."),
-  password: z.string().min(8, "Password must be at least 8 characters."),
 });
 
-export const registerSchema = z
-  .object({
-    name: z.string().trim().min(2, "Please enter your full name."),
-    email: z.string().trim().email("Please enter a valid email address."),
-    password: z
-      .string()
-      .min(10, "Use at least 10 characters.")
-      .regex(/[A-Za-z]/, "Include at least one letter.")
-      .regex(/[0-9]/, "Include at least one number."),
-    confirm: z.string(),
-    terms: z.literal("on", { message: "Please accept the terms to continue." }),
-  })
-  .refine((v) => v.password === v.confirm, { path: ["confirm"], message: "Passwords don't match." });
+/** Reference sign-up fields: first/last name, email, WhatsApp number with country code. */
+export const registerSchema = z.object({
+  firstName: z.string().trim().min(1, "Please enter your first name.").max(60),
+  lastName: z.string().trim().min(1, "Please enter your last name.").max(60),
+  email: z.string().trim().email("Please enter a valid email address."),
+  phone: z
+    .string()
+    .trim()
+    .regex(/^\+[1-9][0-9 ]{7,17}$/, "Include your country code, e.g. +233 54 123 4567."),
+  terms: z.literal("on", { message: "Please accept the terms to continue." }),
+});

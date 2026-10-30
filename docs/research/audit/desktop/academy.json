@@ -1,0 +1,598 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/academy",
+  "screens": 14,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "Academy | KojoForex",
+  "scrollHeight": 10622,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "110px",
+    "fontWeight": "900",
+    "lineHeight": "99px",
+    "letterSpacing": "-5.5px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 7215,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.015] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 7215,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed top-[-10%] right-[-5%] w-200 h-200 bg-[#0071e3]/4 blur-[140px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": 712,
+        "y": 7125,
+        "w": 800,
+        "h": 800
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.04)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed bottom-[10%] left-[-10%] w-150 h-150 bg-[#0071e3]/3 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -144,
+        "y": 7425,
+        "w": 600,
+        "h": 600
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.03)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 7215,
+        "w": 1440,
+        "h": 72
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "Home Academy Venues Curriculum Enroll Now"
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "pt-40 pb-20 px-4 min-h-[95vh] flex flex-col items-center justify-center text-center relative z-10",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 1286
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H1: Master the market. On your terms."
+      ],
+      "text": "Master the market. On your terms. Kojoforex Academy. World-class trading education engineered for every stage of your evolution. Accessible globally, perfected locally. View Curriculum PHYSICAL • ONLINE"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "relative h-[600vh] w-full mt-10",
+      "rect": {
+        "x": 0,
+        "y": 1326,
+        "w": 1440,
+        "h": 5400
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H3: Physical & Online Venues",
+        "H3: Live Market Processing",
+        "H3: Intimate Cohorts",
+        "H3: 3-Month Sprint",
+        "H3: Architectural Framework",
+        "H3: Professional Certification"
+      ],
+      "text": "90 DAYS 01 / 06 Physical & Online Venues Join us at our state-of-the-art campus in Accra, Ghana, or access the exact same elite curriculum globally online. 02 / 06 Live Market Processing Trade live alongside professionals, breaking down real-time active market structures. 03 / 06 Intimate Cohorts Limited class sizes guaranteeing individualized portfolio and risk audits. 04 / 06 3-Month Sprint A robust timeline designed to take you from fundamentals to advanced modeling. 05 / 06 Architectural Fra…"
+    },
+    {
+      "tag": "section",
+      "id": "venues",
+      "cls": "py-32 px-4 sm:px-6 relative z-10",
+      "rect": {
+        "x": 0,
+        "y": 6726,
+        "w": 1440,
+        "h": 1375
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: THE VENUES",
+        "H3: Two platforms. One standard.",
+        "H3: Physical.",
+        "H3: Online."
+      ],
+      "text": "THE VENUES Two platforms. One standard. Whether you prefer the immersion of a physical classroom or the flexibility of borderless access, the curriculum remains uncompromising. Physical. Immersive, in-person training. Surround yourself with driven peers and get hands-on, over-the-shoulder guidance in a state-of-the-art facility. Online. Borderless education. Access the exact same elite curriculum, live sessions, and mentorship from anywhere in the world, entirely on your schedule."
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "py-32 px-4 sm:px-6 relative z-10 w-full overflow-hidden bg-[#000000] border-y border-white/5 shadow-[0_0_80px_rgba(0,0,0,0.8)]",
+      "rect": {
+        "x": 0,
+        "y": 8101,
+        "w": 1440,
+        "h": 554
+      },
+      "bg": "rgb(0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H4: Personal Attention",
+        "H4: Live Analysis",
+        "H4: Practical Setups"
+      ],
+      "text": "Personal Attention Direct mentorship and feedback from experienced, proven traders. You are never learning in isolation. Live Analysis Real-time market dissection. Watch exactly how institutional-grade strategies are applied to live, moving charts. Practical Setups Theory meets execution. Master practical, actionable setups and demonstrations that translate directly to profitability."
+    },
+    {
+      "tag": "section",
+      "id": "curriculum",
+      "cls": "py-32 px-4 sm:px-6 relative z-10 w-full",
+      "rect": {
+        "x": 0,
+        "y": 8655,
+        "w": 1440,
+        "h": 1187
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: THE CURRICULUM",
+        "H3: Choose your level.",
+        "H3: Beginner",
+        "H3: Advanced Strategy"
+      ],
+      "text": "THE CURRICULUM Choose your level. Structured architectures designed for distinct stages of your trading career. FOUNDATION Beginner The architecture of the markets. $50 Introduction to financial markets (Forex, commodities, etc.) How to use trading platforms (MT4 & MT5) Placing your first trade step-by-step Basic risk management principles Simple beginner-friendly trading strategy Enroll Now MOST POPULAR Advanced Strategy For the analytical operator. $250 Advanced trading strategies and market s…"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "relative z-10",
+      "rect": {
+        "x": 0,
+        "y": 9842,
+        "w": 1440,
+        "h": 780
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Footer",
+        "H3: Education",
+        "H3: Ecosystem",
+        "H3: Company",
+        "H3: Legal"
+      ],
+      "text": "Footer Education Mastery Courses Academy Gold Digger Program 1-on-1 Coaching Ecosystem Events Blogs Shop Collaborations Company About KojoForex Testimonials FAQ Telegram Community Legal Privacy Policy Terms of Service Cookie Policy Refund Policy KojoForex Empowering traders across Africa and beyond with world-class forex education, community, and mentorship since 2011. Get in touch hello@kojoforex.com © 2026 KojoForex. All rights reserved. DISCLAIMER: KojoForex.com is an educational platform tha…"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 7215,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.015] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 7215,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed top-[-10%] right-[-5%] w-200 h-200 bg-[#0071e3]/4 blur-[140px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": 712,
+        "y": 7125,
+        "w": 800,
+        "h": 800
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed bottom-[10%] left-[-10%] w-150 h-150 bg-[#0071e3]/3 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -144,
+        "y": 7425,
+        "w": 600,
+        "h": 600
+      },
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 7215,
+        "w": 1440,
+        "h": 72
+      },
+      "text": "Home Academy Venues Curriculum Enroll Now"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-0 h-screen w-full overflow-hidden bg-[#02050f]",
+      "rect": {
+        "x": 0,
+        "y": 5826,
+        "w": 1440,
+        "h": 900
+      },
+      "text": "90 DAYS 01 / 06 Physical & Online Venues Join us at our state-of-the-art campus in Accra, Ghana, or access the exact sam…"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed right-4 md:right-8 z-90 hidden md:flex bottom-6 md:bottom-8",
+      "rect": {
+        "x": 1352,
+        "y": 8027,
+        "w": 56,
+        "h": 56
+      },
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "Home",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Enroll Now",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 7244
+    },
+    {
+      "text": "View Curriculum",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 742
+    },
+    {
+      "text": "Enroll Now",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 9617
+    },
+    {
+      "text": "Enroll Now",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 9587
+    },
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": true,
+      "y": 8027
+    }
+  ],
+  "fields": [],
+  "media": [
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Facademy.webp&w=1920&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "Kojoforex Trading Setup",
+      "rect": {
+        "x": -4,
+        "y": 923,
+        "w": 1449,
+        "h": 621
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "spin",
+      "duration": 30000,
+      "iterations": null,
+      "target": "div.absolute inset-0 rounded-full border border-blue-500/20 bord"
+    },
+    {
+      "name": "spin",
+      "duration": 20000,
+      "iterations": null,
+      "target": "div.absolute inset-8 rounded-full border border-blue-400/30 anim"
+    },
+    {
+      "name": "ping",
+      "duration": 3000,
+      "iterations": null,
+      "target": "div.absolute inset-16 rounded-full border border-blue-400/20 ani"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.absolute top-6 w-full h-6 bg-[#0071e3] shadow-[0_0_10px_#007"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.absolute top-12 w-full h-6 bg-[#0071e3] shadow-[0_0_10px_#00"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.absolute top-4 w-full h-6 bg-[#0071e3] shadow-[0_0_10px_#007"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.bg-[#0071e3]/80 rounded-xs animate-[pulse_2s_infinite]"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.w-32 h-32 border-t-2 border-[#0071e3]/20 rounded-full absolu"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.w-24 h-24 border-t-2 border-[#0071e3]/50 rounded-full absolu"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.w-16 h-16 border-t-2 border-[#0071e3]/80 rounded-full absolu"
+    },
+    {
+      "name": "Animation",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "div.flex flex-col items-center justify-center w-full"
+    },
+    {
+      "name": "Animation",
+      "duration": 800,
+      "iterations": 1,
+      "target": "div.text-center mb-24 md:mb-32"
+    }
+  ]
+}

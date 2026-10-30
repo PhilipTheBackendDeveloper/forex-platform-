@@ -1,10 +1,11 @@
-import type { EventSummary, Loadable } from "@/types/domain";
+import type { Loadable } from "@/types/domain";
+import type { EventListing } from "../components/events-browser";
 
 /**
- * Events adapter. The reference showed "Loading events…" with no public listings when observed.
- * No client events are confirmed, so this returns `empty`. Replace with a server service later.
+ * Events adapter. No client events are confirmed, so this returns `empty` — the UI shows an honest
+ * "No upcoming events" state. Replace the body with a server service call later.
  */
-export async function listUpcomingEvents(): Promise<Loadable<EventSummary[]>> {
-  const events: EventSummary[] = [];
+export async function listUpcomingEvents(): Promise<Loadable<EventListing[]>> {
+  const events: EventListing[] = [];
   return events.length ? { state: "ready", data: events } : { state: "empty" };
 }

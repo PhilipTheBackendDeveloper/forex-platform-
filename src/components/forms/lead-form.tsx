@@ -1,41 +1,48 @@
 "use client";
 
-import { useActionState, useState } from "react";
-import { AlertTriangle, CheckCircle2, Info } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useActionState, useId, useState } from "react";
+import { AlertTriangle, ArrowRight, CheckCircle2, Info } from "lucide-react";
 import { submitLead } from "@/features/leads/actions";
 import { fieldErrorsFrom, leadSchema, type leadKinds } from "@/features/leads/schemas";
 import type { FormResult } from "@/types/domain";
 import { cn } from "@/lib/cn";
-import { SelectField, TextArea, TextField } from "./field";
+import { TextArea, TextField } from "./field";
 
 type LeadKind = (typeof leadKinds)[number];
 
 /**
- * Generic inquiry form (collaborations, coaching interest, cohort waitlist, events).
- * Validates in the browser first, then the Server Action validates again. The result banner
- * reflects exactly what the server reported — it never claims delivery that didn't happen.
+ * Generic inquiry form (collaborations, coaching, cohort waitlist, events).
+ * - Optional single-select category chips (reference: required; submit disabled until chosen).
+ * - Validates in the browser, then the Server Action validates again.
+ * - The result banner reflects exactly what the server reported — never a fake "sent".
  */
 export function LeadForm({
   kind,
   topics,
+  topicsLabel = "Partnership type",
   submitLabel = "Send request",
   messageLabel = "Message",
   messagePlaceholder = "Tell us a little about your request…",
   showCompany = false,
+  showWebsite = false,
   className,
 }: {
   kind: LeadKind;
   topics?: readonly string[];
+  topicsLabel?: string;
   submitLabel?: string;
   messageLabel?: string;
   messagePlaceholder?: string;
   showCompany?: boolean;
+  showWebsite?: boolean;
   className?: string;
 }) {
   const [result, formAction, pending] = useActionState<FormResult, FormData>(submitLead, { status: "idle" });
   const [clientErrors, setClientErrors] = useState<Record<string, string>>({});
+  const [topic, setTopic] = useState("");
+  const uid = useId();
   const errors = { ...(result.status === "invalid" ? result.fieldErrors : {}), ...clientErrors };
+  const needsTopic = Boolean(topics?.length) && !topic;
 
   function validateBeforeSubmit(e: React.FormEvent<HTMLFormElement>) {
     const parsed = leadSchema.safeParse(Object.fromEntries(new FormData(e.currentTarget)));
@@ -51,32 +58,69 @@ export function LeadForm({
   }
 
   return (
-    <form action={formAction} onSubmit={validateBeforeSubmit} noValidate className={cn("flex flex-col gap-5", className)}>
+    <form action={formAction} onSubmit={validateBeforeSubmit} noValidate className={cn("relative flex flex-col gap-5", className)}>
       <input type="hidden" name="kind" value={kind} />
+      <input type="hidden" name="topic" value={topic} />
       <div aria-hidden className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
-        <label htmlFor={`website-${kind}`}>Leave this field empty</label>
-        <input id={`website-${kind}`} name="website" tabIndex={-1} autoComplete="off" />
+        <label htmlFor={`${uid}-hp`}>Leave this field empty</label>
+        <input id={`${uid}-hp`} name="hp" tabIndex={-1} autoComplete="off" />
       </div>
-      {topics && <SelectField label="Nature of inquiry" name="topic" options={topics} error={errors.topic} />}
+
+      {topics && (
+        <fieldset className="rounded-[1.4rem] border border-white/10 bg-white/[0.02] p-4 sm:p-5">
+          <legend className="sr-only">{topicsLabel}</legend>
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <p aria-hidden className="text-[11px] font-semibold tracking-[0.18em] text-foreground/60 uppercase">
+              {topicsLabel} <span className="text-danger">*</span>
+            </p>
+            <span className="rounded-full border border-danger/30 bg-danger/10 px-2 py-0.5 text-[9px] font-bold tracking-[0.15em] text-danger uppercase">Required</span>
+          </div>
+          <div role="radiogroup" aria-label={topicsLabel} aria-required="true" className="grid gap-2 sm:grid-cols-2">
+            {topics.map((t) => (
+              <button
+                key={t}
+                type="button"
+                role="radio"
+                aria-checked={topic === t}
+                onClick={() => {
+                  setTopic(t);
+                  setClientErrors((prev) => Object.fromEntries(Object.entries(prev).filter(([key]) => key !== "topic")));
+                }}
+                className={cn(
+                  "min-h-11 rounded-xl border px-4 text-left text-[13px] font-medium transition-colors",
+                  topic === t ? "border-primary bg-primary/15 text-foreground" : "border-white/10 bg-white/[0.03] text-foreground/65 hover:border-white/25 hover:text-foreground",
+                )}
+              >
+                {t}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+      )}
+
       <div className="grid gap-5 sm:grid-cols-2">
-        <TextField label="Full name" name="name" autoComplete="name" required error={errors.name} />
-        <TextField label="Email" name="email" type="email" autoComplete="email" required error={errors.email} />
+        <TextField label="Representative name" name="name" autoComplete="name" placeholder="Your full name" required error={errors.name} />
+        {showCompany ? (
+          <TextField label="Company / brand" name="company" autoComplete="organization" placeholder="Company name" error={errors.company} />
+        ) : (
+          <TextField label="Email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required error={errors.email} />
+        )}
       </div>
-      {showCompany && <TextField label="Company / organisation (optional)" name="company" autoComplete="organization" error={errors.company} />}
+      {showCompany && (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <TextField label="Work email" name="email" type="email" autoComplete="email" placeholder="you@company.com" required error={errors.email} />
+          {showWebsite && <TextField label="Company website" name="website" type="url" inputMode="url" placeholder="https://example.com" error={errors.website} />}
+        </div>
+      )}
       <TextArea label={messageLabel} name="message" placeholder={messagePlaceholder} required error={errors.message} />
-      <label className="flex items-start gap-3 text-[14px] leading-relaxed text-foreground/60">
-        <input
-          type="checkbox"
-          name="consent"
-          aria-invalid={errors.consent ? true : undefined}
-          className="mt-1 size-4 shrink-0 accent-[var(--primary)]"
-        />
+      <label className="flex items-start gap-3 text-[13px] leading-relaxed text-foreground/55">
+        <input type="checkbox" name="consent" aria-invalid={errors.consent ? true : undefined} className="mt-0.5 size-4 shrink-0 accent-[var(--primary)]" />
         <span>
-          I agree to be contacted about this request. See the{" "}
+          I agree to be contacted about this request (see the{" "}
           <a href="/privacy-policy" className="underline underline-offset-4 hover:text-foreground">
-            privacy policy (draft)
+            privacy policy draft
           </a>
-          .
+          ).
         </span>
       </label>
       {errors.consent && (
@@ -84,9 +128,20 @@ export function LeadForm({
           {errors.consent}
         </p>
       )}
-      <Button type="submit" variant="primary" size="lg" arrow disabled={pending} className="self-start">
+      <button
+        type="submit"
+        disabled={pending || needsTopic}
+        className="inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-2xl bg-foreground px-6 text-[15px] font-semibold text-background transition-[background-color,opacity] hover:bg-white disabled:cursor-not-allowed disabled:opacity-45"
+      >
         {pending ? "Checking…" : submitLabel}
-      </Button>
+        <ArrowRight aria-hidden className="size-4" />
+      </button>
+      {needsTopic && <p className="-mt-2 text-center text-[12px] text-danger/80">* Please select a category to continue</p>}
+      {errors.topic && !needsTopic && (
+        <p role="alert" className="-mt-2 text-center text-[12px] text-danger">
+          {errors.topic}
+        </p>
+      )}
       <div aria-live="polite">
         {result.status === "not_configured" && (
           <Notice tone="info" title="Not sent — preview mode">
@@ -108,15 +163,7 @@ export function LeadForm({
   );
 }
 
-export function Notice({
-  tone,
-  title,
-  children,
-}: {
-  tone: "info" | "success" | "error";
-  title: string;
-  children: React.ReactNode;
-}) {
+export function Notice({ tone, title, children }: { tone: "info" | "success" | "error"; title: string; children: React.ReactNode }) {
   const Icon = tone === "success" ? CheckCircle2 : tone === "error" ? AlertTriangle : Info;
   return (
     <div

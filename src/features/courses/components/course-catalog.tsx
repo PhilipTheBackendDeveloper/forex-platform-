@@ -2,90 +2,55 @@
 
 import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
-import { ArrowUpRight, Search, SearchX } from "lucide-react";
+import { ChevronRight, Search, SearchX } from "lucide-react";
 import { useDeferredValue, useId, useState } from "react";
-import { Badge, PlaceholderBadge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { PlaceholderBadge } from "@/components/ui/badge";
+import { ChartCover } from "@/components/shared/visuals";
 import { easeOutExpo } from "@/design/motion";
-import { cn } from "@/lib/cn";
-import type { CourseLevel, CourseSummary } from "@/types/domain";
+import type { CourseSummary } from "@/types/domain";
 import { filterCourses, formatPrice } from "../filter";
 
-const levels: { value: CourseLevel | "all"; label: string }[] = [
-  { value: "all", label: "All levels" },
-  { value: "beginner", label: "Beginner" },
-  { value: "intermediate", label: "Intermediate" },
-  { value: "advanced", label: "Advanced" },
-];
-
+/** Reference catalogue: one centred search field above a grid of cover cards. */
 export function CourseCatalog({ courses }: { courses: CourseSummary[] }) {
   const [query, setQuery] = useState("");
-  const [level, setLevel] = useState<CourseLevel | "all">("all");
   const deferredQuery = useDeferredValue(query);
-  const results = filterCourses(courses, { query: deferredQuery, level });
+  const results = filterCourses(courses, { query: deferredQuery, level: "all" });
   const searchId = useId();
 
   return (
     <div>
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <div className="relative w-full md:max-w-md">
-          <label htmlFor={searchId} className="sr-only">
-            Search courses
-          </label>
-          <Search aria-hidden className="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-foreground/40" />
-          <input
-            id={searchId}
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search courses, topics…"
-            className="min-h-13 w-full rounded-full border border-border-strong bg-white/[0.03] py-3.5 pr-5 pl-12 text-[15px] placeholder:text-foreground/35 focus:border-[var(--ring)] focus:outline-none"
-          />
-        </div>
-        <div role="group" aria-label="Filter by level" className="flex flex-wrap gap-2">
-          {levels.map((l) => (
-            <button
-              key={l.value}
-              type="button"
-              aria-pressed={level === l.value}
-              onClick={() => setLevel(l.value)}
-              className={cn(
-                "min-h-11 rounded-full border px-4 text-sm font-medium transition-colors",
-                level === l.value
-                  ? "border-foreground bg-foreground text-background"
-                  : "border-border-strong text-foreground/70 hover:text-foreground",
-              )}
-            >
-              {l.label}
-            </button>
-          ))}
-        </div>
+      <div className="relative mx-auto w-full max-w-xl">
+        <label htmlFor={searchId} className="sr-only">
+          Search courses
+        </label>
+        <Search aria-hidden className="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-foreground/40" />
+        <input
+          id={searchId}
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search available courses…"
+          className="min-h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] py-3.5 pr-5 pl-11 text-[14px] backdrop-blur placeholder:text-foreground/35 focus:border-[var(--ring)] focus:outline-none"
+        />
       </div>
 
-      <p aria-live="polite" className="mt-6 text-sm text-foreground/45">
+      <p aria-live="polite" className="sr-only">
         {results.length} {results.length === 1 ? "course" : "courses"} found
       </p>
 
       {results.length === 0 ? (
-        <div className="mt-6 flex flex-col items-center rounded-[var(--radius-card)] border border-dashed border-border-strong px-6 py-20 text-center">
+        <div className="mt-16 flex flex-col items-center rounded-[var(--radius-panel)] border border-dashed border-white/15 px-6 py-20 text-center">
           <SearchX aria-hidden className="size-10 text-foreground/35" />
           <p className="mt-5 text-[19px] font-semibold">No courses match your search</p>
-          <p className="mt-2 max-w-sm text-foreground/55">Try a different keyword or clear the filters.</p>
-          <Button
-            variant="secondary"
-            className="mt-6"
-            onClick={() => {
-              setQuery("");
-              setLevel("all");
-            }}
-          >
-            Clear filters
-          </Button>
+          <p className="mt-2 max-w-sm text-foreground/55">Try a different keyword.</p>
+          <button type="button" onClick={() => setQuery("")} className="mt-6 inline-flex min-h-11 items-center rounded-full bg-primary px-6 text-[14px] font-semibold text-white hover:bg-primary-hover">
+            Clear search
+          </button>
         </div>
       ) : (
-        <ul className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
-            {results.map((course) => (
+            {results.map((course, i) => (
               <motion.li
                 key={course.id}
                 layout
@@ -96,20 +61,24 @@ export function CourseCatalog({ courses }: { courses: CourseSummary[] }) {
               >
                 <Link
                   href={`/mastery-courses/${course.slug}`}
-                  className="group flex h-full flex-col rounded-[var(--radius-card)] border border-border bg-gradient-to-b from-white/[0.05] to-white/[0.01] p-7 transition-[border-color,transform] duration-500 hover:-translate-y-1 hover:border-border-strong"
+                  className="group flex h-full flex-col overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/[0.025] transition-[border-color,transform] duration-500 hover:-translate-y-1 hover:border-white/20"
                 >
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Badge tone="primary">{course.level}</Badge>
-                    {course.status === "demo" && <PlaceholderBadge label="Demo listing" />}
-                  </div>
-                  <h2 className="mt-6 text-[24px] font-bold tracking-tight">{course.title}</h2>
-                  <p className="mt-2 text-[15px] leading-relaxed text-foreground/55">{course.subtitle}</p>
-                  <div className="mt-auto flex items-end justify-between gap-4 pt-8">
-                    <div className="text-sm text-foreground/50">
-                      {course.lessonsCount ? `${course.lessonsCount} lessons · ` : ""}
-                      {formatPrice(course.price)}
+                  <ChartCover seed={i} label={course.level} className="aspect-[16/10] w-full" />
+                  <div className="flex flex-1 flex-col p-6">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h2 className="text-[21px] font-bold tracking-tight">{course.title}</h2>
+                      {course.status === "demo" && <PlaceholderBadge label="Demo" />}
                     </div>
-                    <ArrowUpRight aria-hidden className="size-5 text-foreground/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
+                    <p className="mt-3 text-[14px] leading-relaxed text-foreground/55">{course.subtitle}</p>
+                    <div className="mt-auto flex items-end justify-between gap-4 border-t border-white/10 pt-5">
+                      <div>
+                        <p className="text-[11px] font-semibold tracking-[0.15em] text-foreground/45 uppercase">Tuition</p>
+                        <p className="mt-1 text-[17px] font-bold">{course.price ? formatPrice(course.price) : "TBC"}</p>
+                      </div>
+                      <span className="flex size-11 items-center justify-center rounded-xl bg-primary text-white shadow-[0_0_24px_-6px_var(--primary)] transition-transform group-hover:translate-x-0.5">
+                        <ChevronRight aria-hidden className="size-5" />
+                      </span>
+                    </div>
                   </div>
                 </Link>
               </motion.li>

@@ -1,0 +1,1092 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/",
+  "screens": 19,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "KojoForex — Africa's Finest Forex Educator",
+  "scrollHeight": 14093,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "-apple-system, \"system-ui\", \"SF Pro Display\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal"
+  },
+  "sections": [
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-100 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 5957,
+        "w": 1440,
+        "h": 72
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "KOJOFOREX Gold Digger One on One Academy Mastery Courses Sign in Sign up"
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "relative w-full min-h-screen lg:min-h-dvh flex flex-col lg:flex-row overflow-hidden bg-[#020818]",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 1125
+      },
+      "bg": "rgb(2, 8, 24)",
+      "position": "relative",
+      "headings": [
+        "H1: Where Serious Traders Grow. Where Serious Traders Grow."
+      ],
+      "text": "Where Serious Traders Grow. Where Serious Traders Grow. KojoForex is a distraction-free home for retail traders who want to quietly become consistently profitable. No fluff. Just results. Join the Community Beginner? Start For Free 20M+ AUDIENCE 150K+ STUDENTS 14+ YEARS 170+ COUNTRIES"
+    },
+    {
+      "tag": "section",
+      "id": "testimonials",
+      "cls": "relative pb-56 lg:pb-72 pt-32 overflow-hidden",
+      "rect": {
+        "x": 0,
+        "y": 1125,
+        "w": 1440,
+        "h": 1560
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Real Results from Real Traders.",
+        "H3: Kingsley",
+        "H3: Farouk Badamasi",
+        "H3: Vambe Harrison",
+        "H3: Sulaiman Leefah"
+      ],
+      "text": "SUCCESS STORIES Real Results from Real Traders. Real Results from Real Traders. Kingsley Gold Masterclass Student “After a year and a half of trying to figure it out alone, the Gold Digger Masterclass finally gave me a clear, rules-based way to trade. I stopped gambling and now follow a structured process I can review and refine.” 🏆 Achieved consistent profitability Farouk Badamasi Community Member “This community made discipline and proper market analysis non‑negotiable for me. I understand my…"
+    },
+    {
+      "tag": "section",
+      "id": "educator",
+      "cls": "relative overflow-hidden bg-[#020818] z-10",
+      "rect": {
+        "x": 0,
+        "y": 2570,
+        "w": 1440,
+        "h": 828
+      },
+      "bg": "rgb(2, 8, 24)",
+      "position": "relative",
+      "headings": [
+        "H2: The educator the industry calls on."
+      ],
+      "text": "LIVE AT DUBAI FOREX EXPO Dubai, UAE · 2026 INDUSTRY AUTHORITY The educator the industry calls on. The educator the industry calls on. 150,000 students. 170+ countries. One framework — clarity, discipline, results. He didn't build a brand. He built the category. 150K+ Students mentored 170+ Countries reached 14+ Years in the market"
+    },
+    {
+      "tag": "section",
+      "id": "telegram-community",
+      "cls": "relative overflow-hidden bg-[#02091a]",
+      "rect": {
+        "x": 0,
+        "y": 3398,
+        "w": 1440,
+        "h": 959
+      },
+      "bg": "rgb(2, 9, 26)",
+      "position": "relative",
+      "headings": [
+        "H2: Join Our Exclusive Telegram Signal Community"
+      ],
+      "text": "FREE TELEGRAM COMMUNITY Join Our Exclusive Telegram Signal Community Join Our Exclusive Telegram Signal Community Instant Alerts & Setups Get real-time trading signals, market insights, and expert analysis directly in your Telegram. Join thousands of successful traders who rely on our high-conviction signals daily. • Real-time trading signals • Daily market analysis & breakdowns • Exclusive chart setups • Direct updates from Kojo • Over 230k+ active community members • 100% Free to join Join Tel…"
+    },
+    {
+      "tag": "section",
+      "id": "beginner-course",
+      "cls": "relative py-32 overflow-hidden px-4 bg-black",
+      "rect": {
+        "x": 0,
+        "y": 4358,
+        "w": 1440,
+        "h": 1115
+      },
+      "bg": "rgb(0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Start your journey. Zero cost attached.",
+        "H3: What's Included",
+        "H3: VIP Signals Channel.",
+        "H3: Forex Foundations Course.",
+        "H3: Live Trade Sessions."
+      ],
+      "text": "KOJOFOREX BASICS Start your journey. Zero cost attached. Start your journey. Zero cost attached. Gain access to our free self paced beginner to intermediate course which comes with other benefits such as VIP access. You have to sign up to our recommended broker to gain access. Enroll for Free What's Included VIP Signals Channel. Free access to our dedicated Telegram VIP signals channel for real-time market setups. Forex Foundations Course. Free access to our comprehensive fundamentals course. Ea…"
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "relative py-32 overflow-clip px-4",
+      "rect": {
+        "x": 0,
+        "y": 5472,
+        "w": 1440,
+        "h": 2259
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Forex Trading. Mastery Courses.",
+        "H4: Institutional Concepts.",
+        "H4: Advanced Structure.",
+        "H4: Quantify risk. Execute flawlessly."
+      ],
+      "text": "THE MASTERY COLLECTION Forex Trading. Mastery Courses. Forex Trading. Mastery Courses. Go beyond the basics. An expanding library of battle-tested mastery courses designed to transform your understanding of market structure, institutional liquidity, and algorithmic execution. FOUNDATIONS Institutional Concepts. Decode the precise algorithmic footprints that drive the market. Stop trading against the banks—learn how to spot their liquidity traps and trade alongside them. SELL SIDE LIQ BUY SIDE LI…"
+    },
+    {
+      "tag": "section",
+      "id": "coaching",
+      "cls": "relative py-24 lg:py-48 overflow-hidden",
+      "rect": {
+        "x": 0,
+        "y": 7732,
+        "w": 1440,
+        "h": 1284
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Private Coaching with KojoForex",
+        "H4: MENTORSHIP FEE"
+      ],
+      "text": "1-ON-1 COACHING Private Coaching with KojoForex Private Coaching with KojoForex Experience the ultimate in personalized trading education. Work directly with KojoForex himself in private, customized sessions designed specifically for your trading goals and learning style. ✓ Private, personalized sessions with KojoForex ✓ Customized trading strategies for your goals ✓ One-on-one mentorship and guidance ✓ Real-time feedback on your trading decisions ✓ Advanced market analysis techniques ✓ Long-ter…"
+    },
+    {
+      "tag": "section",
+      "id": "blogs",
+      "cls": "relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#020617] overflow-hidden",
+      "rect": {
+        "x": 0,
+        "y": 9016,
+        "w": 1440,
+        "h": 1249
+      },
+      "bg": "rgb(2, 6, 23)",
+      "position": "relative",
+      "headings": [
+        "H2: Market Insights.",
+        "H3: How Do You Build a Forex Trading Routine That You Can Actually Follow?",
+        "H3: Can You Learn Forex Without Paying for a Course?",
+        "H3: Do You Really Need to Be Glued to the Charts All Day to Make Money From Forex?",
+        "H3: How Long Does It Take to Become a Good Forex Trader?"
+      ],
+      "text": "EDITORIAL Market Insights. Market Insights. VIEW ALL ARTICLES MARKET RESEARCH 6 MIN READ How Do You Build a Forex Trading Routine That You Can Actually Follow? Struggling to stay consistent with forex? Discover how to build a practical trading routine that fits your lifestyle, sharpens your decision making, and helps you trade with more discipline and confidence. MARKET RESEARCH 9 MIN READ Can You Learn Forex Without Paying for a Course? Can you really learn forex for free? Discover what YouTube…"
+    },
+    {
+      "tag": "section",
+      "id": "collaborate",
+      "cls": "relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-transparent overflow-hidden",
+      "rect": {
+        "x": 0,
+        "y": 10265,
+        "w": 1440,
+        "h": 1004
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Align with Africa's Finest. Scale globally.",
+        "H3: Corporate Branding",
+        "H3: Media Engagements",
+        "H3: Submit a Proposal"
+      ],
+      "text": "OPEN FOR COLLABORATION Align with Africa's Finest. Scale globally. Align with Africa's Finest. Scale globally. KojoForex represents absolute authority in the financial markets. We partner with elite brands, tier-one brokers, and media platforms that align with uncompromised quality and high-performance trading. Corporate Branding Sponsorships & official endorsements. Media Engagements Podcasts, stages, and keynote speeches. Submit a Proposal Select the nature of your inquiry to route it to the c…"
+    },
+    {
+      "tag": "section",
+      "id": "faq",
+      "cls": "relative z-10 overflow-hidden w-full py-32 md:py-40 px-4 sm:px-6 flex flex-col items-center justify-center min-h-screen",
+      "rect": {
+        "x": 0,
+        "y": 11269,
+        "w": 1440,
+        "h": 1553
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Everything You Need to Know.",
+        "H3: How do I access the KojoForex Academy courses?",
+        "H3: Are the strategies taught by Kojo suitable for absolute beginners?",
+        "H3: What exactly is included in the KojoForex Telegram Community?",
+        "H3: How does the 1-on-1 Coaching program work?",
+        "H3: Can I access the KojoForex platform on my phone?",
+        "H3: What makes the KojoForex approach to risk management different?"
+      ],
+      "text": "KNOWLEDGE BASE Everything You Need to Know. Ask our AI assistant anything about KojoForex's courses and mentorship programs, or browse our most frequently asked questions below. Ask anything about KojoForex PLATFORM ACCESS How do I access the KojoForex Academy courses? Once you create an account on the KojoForex platform, all your purchased courses, from the Beginner Blueprint to the advanced Gold Digger strategy, will be instantly available in your personal learning dashboard. EDUCATION Are the…"
+    },
+    {
+      "tag": "section",
+      "id": "socials",
+      "cls": "relative",
+      "rect": {
+        "x": 0,
+        "y": 12822,
+        "w": 1440,
+        "h": 489
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Social Media Connectivity"
+      ],
+      "text": "Social Media Connectivity 0.00M+ Followers who trust KojoForex to navigate the markets — every day. Instagram @kojoforex YouTube @kojoforex X @kojoforex Telegram kojoforextrades Facebook kojoforex"
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "cls": "relative border-t border-white/10",
+      "rect": {
+        "x": 0,
+        "y": 13310,
+        "w": 1440,
+        "h": 783
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Footer",
+        "H3: Education",
+        "H3: Ecosystem",
+        "H3: Company",
+        "H3: Legal"
+      ],
+      "text": "Footer Education Mastery Courses Academy Gold Digger Program 1-on-1 Coaching Ecosystem Events Blogs Shop Collaborations Company About KojoForex Testimonials FAQ Telegram Community Legal Privacy Policy Terms of Service Cookie Policy Refund Policy KojoForex Empowering traders across Africa and beyond with world-class forex education, community, and mentorship since 2011. Get in touch hello@kojoforex.com © 2026 KojoForex. All rights reserved. DISCLAIMER: KojoForex.com is an educational platform tha…"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-100 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 5957,
+        "w": 1440,
+        "h": 72
+      },
+      "text": "KOJOFOREX Gold Digger One on One Academy Mastery Courses Sign in Sign up"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-[10vh] pt-0 w-full mb-8 md:mb-12",
+      "rect": {
+        "x": 208,
+        "y": 6078,
+        "w": 1024,
+        "h": 450
+      },
+      "text": "FOUNDATIONS Institutional Concepts. Decode the precise algorithmic footprints that drive the market. Stop trading agains…"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-[14vh] pt-0 w-full mb-8 md:mb-12",
+      "rect": {
+        "x": 208,
+        "y": 6576,
+        "w": 1024,
+        "h": 450
+      },
+      "text": "ADVANCED Advanced Structure. Master multi-timeframe analysis. Understand deep market topography, complex pullbacks, and …"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-[18vh] pt-0 w-full",
+      "rect": {
+        "x": 208,
+        "y": 7074,
+        "w": 1024,
+        "h": 450
+      },
+      "text": "EXECUTION Quantify risk. Execute flawlessly. The exact entry models used by funded traders. Learn to quantify your risk,…"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed right-4 md:right-8 z-90 hidden md:flex bottom-6 md:bottom-8",
+      "rect": {
+        "x": 1352,
+        "y": 6769,
+        "w": 56,
+        "h": 56
+      },
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "KOJOFOREX",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Gold Digger",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "One on One",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Sign in",
+      "href": "/signin",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Sign up",
+      "href": "/get-access",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Gold Digger",
+      "href": "/gold-digger",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "One on One",
+      "href": "/coaching",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Sign in",
+      "href": "/signin",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Sign up",
+      "href": "/get-access",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Join the Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Beginner? Start For Free",
+      "href": "#beginner-course",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Start Your Success Story",
+      "href": "/signin",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Join Telegram Free",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "VIEW ALL ARTICLES",
+      "href": "/blogs",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "MARKET RESEARCH 6 MIN READ How Do You Build a Forex Trading Routine That You Can…",
+      "href": "/blogs/how-do-you-build-a-forex-trading-routine-that-you-can-actually-follow",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "MARKET RESEARCH 9 MIN READ Can You Learn Forex Without Paying for a Course? Can …",
+      "href": "/blogs/can-you-learn-forex-without-paying-for-a-course",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "PSYCHOLOGY 4 MIN READ Do You Really Need to Be Glued to the Charts All Day to Ma…",
+      "href": "/blogs/do-you-really-need-to-be-glued-to-the-charts-all-day-to-make-money-from-forex",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "MARKET RESEARCH 9 MIN READ How Long Does It Take to Become a Good Forex Trader? …",
+      "href": "/blogs/how-long-does-it-take-to-become-a-good-forex-trader",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Contact Support",
+      "href": "https://t.me/Kojoforex",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Instagram @kojoforex",
+      "href": "https://www.instagram.com/kojoforex?igsh=OWx1cTdxd2Y2aXBq",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "YouTube @kojoforex",
+      "href": "https://youtube.com/@kojoforex?si=4S9EqJZxlM2F9WPv",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "X @kojoforex",
+      "href": "https://x.com/kojoforex?s=21&t=_9gvmgL5W5Pk35Qo9eo6Ng",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Telegram kojoforextrades",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Facebook kojoforex",
+      "href": "https://www.facebook.com/kojoforex",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Open Menu",
+      "aria": "Open Menu",
+      "expanded": "false",
+      "visible": false,
+      "y": 5957
+    },
+    {
+      "text": "Slide 1: Dubai Forex Expo",
+      "aria": "Slide 1: Dubai Forex Expo",
+      "expanded": null,
+      "visible": true,
+      "y": 3349
+    },
+    {
+      "text": "Slide 2: Partnership Commercial",
+      "aria": "Slide 2: Partnership Commercial",
+      "expanded": null,
+      "visible": true,
+      "y": 3349
+    },
+    {
+      "text": "Slide 3: Africa Forex Summit",
+      "aria": "Slide 3: Africa Forex Summit",
+      "expanded": null,
+      "visible": true,
+      "y": 3349
+    },
+    {
+      "text": "Slide 4: Forex Trading Conference",
+      "aria": "Slide 4: Forex Trading Conference",
+      "expanded": null,
+      "visible": true,
+      "y": 3349
+    },
+    {
+      "text": "Enroll for Free",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 4940
+    },
+    {
+      "text": "Explore Courses",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 7480
+    },
+    {
+      "text": "Secure Your Spot",
+      "aria": "Secure Your Spot for Private Coaching for 2000 dollars",
+      "expanded": null,
+      "visible": true,
+      "y": 8814
+    },
+    {
+      "text": "Brand Sponsorship",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 10573
+    },
+    {
+      "text": "Broker Partnership",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 10573
+    },
+    {
+      "text": "Speaking Engagement",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 10573
+    },
+    {
+      "text": "Media / Interview",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 10619
+    },
+    {
+      "text": "Other",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 10619
+    },
+    {
+      "text": "Initiate Contact",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 11063
+    },
+    {
+      "text": "Send message to AI",
+      "aria": "Send message to AI",
+      "expanded": null,
+      "visible": true,
+      "y": 11802
+    },
+    {
+      "text": "PLATFORM ACCESS How do I access the KojoForex Academy courses? Once you create a…",
+      "aria": null,
+      "expanded": "false",
+      "visible": true,
+      "y": 11967
+    },
+    {
+      "text": "EDUCATION Are the strategies taught by Kojo suitable for absolute beginners? Yes…",
+      "aria": null,
+      "expanded": "false",
+      "visible": true,
+      "y": 11967
+    },
+    {
+      "text": "COMMUNITY What exactly is included in the KojoForex Telegram Community? The VIP …",
+      "aria": null,
+      "expanded": "false",
+      "visible": true,
+      "y": 12162
+    },
+    {
+      "text": "MENTORSHIP How does the 1-on-1 Coaching program work? Our 1-on-1 Coaching provid…",
+      "aria": null,
+      "expanded": "false",
+      "visible": true,
+      "y": 12162
+    },
+    {
+      "text": "TECHNICAL SPECIFICS Can I access the KojoForex platform on my phone? Absolutely.…",
+      "aria": null,
+      "expanded": "false",
+      "visible": true,
+      "y": 12357
+    },
+    {
+      "text": "RISK & SAFETY What makes the KojoForex approach to risk management different? At…",
+      "aria": null,
+      "expanded": "false",
+      "visible": true,
+      "y": 12357
+    },
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": true,
+      "y": 6769
+    }
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": "Bright Kojo",
+      "label": "NAME / CONTACT",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": "Company Name",
+      "label": "COMPANY / BRAND",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "name": null,
+      "placeholder": "kojo@company.com",
+      "label": "EMAIL ADDRESS",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "url",
+      "name": null,
+      "placeholder": "https://example.com",
+      "label": "COMPANY WEBSITE",
+      "required": false
+    },
+    {
+      "tag": "textarea",
+      "type": null,
+      "name": null,
+      "placeholder": "Briefly describe your partnership proposal...",
+      "label": "PROPOSAL OUTLINE",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": "Ask anything about KojoForex...",
+      "label": "Ask anything about KojoForex",
+      "required": false
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Fhero.webp&w=750&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "KojoForex - Africa's leading forex educator analyzing the markets",
+      "rect": {
+        "x": 740,
+        "y": 68,
+        "w": 709,
+        "h": 954
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Feducator-1.webp&w=750&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "KojoForex speaking at Dubai Forex Expo in Dubai, UAE · 2026",
+      "rect": {
+        "x": 0,
+        "y": 2570,
+        "w": 749,
+        "h": 828
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Feducator-2.webp&w=750&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "KojoForex speaking at Partnership Commercial in Online · Global",
+      "rect": {
+        "x": 0,
+        "y": 2570,
+        "w": 749,
+        "h": 828
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Feducator-3.webp&w=750&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "KojoForex speaking at Africa Forex Summit in Cape Town, South Africa · 2024",
+      "rect": {
+        "x": 0,
+        "y": 2570,
+        "w": 749,
+        "h": 828
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Feducator-4.webp&w=750&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "KojoForex speaking at Forex Trading Conference in Accra, Ghana · 2023",
+      "rect": {
+        "x": 0,
+        "y": 2570,
+        "w": 749,
+        "h": 828
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2Ftelegram.webp&w=828&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "Thousands of active traders collaborating in the KojoForex Telegram signal community",
+      "rect": {
+        "x": 691,
+        "y": 3398,
+        "w": 749,
+        "h": 959
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=%2Fhomepage%2F1-on-1.webp&w=750&q=75&dpl=dpl_BSWC7ja2DfkvFySe52hbkJtSMo5P",
+      "alt": "Personal coaching and mentorship",
+      "rect": {
+        "x": 782,
+        "y": 8098,
+        "w": 433,
+        "h": 672
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=https%3A%2F%2Fpnuvlmcnueulmjudonyy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fblog_images%2Fcovers%2Fh0xodq2a8i_17",
+      "alt": "",
+      "rect": {
+        "x": 42,
+        "y": 9342,
+        "w": 889,
+        "h": 390
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=https%3A%2F%2Fpnuvlmcnueulmjudonyy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fblog_images%2Fcovers%2F9az73cmr3lv_1",
+      "alt": "",
+      "rect": {
+        "x": 971,
+        "y": 9342,
+        "w": 432,
+        "h": 390
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=https%3A%2F%2Fpnuvlmcnueulmjudonyy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fblog_images%2Fcovers%2Fwd9eny80dva_1",
+      "alt": "",
+      "rect": {
+        "x": 40,
+        "y": 9766,
+        "w": 661,
+        "h": 390
+      }
+    },
+    {
+      "tag": "img",
+      "src": "https://www.kojoforex.com/_next/image?url=https%3A%2F%2Fpnuvlmcnueulmjudonyy.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fblog_images%2Fcovers%2Fa0g5h7f70id_1",
+      "alt": "",
+      "rect": {
+        "x": 740,
+        "y": 9766,
+        "w": 661,
+        "h": 390
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "CSSTransition",
+      "duration": 40000,
+      "iterations": 1,
+      "target": "img.object-cover object-top filter brightness-50 lg:brightness-["
+    },
+    {
+      "name": "orbFloat",
+      "duration": 20000,
+      "iterations": null,
+      "target": "div.absolute top-[10%] left-[10%] w-100 lg:w-150 h-100 lg:h-150 "
+    },
+    {
+      "name": "orbFloatReverse",
+      "duration": 25000,
+      "iterations": null,
+      "target": "div.absolute bottom-[-10%] right-[20%] w-75 lg:w-125 h-75 lg:h-1"
+    },
+    {
+      "name": "shineFlow",
+      "duration": 8000,
+      "iterations": null,
+      "target": "span.block font-black leading-[0.88] tracking-tighter bg-clip-tex"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "span.w-1.5 h-1.5 rounded-full bg-[#3399FF] animate-pulse"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "span.w-1.5 h-1.5 rounded-full bg-white animate-pulse"
+    },
+    {
+      "name": "ping",
+      "duration": 1000,
+      "iterations": null,
+      "target": "div.absolute inset-0 rounded-full bg-[#10b981] animate-ping opac"
+    },
+    {
+      "name": "spin",
+      "duration": 15000,
+      "iterations": null,
+      "target": "div.w-8 h-8 rounded-full border border-blue-500/20 flex items-ce"
+    },
+    {
+      "name": "spin",
+      "duration": 10000,
+      "iterations": null,
+      "target": "div.absolute inset-2 rounded-full border border-blue-400/30 anim"
+    },
+    {
+      "name": "ping",
+      "duration": 1000,
+      "iterations": null,
+      "target": "span.animate-ping absolute h-full w-full rounded-full bg-[#0071e3"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "p.text-center text-[12px] text-rose-400/80 mt-3 animate-pulse"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.absolute top-[10%] left-[10%] w-125 h-125 rounded-full bg-bl"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.absolute bottom-[10%] right-[10%] w-150 h-150 rounded-full b"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"
+    },
+    {
+      "name": "Animation",
+      "duration": 4000,
+      "iterations": null,
+      "target": "div.absolute w-40 h-10 bg-[#ff3b30]/10 border border-[#ff3b30]/3"
+    },
+    {
+      "name": "Animation",
+      "duration": 4000,
+      "iterations": null,
+      "target": "div.absolute w-40 h-10 bg-[#30d158]/10 border border-[#30d158]/3"
+    }
+  ]
+}

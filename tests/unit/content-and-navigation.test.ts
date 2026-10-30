@@ -52,6 +52,7 @@ describe("form schemas", () => {
     name: "Ama Mensah",
     email: "ama@example.com",
     message: "We would like to discuss a partnership.",
+    topic: "Brand Sponsorship",
     consent: "on",
   };
 
@@ -62,12 +63,17 @@ describe("form schemas", () => {
   it("rejects a bad email, missing consent and a filled honeypot", () => {
     expect(leadSchema.safeParse({ ...valid, email: "nope" }).success).toBe(false);
     expect(leadSchema.safeParse({ ...valid, consent: undefined }).success).toBe(false);
-    expect(leadSchema.safeParse({ ...valid, website: "spam.example" }).success).toBe(false);
+    expect(leadSchema.safeParse({ ...valid, hp: "spam.example" }).success).toBe(false);
   });
 
-  it("requires matching passwords on register", () => {
-    const base = { name: "Ama", email: "ama@example.com", password: "abcdef1234", terms: "on" };
-    expect(registerSchema.safeParse({ ...base, confirm: "abcdef1234" }).success).toBe(true);
-    expect(registerSchema.safeParse({ ...base, confirm: "different1" }).success).toBe(false);
+  it("requires a partnership category for collaboration leads", () => {
+    expect(leadSchema.safeParse({ ...valid, topic: "" }).success).toBe(false);
+    expect(leadSchema.safeParse({ ...valid, kind: "coaching", topic: "" }).success).toBe(true);
+  });
+
+  it("requires a country-coded WhatsApp number on register", () => {
+    const base = { firstName: "Ama", lastName: "Mensah", email: "ama@example.com", terms: "on" };
+    expect(registerSchema.safeParse({ ...base, phone: "+233 54 123 4567" }).success).toBe(true);
+    expect(registerSchema.safeParse({ ...base, phone: "0541234567" }).success).toBe(false);
   });
 });

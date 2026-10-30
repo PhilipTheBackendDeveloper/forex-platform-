@@ -1,0 +1,504 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/refund-policy",
+  "screens": 6,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "Refund Policy | KojoForex",
+  "scrollHeight": 3720,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "36px",
+    "fontWeight": "900",
+    "lineHeight": "45px",
+    "letterSpacing": "-0.9px"
+  },
+  "sections": [
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 2545,
+        "w": 390,
+        "h": 72
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "Refund Policy Contact Support"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 2545,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed top-[-10%] right-[-5%] w-125 h-125 bg-[#0071e3]/5 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -90,
+        "y": 2461,
+        "w": 500,
+        "h": 500
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.05)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed bottom-[-10%] left-[-10%] w-100 h-100 bg-[#bf5af2]/5 blur-[100px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -39,
+        "y": 3073,
+        "w": 400,
+        "h": 400
+      },
+      "bg": "lab(56.3909 58.869 -60.0193 / 0.05)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "relative z-10 max-w-4xl mx-auto px-6 sm:px-8",
+      "rect": {
+        "x": 0,
+        "y": 128,
+        "w": 390,
+        "h": 1631
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H1: Refund Policy",
+        "H2: 1. No Refunds On:",
+        "H2: 2. Refunds May Be Granted If:",
+        "H2: 3. How to Request a Refund"
+      ],
+      "text": "LEGAL INFORMATION Refund Policy Effective Date: August 7, 2025 Due to the digital nature of our content and the time-intensive preparation behind services like mentorship and signal setups, our refund policy is as follows: 1. No Refunds On: Subscription payments for signals or courses Any session of one-on-one mentorship already completed In-person physical classes once attended 2. Refunds May Be Granted If: Duplicate transactions were processed You were mistakenly charged and contact us within …"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 2545,
+        "w": 390,
+        "h": 72
+      },
+      "text": "Refund Policy Contact Support"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 2545,
+        "w": 390,
+        "h": 844
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed top-[-10%] right-[-5%] w-125 h-125 bg-[#0071e3]/5 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -90,
+        "y": 2461,
+        "w": 500,
+        "h": 500
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed bottom-[-10%] left-[-10%] w-100 h-100 bg-[#bf5af2]/5 blur-[100px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -39,
+        "y": 3073,
+        "w": 400,
+        "h": 400
+      },
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Contact Support",
+      "href": "/#contact",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "kojo@kojoforex.com",
+      "href": "mailto:kojo@kojoforex.com",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": false,
+      "y": 2545
+    }
+  ],
+  "fields": [],
+  "media": [],
+  "animations": [
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.transition-all duration-700 opacity-100 translate-y-0"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.border-t border-white/10 mt-8 pt-6 transition-all duration-7"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.border-t border-white/10 mt-8 pt-6 transition-all duration-7"
+    },
+    {
+      "name": "ping",
+      "duration": 1000,
+      "iterations": null,
+      "target": "span.animate-ping absolute h-full w-full rounded-full bg-[#0071e3"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/shop",
+  "screens": 3,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "Shop & Merchandise | KojoForex",
+  "scrollHeight": 1696,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "72px",
+    "fontWeight": "700",
+    "lineHeight": "72px",
+    "letterSpacing": "-3.6px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 765,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.015] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 765,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 765,
+        "w": 1440,
+        "h": 73
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "Home Premium Shop My Orders"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "pt-24 lg:pt-32 pb-12 w-full min-h-[85vh] max-w-7xl mx-auto px-4 lg:px-6",
+      "rect": {
+        "x": 80,
+        "y": 0,
+        "w": 1280,
+        "h": 916
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "static",
+      "headings": [
+        "H1: The Protocol Shop.",
+        "H3: Coming soon"
+      ],
+      "text": "KOJOFOREX ECOSYSTEM The Protocol Shop. Curated hardware, lifestyle, and tactical assets for the 0.1%. View your order history BAG (0) ALL ACCESSORIES CLOTHING OTHERS Coming soon We haven't listed any items here yet, but we will soon. View Cart"
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "cls": "relative border-t border-white/10",
+      "rect": {
+        "x": 0,
+        "y": 916,
+        "w": 1440,
+        "h": 780
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Footer",
+        "H3: Education",
+        "H3: Ecosystem",
+        "H3: Company",
+        "H3: Legal"
+      ],
+      "text": "Footer Education Mastery Courses Academy Gold Digger Program 1-on-1 Coaching Ecosystem Events Blogs Shop Collaborations Company About KojoForex Testimonials FAQ Telegram Community Legal Privacy Policy Terms of Service Cookie Policy Refund Policy KojoForex Empowering traders across Africa and beyond with world-class forex education, community, and mentorship since 2011. Get in touch hello@kojoforex.com © 2026 KojoForex. All rights reserved. DISCLAIMER: KojoForex.com is an educational platform tha…"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 765,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.015] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 765,
+        "w": 1440,
+        "h": 900
+      },
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 765,
+        "w": 1440,
+        "h": 73
+      },
+      "text": "Home Premium Shop My Orders"
+    },
+    {
+      "tag": "button",
+      "position": "fixed",
+      "cls": "fixed right-4 md:right-6 z-100 flex items-center justify-center gap-3 bg-[#020818]/80 backdrop-blur-[32px] border border-white/10 text-white px-5 py-4 rounded-full shadow-[0_16px_32px_-8px_rgba(0,0,0,0.8),0_0_20px_rgba(0",
+      "rect": {
+        "x": 1269,
+        "y": 1495,
+        "w": 147,
+        "h": 58
+      },
+      "text": "View Cart"
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed right-4 md:right-8 z-90 hidden md:flex bottom-6 md:bottom-8",
+      "rect": {
+        "x": 1352,
+        "y": 1577,
+        "w": 56,
+        "h": 56
+      },
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "Home",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "My Orders",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 795
+    },
+    {
+      "text": "View your order history",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 340
+    },
+    {
+      "text": "BAG (0)",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 238
+    },
+    {
+      "text": "ALL",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 426
+    },
+    {
+      "text": "ACCESSORIES",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 426
+    },
+    {
+      "text": "CLOTHING",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 426
+    },
+    {
+      "text": "OTHERS",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 426
+    },
+    {
+      "text": "View Cart",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 1495
+    },
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": true,
+      "y": 1577
+    }
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": "Search protocol...",
+      "label": "",
+      "required": false
+    }
+  ],
+  "media": [],
+  "animations": [
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "CSSTransition",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "nav.relative flex items-center justify-between transition-all du"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"
+    }
+  ]
+}

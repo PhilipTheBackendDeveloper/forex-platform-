@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased] — 2026-10-30 · Reference-parity rebuild
+### Added
+- Interactive audit tooling (`scripts/audit-reference.mjs`, `audit-reference-interactions.mjs`, `capture-scroll.mjs`) and `docs/research/LIVE_AUDIT.md`.
+- Two header systems: global `SiteHeader` and per-page `PageHeader`, both on a floating-pill `FloatingBar`; `(site)` / `(landing)` route groups; standalone Gold Digger and auth pages.
+- `Dialog` (modal/drawer), `StickyStack`, `ScrollSteps`, SVG visuals + generated `ChartCover`, assistant panel with `openAssistant()` event bus.
+- Homepage rebuilt into 11 reference-order sections; coaching/academy pinned scroll sections; events/shop modals, drawer and filters.
+### Changed
+- Header CTA is now Sign in / Sign up (logged-out reference behaviour); mobile menu redesigned.
+- Sign in is email-only; sign-up uses first/last name, email, WhatsApp number and a 3-step stepper (still not connected).
+- Proposal form: required category chips, website field; honeypot renamed to `hp`.
+- Footer: reference column order, brand row and disclaimer block.
+### Removed
+- `PageHero`, `EmptyState`, `dashboardEntryHref`, the old `sections.tsx`.
+### Fixed
+- Removed a grayscale filter applied to a client photo.
+
 ## [Unreleased] — 2026-10-29
 ### Added
 - Next.js 16.4.2 App Router scaffold (strict TS, Tailwind v4, ESLint, Turbopack, Cache Components).

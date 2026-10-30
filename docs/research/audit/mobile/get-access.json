@@ -1,0 +1,277 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/get-access",
+  "screens": 2,
+  "header": {
+    "atTop": {
+      "top": 303,
+      "height": 96,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "static",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 239,
+      "height": 96,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "static",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 239,
+      "height": 96,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "static",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [
+    "%c%d font-size:0;color:transparent NaN",
+    "%c%d font-size:0;color:transparent NaN",
+    "%c%o font-size:0;color:transparent {}",
+    "%c%o font-size:0;color:transparent {}",
+    "Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.",
+    "Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.",
+    "Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.",
+    "Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy."
+  ],
+  "title": "Create Account | KojoForex | KojoForex",
+  "scrollHeight": 908,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "-apple-system, \"system-ui\", \"SF Pro Display\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "30px",
+    "fontWeight": "600",
+    "lineHeight": "36px",
+    "letterSpacing": "-0.75px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-150 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.03)_0%,transparent_70%)] pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 600
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "absolute",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "nav",
+      "id": null,
+      "cls": "relative z-10 w-full max-w-2xl mx-auto pt-8 flex items-center justify-between",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 358,
+        "h": 64
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [],
+      "text": "Cancel"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "w-full max-w-md mx-auto px-4 mt-8 mb-4 relative z-10 sm:hidden",
+      "rect": {
+        "x": 16,
+        "y": 96,
+        "w": 358,
+        "h": 56
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [],
+      "text": "STEP 1 OF 2 Account Setup"
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "flex-1 flex flex-col items-center justify-start sm:justify-center mt-12 sm:mt-0 pb-12 relative z-10 w-full px-4",
+      "rect": {
+        "x": 16,
+        "y": 216,
+        "w": 358,
+        "h": 692
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H3: Registration Notice",
+        "H1: Create your account.",
+        "H2: Verify your email.",
+        "H2: Account Created."
+      ],
+      "text": "Registration Notice Create your account. One account. Total access to the KojoForex ecosystem. First Name Last Name Email Address WhatsApp Number Include country code, e.g. +233 54 123 4567 Already have an account? Sign in. Verify your email. We sent a secure code to your email. Verify Email Didn't receive it? Resend code Account Created. Welcome to Kojoforex. Redirecting you to your dashboard to explore our forex education platform. Enter Dashboard"
+    }
+  ],
+  "fixed": [],
+  "links": [
+    {
+      "text": "Cancel",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Already have an account? Sign in.",
+      "href": "/signin",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 699
+    },
+    {
+      "text": "Verify Email",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 389
+    },
+    {
+      "text": "Resend code",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 483
+    },
+    {
+      "text": "Enter Dashboard",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 557
+    }
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "cf-turnstile-response",
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": " ",
+      "label": "First Name",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": " ",
+      "label": "Last Name",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "name": null,
+      "placeholder": " ",
+      "label": "Email Address",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "tel",
+      "name": null,
+      "placeholder": " ",
+      "label": "WhatsApp Number",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "placeholder": null,
+      "label": "",
+      "required": false
+    }
+  ],
+  "media": [],
+  "animations": [
+    {
+      "name": "spin",
+      "duration": 1000,
+      "iterations": null,
+      "target": "svg."
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "div.w-24 h-24 bg-linear-to-tr from-[#5B63E6] to-[#45b7d1] rounde"
+    }
+  ]
+}

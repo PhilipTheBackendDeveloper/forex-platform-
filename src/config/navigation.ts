@@ -1,5 +1,3 @@
-import { siteConfig } from "./site.config";
-
 export type NavLink = { label: string; href: string };
 export type NavGroup = { title: string; links: NavLink[] };
 
@@ -17,6 +15,7 @@ export const routes = {
   about: "/about",
   testimonials: "/#testimonials",
   faq: "/#faq",
+  community: "/#community",
   privacy: "/privacy-policy",
   terms: "/terms-of-service",
   cookies: "/cookie-policy",
@@ -27,11 +26,6 @@ export const routes = {
   /** Owned by Roddy (feat/dashboard). See docs/team/INTEGRATION_CONTRACT.md. */
   dashboard: "/dashboard",
 } as const;
-
-/** Where "Dashboard" CTAs point until the protected dashboard is merged. */
-export const dashboardEntryHref = siteConfig.features.dashboardAvailable
-  ? routes.dashboard
-  : routes.login;
 
 export const primaryNav: NavLink[] = [
   { label: "Gold Digger", href: routes.goldDigger },
@@ -44,10 +38,10 @@ export const footerNav: NavGroup[] = [
   {
     title: "Education",
     links: [
-      { label: "Gold Digger", href: routes.goldDigger },
-      { label: "1-on-1 Coaching", href: routes.coaching },
-      { label: "Academy", href: routes.academy },
       { label: "Mastery Courses", href: routes.masteryCourses },
+      { label: "Academy", href: routes.academy },
+      { label: "Gold Digger Program", href: routes.goldDigger },
+      { label: "1-on-1 Coaching", href: routes.coaching },
     ],
   },
   {
@@ -65,7 +59,7 @@ export const footerNav: NavGroup[] = [
       { label: "About", href: routes.about },
       { label: "Testimonials", href: routes.testimonials },
       { label: "FAQ", href: routes.faq },
-      { label: "Sign in", href: routes.login },
+      { label: "Community", href: routes.community },
     ],
   },
   {

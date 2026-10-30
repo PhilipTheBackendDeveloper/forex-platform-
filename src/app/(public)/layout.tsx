@@ -1,15 +1,10 @@
 import { HelpLauncher } from "@/components/layout/help-launcher";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SiteHeader } from "@/components/layout/site-header";
 
+/** Every public page gets the assistant launcher; headers/footers are chosen by the nested groups. */
 export default function PublicLayout({ children }: LayoutProps<"/">) {
   return (
     <>
-      <SiteHeader />
-      <main id="main" className="relative overflow-x-clip">
-        {children}
-      </main>
-      <SiteFooter />
+      {children}
       <HelpLauncher />
     </>
   );

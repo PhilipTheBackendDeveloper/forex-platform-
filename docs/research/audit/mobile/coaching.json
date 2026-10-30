@@ -1,0 +1,559 @@
+{
+  "status": 200,
+  "finalUrl": "https://www.kojoforex.com/coaching",
+  "screens": 14,
+  "header": {
+    "atTop": {
+      "top": 0,
+      "height": 80,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledDown": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    },
+    "scrolledUp": {
+      "top": 0,
+      "height": 72,
+      "bg": "rgba(0, 0, 0, 0)",
+      "backdrop": "none",
+      "position": "fixed",
+      "border": "0px solid rgb(23, 23, 23)",
+      "transform": "none"
+    }
+  },
+  "consoleErrors": [],
+  "title": "1-on-1 Coaching | KojoForex",
+  "scrollHeight": 10032,
+  "bodyBg": "rgb(255, 255, 255)",
+  "typography": {
+    "fontFamily": "Geist, \"Geist Fallback\"",
+    "fontSize": "48px",
+    "fontWeight": "900",
+    "lineHeight": "43.2px",
+    "letterSpacing": "-2.4px"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 3145,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.015] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 3145,
+        "w": 390,
+        "h": 844
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed top-[-10%] right-[-5%] w-200 h-200 bg-[#0071e3]/4 blur-[140px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -390,
+        "y": 3061,
+        "w": 800,
+        "h": 800
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.04)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "cls": "fixed bottom-[10%] left-[-10%] w-150 h-150 bg-[#0071e3]/3 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -39,
+        "y": 3305,
+        "w": 600,
+        "h": 600
+      },
+      "bg": "lab(47.6169 8.06421 -66.5535 / 0.03)",
+      "position": "fixed",
+      "headings": [],
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "id": null,
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 3145,
+        "w": 390,
+        "h": 72
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "headings": [],
+      "text": "Private Coaching Apply Now ($2000)"
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "pt-40 pb-20 px-4 min-h-[95vh] flex flex-col items-center justify-center text-center relative z-10",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 802
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H1: Rebuild your trading edge."
+      ],
+      "text": "Rebuild your trading edge. For highly motivated traders who want to collapse 3–5 years of pain into 5 deep sessions. We rebuild your psychology and engineer a custom trading system that actually works for you. Secure Your Seat ($2000) EXTREMELY LIMITED AVAILABILITY"
+    },
+    {
+      "tag": "section",
+      "id": "philosophy",
+      "cls": "py-32 px-4 sm:px-6 relative z-10",
+      "rect": {
+        "x": 0,
+        "y": 802,
+        "w": 390,
+        "h": 2857
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: THE MENTORSHIP PHILOSOPHY",
+        "H3: Bespoke architecture. Surgical precision.",
+        "H4: 24/7 Personal Access.",
+        "H4: Weekly Live Sessions.",
+        "H4: Unprecedented Edge."
+      ],
+      "text": "THE MENTORSHIP PHILOSOPHY Bespoke architecture. Surgical precision. Every trader's mind operates differently. 1-on-1 coaching is designed to exploit your unique psychological edge while surgically removing your specific bad habits. PILLAR 01 24/7 Personal Access. Direct line to my phone. Ask questions mid-trade, send chart markups for review, and get immediate feedback when the markets are live and moving. PILLAR 02 Weekly Live Sessions. Intensive 1-hour coaching calls via Zoom. We screen-share,…"
+    },
+    {
+      "tag": "section",
+      "id": "roadmap",
+      "cls": "relative z-20",
+      "rect": {
+        "x": 0,
+        "y": 3659,
+        "w": 390,
+        "h": 2954
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: THE TRANSFORMATION",
+        "H3: Structured Evolution.",
+        "H4: Live Chart Audit",
+        "H4: Strategy Refinement",
+        "H4: Psychology Mastery",
+        "H4: Custom System Build",
+        "H4: VIP Execution"
+      ],
+      "text": "THE TRANSFORMATION Structured Evolution. SESSION 1 Live Chart Audit Get your trading journal analyzed and experience a deep trade-by-trade breakdown to pinpoint exactly where you are losing capital. SESSION 2 Strategy Refinement Take what you already know and we will optimize it for unparalleled consistency and profitability. SESSION 3 Psychology Mastery Identify emotional leaks, eliminate self-sabotage, and create a mechanical system that neutralizes anxiety. SESSION 4 Custom System Build We co…"
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "cls": "py-32 md:py-48 px-4 md:px-6 relative z-10 flex flex-col items-center min-h-screen justify-center overflow-hidden",
+      "rect": {
+        "x": 0,
+        "y": 6613,
+        "w": 390,
+        "h": 1638
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Elite Access. ZeroCompromise.",
+        "H3: 1-on-1 Mentorship",
+        "H4: 5 Personalized Coaching Sessions",
+        "H4: Custom Strategy Refinement",
+        "H4: Live Chart Reviews & Audit",
+        "H4: Trading Psychology Mastery",
+        "H4: Lifetime VIP Signal Group"
+      ],
+      "text": "INTAKE OPEN • LIMITED SLOTS Elite Access. ZeroCompromise. 1-on-1 Mentorship Strategy • Execution • Psychology 5 Personalized Coaching Sessions One-on-one Zoom sessions with KojoForex — lifetime replay access included. Custom Strategy Refinement Take what you know, optimize it for consistency and profitability. Live Chart Reviews & Audit Get your trading journal analyzed with a trade-by-trade breakdown. Trading Psychology Mastery Identify emotional leaks and create a system that neutralizes them.…"
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "cls": "relative border-t border-white/10",
+      "rect": {
+        "x": 0,
+        "y": 8251,
+        "w": 390,
+        "h": 1782
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "position": "relative",
+      "headings": [
+        "H2: Footer",
+        "H3: Education",
+        "H3: Ecosystem",
+        "H3: Company",
+        "H3: Legal"
+      ],
+      "text": "Footer Education Mastery Courses Academy Gold Digger Program 1-on-1 Coaching Ecosystem Events Blogs Shop Collaborations Company About KojoForex Testimonials FAQ Telegram Community Legal Privacy Policy Terms of Service Cookie Policy Refund Policy KojoForex Empowering traders across Africa and beyond with world-class forex education, community, and mentorship since 2011. Get in touch hello@kojoforex.com © 2026 KojoForex. All rights reserved. DISCLAIMER: KojoForex.com is an educational platform tha…"
+    }
+  ],
+  "fixed": [
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-2]",
+      "rect": {
+        "x": 0,
+        "y": 3145,
+        "w": 390,
+        "h": 844
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed inset-0 pointer-events-none z-[-1] opacity-[0.015] mix-blend-overlay",
+      "rect": {
+        "x": 0,
+        "y": 3145,
+        "w": 390,
+        "h": 844
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed top-[-10%] right-[-5%] w-200 h-200 bg-[#0071e3]/4 blur-[140px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -390,
+        "y": 3061,
+        "w": 800,
+        "h": 800
+      },
+      "text": ""
+    },
+    {
+      "tag": "div",
+      "position": "fixed",
+      "cls": "fixed bottom-[10%] left-[-10%] w-150 h-150 bg-[#0071e3]/3 blur-[120px] rounded-full pointer-events-none z-[-1]",
+      "rect": {
+        "x": -39,
+        "y": 3305,
+        "w": 600,
+        "h": 600
+      },
+      "text": ""
+    },
+    {
+      "tag": "header",
+      "position": "fixed",
+      "cls": "fixed top-0 inset-x-0 z-60 flex flex-col items-center pointer-events-none",
+      "rect": {
+        "x": 0,
+        "y": 3145,
+        "w": 390,
+        "h": 72
+      },
+      "text": "Private Coaching Apply Now ($2000)"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-[10vh] pt-0 w-full mb-8 md:mb-12",
+      "rect": {
+        "x": 16,
+        "y": 2776,
+        "w": 358,
+        "h": 643
+      },
+      "text": "PILLAR 01 24/7 Personal Access. Direct line to my phone. Ask questions mid-trade, send chart markups for review, and get…"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-[14vh] pt-0 w-full mb-8 md:mb-12",
+      "rect": {
+        "x": 16,
+        "y": 2810,
+        "w": 358,
+        "h": 609
+      },
+      "text": "PILLAR 02 Weekly Live Sessions. Intensive 1-hour coaching calls via Zoom. We screen-share, backtest together, review you…"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-[18vh] pt-0 w-full",
+      "rect": {
+        "x": 16,
+        "y": 2764,
+        "w": 358,
+        "h": 687
+      },
+      "text": "PILLAR 03 Unprecedented Edge. As a 1-on-1 student, you don't just get my time. You inherit my entire ecosystem. We skip …"
+    },
+    {
+      "tag": "div",
+      "position": "sticky",
+      "cls": "sticky top-0 h-screen w-full overflow-hidden flex flex-col justify-center",
+      "rect": {
+        "x": 0,
+        "y": 3659,
+        "w": 390,
+        "h": 844
+      },
+      "text": "THE TRANSFORMATION Structured Evolution. SESSION 1 Live Chart Audit Get your trading journal analyzed and experience a d…"
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "/",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "text": "Mastery Courses",
+      "href": "/mastery-courses",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Academy",
+      "href": "/academy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Gold Digger Program",
+      "href": "/gold-digger",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "1-on-1 Coaching",
+      "href": "/coaching",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Events",
+      "href": "/events",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Blogs",
+      "href": "/blogs",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Collaborations",
+      "href": "/collaborations",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "About KojoForex",
+      "href": "#educator",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Testimonials",
+      "href": "#testimonials",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookie-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "Refund Policy",
+      "href": "/refund-policy",
+      "inHeader": true,
+      "inFooter": true
+    },
+    {
+      "text": "KojoForex",
+      "href": "/",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "hello@kojoforex.com",
+      "href": "mailto:hello@kojoforex.com",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Join our Telegram Community",
+      "href": "https://t.me/kojoforextrades",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Subscribe to our YouTube channel",
+      "href": "https://youtube.com/@kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Follow us on Instagram",
+      "href": "https://instagram.com/kojoforex",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Terms of Service",
+      "href": "/terms-of-service",
+      "inHeader": false,
+      "inFooter": true
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy-policy",
+      "inHeader": false,
+      "inFooter": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Apply Now ($2000)",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 3174
+    },
+    {
+      "text": "Secure Your Seat ($2000)",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 615
+    },
+    {
+      "text": "Secure Enrollment",
+      "aria": null,
+      "expanded": null,
+      "visible": true,
+      "y": 7980
+    },
+    {
+      "text": "Open AI Assistant",
+      "aria": "Open AI Assistant",
+      "expanded": null,
+      "visible": false,
+      "y": 3145
+    }
+  ],
+  "fields": [],
+  "media": [],
+  "animations": [
+    {
+      "name": "bounce",
+      "duration": 1000,
+      "iterations": null,
+      "target": "div.absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce "
+    },
+    {
+      "name": "spin",
+      "duration": 8000,
+      "iterations": null,
+      "target": "div.absolute w-full h-full rounded-full border border-white/10 a"
+    },
+    {
+      "name": "spin",
+      "duration": 12000,
+      "iterations": null,
+      "target": "div.absolute w-[80%] h-[80%] rounded-full border border-white/20"
+    },
+    {
+      "name": "pulse",
+      "duration": 2000,
+      "iterations": null,
+      "target": "span.w-2 h-2 rounded-full bg-[#0071e3] shadow-[0_0_8px_#0071e3] a"
+    },
+    {
+      "name": "Animation",
+      "duration": 1000,
+      "iterations": 1,
+      "target": "div.flex flex-col items-center justify-center w-full"
+    },
+    {
+      "name": "Animation",
+      "duration": 4000,
+      "iterations": null,
+      "target": "div.absolute w-[15%] h-[15%] rounded-full bg-[#0071e3] shadow-[0"
+    },
+    {
+      "name": "Animation",
+      "duration": 700,
+      "iterations": 1,
+      "target": "div.w-full bg-linear-to-br from-[#0071e3] to-[#0052a3] rounded-["
+    }
+  ]
+}
