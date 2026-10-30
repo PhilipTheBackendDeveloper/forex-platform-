@@ -1,5 +1,16 @@
 # Changelog
 
+## [Unreleased] — 2026-10-30 · Image integration, ticker, button sizing
+### Added
+- `scripts/cutout.swift`: on-device Vision subject cutouts (defringe, feather, auto-trim); 4 cutouts in `public/images/client/cutouts/`.
+- `PortraitScene`: places cutouts in a lit navy scene with mask-based edge fades (no seams against gradients) and the reference's 40 s settle-zoom.
+- Market ticker strip above the global header (reference parity) using real, keyless sources: ECB daily reference rates (Frankfurter) and CoinGecko; cached `minutes`, hidden if the sources fail, labelled indicative.
+### Changed
+- Hero rebuilt on the measured reference structure (52% text column + `flex-1` image panel; full-bleed behind text on mobile); headline offset matches the reference.
+- Buttons resized to the reference (`px-8 py-4`, 16px, medium, never wrap); unavailable links show their reason as a hover/focus tooltip instead of a caption.
+- Placeholder badges made quiet (small neutral pill + amber dot) so previews look finished but stay honest.
+- Educator slider and coaching frame use cutouts instead of bright window photos.
+
 ## [Unreleased] — 2026-10-30 · Reference-parity rebuild
 ### Added
 - Interactive audit tooling (`scripts/audit-reference.mjs`, `audit-reference-interactions.mjs`, `capture-scroll.mjs`) and `docs/research/LIVE_AUDIT.md`.

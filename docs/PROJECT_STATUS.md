@@ -23,9 +23,15 @@ The public site was **rebuilt to match the reference's real multi-page structure
 - [x] Tests updated + new e2e for modals/drawer/assistant/sub-header/category gating
 - [x] Removed a grayscale filter that had been applied to a client photo (photo rule: never alter the subject)
 
+### Done 2026-10-30 (image & feel pass)
+- [x] Subject cutouts (Vision, pixel-identical subject) + `PortraitScene`; hero/educator/coaching no longer show bright backdrops or seams
+- [x] Hero matches measured reference structure and spacing; buttons resized to reference; stats fit on one line at 390 px
+- [x] Market ticker with real indicative data (ECB / CoinGecko), collapses on scroll
+- [x] Quieter placeholder badges; tooltip reasons instead of captions
+- [x] Verified: lint ✅ · typecheck ✅ · unit 16/16 ✅ · build ✅ · e2e 59 passed, 1 skipped ✅
+
 ### Next
 - [ ] Visual polish pass at 320/360/1024/1920 widths; Safari/Firefox
-- [ ] Hero pillar row wraps to two lines at 390 px (reference fits four stats in one line); decide on shorter labels
 - [ ] Tailwind canonical-class cleanup (IDE suggestions only)
 - [ ] Lighthouse + axe runs on a preview deploy
 

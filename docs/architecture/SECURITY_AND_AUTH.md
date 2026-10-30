@@ -6,6 +6,9 @@
 - Headers (`next.config.ts`): `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options: DENY`, `Permissions-Policy`; `x-powered-by` disabled. **TODO:** CSP with nonces once third-party scripts are known.
 - `robots.ts` disallows everything unless `NEXT_PUBLIC_ALLOW_INDEXING=true`; auth layout is `noindex`.
 
+## Third-party requests
+- `src/server/services/market-ticker.ts` (server-only) fetches public, keyless endpoints (api.frankfurter.dev, api.coingecko.com) with an 8 s timeout; results are cached (`cacheLife("minutes")`). No user data is sent, nothing runs in the browser, and failures hide the ticker. Data is labelled indicative (ECB daily fixings; CoinGecko 24 h) — never present it as tradeable quotes. Check provider terms/rate limits before production traffic.
+
 ## Required before accounts go live
 1. Session in HTTP-only, Secure, SameSite=Lax cookie; rotate on login; short idle timeout for admin.
 2. Authorisation in the data layer for every read/write (`src/server/services`), plus RLS if using Supabase.

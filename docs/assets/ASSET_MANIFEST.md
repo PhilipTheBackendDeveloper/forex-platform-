@@ -22,6 +22,25 @@
 
 Verify with: `shasum -a 256 private/reference-assets/client-originals/*`.
 
+## Subject cutouts (added 2026-10-30, requested by the project owner)
+The client's photos have bright studio/window backdrops that cannot blend into the dark design without a visible seam. Per the owner's request to "recreate the images so they fit", the backdrop was removed **without altering the person**:
+
+- Tool: `scripts/cutout.swift` — Apple Vision `VNGeneratePersonInstanceMaskRequest`, on-device (no upload).
+- Settings: 2 px mask defringe (removes the light halo from the white wall), 1.2 px feather, trimmed to the subject bounds + 4% margin.
+- The subject's pixels are copied unchanged: no recolouring, retouching, reshaping, brightness/contrast or grayscale on the person. Scene light, a faint rim light (CSS `drop-shadow`) and edge mask fades are added *around* them in `PortraitScene`.
+
+| Cutout (`public/images/client/cutouts/`) | From | Size | Used in |
+|---|---|---|---|
+| `purple-portrait.png` | client-purple-portrait.jpeg | 1191×1098 | Home hero |
+| `black-outfit-window.png` | client-black-outfit-window.jpeg | 703×978 | Home coaching frame, educator slide 3 |
+| `red-outfit.png` | client-red-outfit.jpeg | 550×1081 | Educator slide 1 |
+| `london.png` | client-london.jpeg | 422×864 | Educator slide 2 (rendered `contain`, never upscaled) |
+
+Regenerate: `swiftc -O scripts/cutout.swift -o /tmp/cutout && /tmp/cutout private/reference-assets/client-originals/client-<name>.jpeg public/images/client/cutouts/<name>.png person 1.2 2`.
+The yacht, stained-glass and football photos were **not** cut out (the segmenter picks up the boat deck / a hanging shirt, and their scenes carry the story) — they stay full photos in framed/gallery contexts.
+
+> Publication consent (OPEN_CLIENT_ITEMS #4) should cover these derivative cutouts too.
+
 ## Notes / risks
 - `client-football-stadium` shows a club's branded shirts with player names; `client-red-outfit` shows a framed artwork with luxury-brand pattern; `client-london` and `client-stained-glass` include bystanders/branded interiors. Confirm the client is comfortable publishing these.
 - Clothing in some photos carries third-party brand marks (e.g. caps, a "UAE" polo, product branding on a T-shirt). Fine for lifestyle use, but avoid implying endorsement.
